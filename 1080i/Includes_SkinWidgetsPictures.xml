@@ -1,0 +1,1502 @@
+					<includes>
+
+					<include name="SkinWidgetsPictures">
+
+					<control type="group" id="8090">
+					<posx>-250</posx>
+					<posy>80</posy>
+					
+					<!-- PICS -->
+
+					
+					<control type="wraplist" id="8091">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>360</height>
+					<onup>300</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<visible>Container(300).Hasfocus(7)</visible>
+					<include>widgets_animation</include>
+					
+					<itemlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					</control>
+					<control type="group">
+					<visible>!Control.HasFocus(8091)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					
+					<control type="group">
+					<visible>Control.HasFocus(8091)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					</focusedlayout>
+					<content>
+					
+					<!-- Pics ITEM 1 -->
+					
+					
+					<item id="1">
+					<description>Custom Item 1</description>
+					<label>$INFO[Skin.String(Pics.1.Label]</label>
+					<icon>$INFO[Skin.String(Pics.1.Icon]</icon>
+					<onclick>$INFO[Skin.String(Pics.1.Path]</onclick>
+					<visible>Skin.HasSetting(custom900)</visible>
+					</item>
+					
+					<item id="1">
+					<description>Custom Item 1</description>
+					<label>32104</label>
+					<icon>-</icon>
+					<onclick>ActivateWindow(3006)</onclick>
+					<visible>![Skin.HasSetting(hide900) | Skin.HasSetting(custom900)]</visible>
+					</item>
+					
+					<!-- Pics ITEM 2 -->
+					
+					<item id="2">
+					<description>Custom Item 2</description>
+					<label>$INFO[Skin.String(Pics.2.Label]</label>
+					<icon>$INFO[Skin.String(Pics.2.Icon]</icon>
+					<onclick>$INFO[Skin.String(Pics.2.Path]</onclick>
+					<visible>Skin.HasSetting(custom901)</visible>
+					</item>
+					
+					<item id="2">
+					<description>Custom Item 2</description>
+					<label>32104</label>
+					<icon>-</icon>
+					<onclick>ActivateWindow(3006)</onclick>
+					<visible>![Skin.HasSetting(hide901) | Skin.HasSetting(custom901)]</visible>
+					</item>
+					
+					<!-- Pics ITEM 3 -->
+					
+					<item id="3">
+					<description>Custom Item 3</description>
+					<label>$INFO[Skin.String(Pics.3.Label]</label>
+					<icon>$INFO[Skin.String(Pics.3.Icon]</icon>
+					<onclick>$INFO[Skin.String(Pics.3.Path]</onclick>
+					<visible>Skin.HasSetting(custom902)</visible>
+					</item>
+					
+					<item id="3">
+					<description>Custom Item 3</description>
+					<label>32104</label>
+					<icon>-</icon>
+					<onclick>ActivateWindow(3006)</onclick>
+					<visible>![Skin.HasSetting(hide902) | Skin.HasSetting(custom902)]</visible>
+					</item>
+					
+					<!-- Pics ITEM 4 -->
+					
+					<item id="4">
+					<description>Custom Item 4</description>
+					<label>$INFO[Skin.String(Pics.4.Label]</label>
+					<icon>$INFO[Skin.String(Pics.4.Icon]</icon>
+					<onclick>$INFO[Skin.String(Pics.4.Path]</onclick>
+					<visible>Skin.HasSetting(custom903)</visible>
+					</item>
+					
+					<item id="4">
+					<description>Custom Item 4</description>
+					<label>32104</label>
+					<icon>-</icon>
+					<onclick>ActivateWindow(3006)</onclick>
+					<visible>![Skin.HasSetting(hide903) | Skin.HasSetting(custom903)]</visible>
+					</item>
+					
+					<!-- Pics ITEM 5 -->
+					
+					<item id="5">
+					<description>Custom Item 5</description>
+					<label>$INFO[Skin.String(Pics.5.Label]</label>
+					<icon>$INFO[Skin.String(Pics.5.Icon]</icon>
+					<onclick>$INFO[Skin.String(Pics.5.Path]</onclick>
+					<visible>Skin.HasSetting(custom904)</visible>
+					</item>
+					
+					<item id="5">
+					<description>Custom Item 5</description>
+					<label>32104</label>
+					<icon>-</icon>
+					<onclick>ActivateWindow(3006)</onclick>
+					<visible>![Skin.HasSetting(hide904) | Skin.HasSetting(custom904)]</visible>
+					</item>
+					
+					<!-- Pics ITEM 6 -->
+					
+					<item id="6">
+					<description>Custom Item 6</description>
+					<label>$INFO[Skin.String(Pics.6.Label]</label>
+					<icon>$INFO[Skin.String(Pics.6.Icon]</icon>
+					<onclick>$INFO[Skin.String(Pics.6.Path]</onclick>
+					<visible>Skin.HasSetting(custom905)</visible>
+					</item>
+					
+					<item id="6">
+					<description>Custom Item 6</description>
+					<label>32104</label>
+					<icon>-</icon>
+					<onclick>ActivateWindow(3006)</onclick>
+					<visible>![Skin.HasSetting(hide905) | Skin.HasSetting(custom905)]</visible>
+					</item>
+					
+					<!-- Pics ITEM 7 -->
+					
+					<item id="7">
+					<description>Custom Item 7</description>
+					<label>$INFO[Skin.String(Pics.7.Label]</label>
+					<icon>$INFO[Skin.String(Pics.7.Icon]</icon>
+					<onclick>$INFO[Skin.String(Pics.7.Path]</onclick>
+					<visible>Skin.HasSetting(custom906)</visible>
+					</item>
+					
+					<item id="7">
+					<description>Custom Item 7</description>
+					<label>32104</label>
+					<icon>-</icon>
+					<onclick>ActivateWindow(3006)</onclick>
+					<visible>![Skin.HasSetting(hide906) | Skin.HasSetting(custom906)]</visible>
+					</item>
+					
+					<!-- Pics ITEM 8 -->
+					
+					
+					<item id="8">
+					<description>Custom Item 8</description>
+					<label>$INFO[Skin.String(Pics.8.Label]</label>
+					<icon>$INFO[Skin.String(Pics.8.Icon]</icon>
+					<onclick>$INFO[Skin.String(Pics.8.Path]</onclick>
+					<visible>Skin.HasSetting(custom907)</visible>
+					</item>
+					
+					<item id="8">
+					<description>Custom Item 8</description>
+					<label>32104</label>
+					<icon>-</icon>
+					<onclick>ActivateWindow(3006)</onclick>
+					<visible>![Skin.HasSetting(hide907) | Skin.HasSetting(custom907)]</visible>
+					</item>
+					
+					<!-- Pics ITEM 9 -->
+					
+					<item id="9">
+					<description>Custom Item 9</description>
+					<label>$INFO[Skin.String(Pics.9.Label]</label>
+					<icon>$INFO[Skin.String(Pics.9.Icon]</icon>
+					<onclick>$INFO[Skin.String(Pics.9.Path]</onclick>
+					<visible>Skin.HasSetting(custom908)</visible>
+					</item>
+					
+					<item id="9">
+					<description>Custom Item 9</description>
+					<label>32104</label>
+					<icon>-</icon>
+					<onclick>ActivateWindow(3006)</onclick>
+					<visible>![Skin.HasSetting(hide908) | Skin.HasSetting(custom908)]</visible>
+					</item>
+					
+					<!-- Pics ITEM 10 -->
+					
+					<item id="10">
+					<description>Custom Item 10</description>
+					<label>$INFO[Skin.String(Pics.10.Label]</label>
+					<icon>$INFO[Skin.String(Pics.10.Icon]</icon>
+					<onclick>$INFO[Skin.String(Pics.10.Path]</onclick>
+					<visible>Skin.HasSetting(custom909)</visible>
+					</item>
+					
+					<item id="10">
+					<description>Custom Item 10</description>
+					<label>32104</label>
+					<icon>-</icon>
+					<onclick>ActivateWindow(3006)</onclick>
+					<visible>![Skin.HasSetting(hide909) | Skin.HasSetting(custom909)]</visible>
+					</item>
+					</content>
+					</control>
+					</control>
+					
+					
+					<!-- WIDGETS BOTTOM -->
+					
+					<control type="group" id="8010">
+					<posx>-250</posx>
+					<posy>140</posy>
+					
+					<control type="group">
+					<posx>5</posx>
+					<posy>25</posy>
+					
+					<!-- Pics TILE 1 TITLE -->
+					
+					<control type="label">
+					<posx>335</posx>
+					<posy>400</posy>
+					<label>32159</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(7) + !Skin.HasSetting(custom_Pics_tile_1)</visible>
+					<visible>![Player.HasVideo | Player.HasAudio]</visible>
+					</control>
+					
+					<control type="label">
+					<posx>335</posx>
+					<posy>400</posy>
+					<label>$INFO[Skin.String(custom_Pics_tile_1_addon_label)]</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(7) + Skin.HasSetting(custom_Pics_tile_1)</visible>
+					<visible>![Player.HasVideo | Player.HasAudio]</visible>
+					</control>
+					
+					<control type="label">
+					<posx>335</posx>
+					<posy>400</posy>
+					<label>$LOCALIZE[31040]</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(7) + !Skin.HasSetting(custom_Pics_tile_1)</visible>
+					<visible>Player.HasVideo | Player.HasAudio</visible>
+					</control>
+					
+					<control type="label">
+					<posx>335</posx>
+					<posy>400</posy>
+					<label>$LOCALIZE[31040]</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(7) + Skin.HasSetting(custom_Pics_tile_1)</visible>
+					<visible>Player.HasVideo | Player.HasAudio</visible>
+					</control>
+					
+					
+					<!-- Pics TILE 2 TITLE -->
+					
+					<control type="label">
+					<posx>775</posx>
+					<posy>400</posy>
+					<label>32160</label>
+					<width>350</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(7) + !Skin.HasSetting(custom_Pics_tile_2)</visible>
+					</control>
+					
+					<control type="label">
+					<posx>775</posx>
+					<posy>400</posy>
+					<label>$INFO[Skin.String(custom_Pics_tile_2_addon_label)]</label>
+					<width>350</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(7) + Skin.HasSetting(custom_Pics_tile_2)</visible>
+					</control>
+					
+					<!-- Pics TILE 3 TITLE -->
+					
+					<control type="label">
+					<posx>1215</posx>
+					<posy>400</posy>
+					<label>32161</label>
+					<width>350</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(7) + !Skin.HasSetting(custom_Pics_tile_3)</visible>
+					</control>
+					
+					<control type="label">
+					<posx>1215</posx>
+					<posy>400</posy>
+					<label>$INFO[Skin.String(custom_Pics_tile_3_addon_label)]</label>
+					<width>350</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(7) + Skin.HasSetting(custom_Pics_tile_3)</visible>
+					</control>
+					
+					
+					<!-- Pics TILE 4 TITLE -->
+					
+					<control type="label">
+					<posx>1650</posx>
+					<posy>400</posy>
+					<label>32162</label>
+					<width>350</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(7) + !Skin.HasSetting(custom_Pics_tile_4)</visible>
+					</control>
+					
+					<control type="label">
+					<posx>1650</posx>
+					<posy>400</posy>
+					<label>$INFO[Skin.String(custom_Pics_tile_4_addon_label)]</label>
+					<width>350</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(7) + Skin.HasSetting(custom_Pics_tile_4)</visible>
+					</control>
+					</control>
+					
+					
+					<!-- TILE 1 -->
+					
+					
+					<control type="panel" id="8002">
+					<posx>340</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>noop</onleft>
+					<onright>8003</onright>
+					<onup>8091</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(7) + Skin.HasSetting(custom_Pics_tile_1)</visible>
+				    <visible>![Player.HasVideo | Player.HasAudio]</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					
+					</focusedlayout>
+					<content>
+					
+					<item id="1">
+					<description>Pics Tile 1</description>
+					<onclick>RunAddon($INFO[Skin.String(custom_Pics_tile_1_addon)])</onclick>
+					<icon>$INFO[Skin.String(custom_Pics_tile_1_addon_icon)]</icon>
+					<label>$INFO[system.addontitle(Skin.String(custom_Pics_tile_1_addon))]</label>
+					</item>
+					</content>
+					</control>
+					
+					
+					<control type="panel" id="8002">
+					<posx>340</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>noop</onleft>
+					<onright>8003</onright>
+					<onup>8091</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(7) + !Skin.HasSetting(custom_Pics_tile_1)</visible>
+				    <visible>![Player.HasVideo | Player.HasAudio]</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Pics Tile 1</description>
+					<onclick>ActivateWindow(3006)</onclick>
+					<icon>-</icon>
+					<label>32104</label>
+					</item>
+					</content>
+					</control>
+					
+					
+					<!-- TILE 2 -->
+
+					<control type="panel" id="8003">
+					<posx>778</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>8002</onleft>
+					<onright>8004</onright>
+					<onup>8091</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(7) + Skin.HasSetting(custom_Pics_tile_2)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Pics Tile 2</description>
+					<onclick>RunAddon($INFO[Skin.String(custom_Pics_tile_2_addon)])</onclick>
+					<icon>$INFO[Skin.String(custom_Pics_tile_2_addon_icon)]</icon>
+					<label>$INFO[system.addontitle(Skin.String(custom_Pics_tile_2_addon))]</label>
+					</item>
+					</content>
+					</control>
+					
+					<control type="panel" id="8003">
+					<posx>778</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>8002</onleft>
+					<onright>8004</onright>
+					<onup>8091</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(7) + !Skin.HasSetting(custom_Pics_tile_2)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Pics Tile 2</description>
+					<onclick>ActivateWindow(3006)</onclick>
+					<icon>-</icon>
+					<label>32104</label>
+					</item>
+					</content>
+					</control>
+					
+					
+					<!-- TILE 3 -->
+					
+					<control type="panel" id="8004">
+					<posx>1216</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>8003</onleft>
+					<onright>8005</onright>
+					<onup>8091</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(7) + Skin.HasSetting(custom_Pics_tile_3)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Pics Tile 3</description>
+					<onclick>RunAddon($INFO[Skin.String(custom_Pics_tile_3_addon)])</onclick>
+					<icon>$INFO[Skin.String(custom_Pics_tile_3_addon_icon)]</icon>
+					<label>$INFO[system.addontitle(Skin.String(custom_Pics_tile_3_addon))]</label>
+					</item>
+					</content>
+					</control>
+					
+					<control type="panel" id="8004">
+					<posx>1216</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>8003</onleft>
+					<onright>8005</onright>
+					<onup>8091</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(7) + !Skin.HasSetting(custom_Pics_tile_3)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Pics Tile 3</description>
+					<onclick>ActivateWindow(3006)</onclick>
+					<icon>-</icon>
+					<label>32104</label>
+					</item>
+					</content>
+					</control>
+
+					<!-- TILE 4  -->
+
+					<control type="panel" id="8005">
+					<posx>1654</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>8004</onleft>
+					<onright>noop</onright>
+					<onup>8091</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(7) + Skin.HasSetting(custom_Pics_tile_4)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					
+					</focusedlayout>
+					
+					<content>
+					<item id="1">
+					<description>Pics Tile 4</description>
+					<onclick>RunAddon($INFO[Skin.String(custom_Pics_tile_4_addon)])</onclick>
+					<icon>$INFO[Skin.String(custom_Pics_tile_4_addon_icon)]</icon>
+					<label>$INFO[system.addontitle(Skin.String(custom_Pics_tile_4_addon))]</label>
+					</item>
+					</content>
+					</control>
+					
+					<control type="panel" id="8005">
+					<posx>1654</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>8004</onleft>
+					<onright>noop</onright>
+					<onup>8091</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(7) + !Skin.HasSetting(custom_Pics_tile_4)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					
+					</focusedlayout>
+					
+					<content>
+					<item id="1">
+					<description>Pics Tile 4</description>
+					<onclick>ActivateWindow(3006)</onclick>
+					<icon>-</icon>
+					<label>32104</label>
+					</item>
+					</content>
+					</control>
+					</control>
+
+					
+					
+					</include>
+					</includes>

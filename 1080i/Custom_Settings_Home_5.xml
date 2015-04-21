@@ -1,0 +1,1149 @@
+					
+					<?xml version="1.0" encoding="UTF-8"?>
+					<window type="dialog" id="3004">
+					<defaultcontrol always="true">9000</defaultcontrol>
+					<controls>
+					
+					<include>Overlay</include>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1920</width>
+					<height>1080</height>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>300</fadetime>
+					<texture colordiffuse="white-condensed">special://skin/extras/backgrounds/1080/settings.jpg</texture>
+					</control>
+					
+					
+					
+					<!-- SETTINGS CUSTOM MUSIC ITEMS -->
+					
+					<control type="grouplist">
+					<visible>!Window.IsVisible(filebrowser)</visible>
+					<posx>95</posx>
+					<posy>18</posy>
+					<width>1500</width>
+					<height>70</height>
+					<orientation>horizontal</orientation>
+					<align>left</align>
+					<itemgap>8</itemgap>
+					<control type="label">
+					<include>WindowTitleCommons</include>
+					<label>$LOCALIZE[32058]</label>
+					</control>
+					</control>
+					
+					<control type="group">
+					<visible>!Window.IsVisible(filebrowser)</visible>
+					<posx>0</posx>
+					<posy>20</posy>
+					
+				    <!-- LIST OVERLAY -->
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>180</posy>
+					<width>455</width>
+					<height>673.375</height>
+					<texture colordiffuse="color5-transparent" background="true">white.png</texture>
+					</control>
+					
+					<!-- GRID -->
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>264.375</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>348.75</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>433.125</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>517.5</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>601.875</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>686.25</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>770.625</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					
+					
+					<!-- LIST OVERLAY -->
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>180</posy>
+					<width>1260</width>
+					<height>673.375</height>
+					<texture colordiffuse="color5-transparent" background="true">white.png</texture>
+					</control>
+					
+					<!-- GRID -->
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>264.375</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>348.75</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>433.125</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>517.5</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>601.875</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>686.25</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>770.625</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="list" id="9000">
+					<posx>90</posx>
+					<posy>180</posy>
+					<width>455</width>
+					<height>675</height>
+					<onleft>9010</onleft>
+					<onright>9010</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<scrolltime>300</scrolltime>
+					
+					<itemlayout height="86" width="455">
+					
+					<control type="label">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>424</width>
+					<height>86</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color2</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					</control>
+					
+					</itemlayout>
+					<focusedlayout height="86" width="455">
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>86</height>
+					<width>455</width>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					</control>
+					
+					<control type="label">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>424</width>
+					<height>86</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color2</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					</control>
+					
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<label>32062</label>
+					<onclick>noop</onclick>
+					</item>
+					
+					<item id="2">
+					<label>32158</label>
+					<onclick>noop</onclick>
+					</item>
+					
+				<!-- 	<item id="3">
+					<label>Settings 3</label>
+					<onclick>noop</onclick>
+					</item>
+					
+					<item id="4">
+					<label>Settings 4</label>
+					<onclick>noop</onclick>
+					</item>
+					
+					<item id="5">
+					<label>Settings 5</label>
+					<onclick>noop</onclick>
+					</item> -->
+					
+					</content>
+					</control>
+				
+					
+					
+					<control type="group" id="9010">
+					<control type="grouplist" id="9001">
+					<visible>Container(9000).Hasfocus(1)</visible>
+					<posx>560</posx>
+					<posy>180</posy>
+					<width>1260</width>
+					<height>675</height>
+					<itemgap>0</itemgap>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					
+					<!-- MUSIC SUBMENU ITEM 1 -->
+					
+					<control type="button" id="500">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32136]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item1)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item1)</selected>
+					</control>
+					
+					<control type="radiobutton" id="501">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide500)</onclick>
+					<onclick>Skin.Reset(custom500)</onclick>
+					<selected>Skin.HasSetting(hide500)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item1)</visible>
+					</control>
+					
+					<control type="radiobutton" id="502">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide500)</onclick>
+					<onclick>Skin.ToggleSetting(custom500)</onclick>
+					<selected>Skin.HasSetting(custom500)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item1)</visible>
+					</control>
+					
+					<control type="button" id="503">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom500playlist)</onclick>
+					<label2>$INFO[Skin.String(custom500playlist)]</label2>
+					<visible>Skin.HasSetting(custom500)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item1)</visible>
+					</control>
+					
+					<control type="button" id="504">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom500label)</onclick>
+					<label2>$INFO[Skin.String(custom500label)]</label2>
+					<visible>Skin.HasSetting(custom500)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item1)</visible>
+					</control>
+					
+					<control type="button" id="505">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom500icon)</onclick>
+					<label2>$INFO[Skin.String(custom500icon)]</label2>
+					<visible>Skin.HasSetting(custom500)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item1)</visible>
+					</control>
+					
+					<!-- MUSIC SUBMENU ITEM 2 -->
+					
+					<control type="button" id="511">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32137]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item2)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item2)</selected>
+					</control>
+					
+					<control type="radiobutton" id="512">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide501)</onclick>
+					<onclick>Skin.Reset(custom501)</onclick>
+					<selected>Skin.HasSetting(hide501)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item2)</visible>
+					</control>
+					
+					<control type="radiobutton" id="513">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide501)</onclick>
+					<onclick>Skin.ToggleSetting(custom501)</onclick>
+					<selected>Skin.HasSetting(custom501)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item2)</visible>
+					</control>
+					
+					<control type="button" id="514">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom501playlist)</onclick>
+					<label2>$INFO[Skin.String(custom501playlist)]</label2>
+					<visible>Skin.HasSetting(custom501)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item2)</visible>
+					</control>
+					
+					<control type="button" id="515">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom501label)</onclick>
+					<label2>$INFO[Skin.String(custom501label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item2)</visible>
+					<visible>Skin.HasSetting(custom501)</visible>
+					</control>
+					
+					<control type="button" id="516">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom501icon)</onclick>
+					<label2>$INFO[Skin.String(custom501icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item2)</visible>
+					<visible>Skin.HasSetting(custom501)</visible>
+					</control>
+					
+					
+					<!-- MUSIC SUBMENU ITEM 3 -->
+					
+					<control type="button" id="521">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32138]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item3)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item3)</selected>
+					</control>
+					
+					<control type="radiobutton" id="522">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide502)</onclick>
+					<onclick>Skin.Reset(custom502)</onclick>
+					<selected>Skin.HasSetting(hide502)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item3)</visible>
+					</control>
+					
+					<control type="radiobutton" id="523">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide502)</onclick>
+					<onclick>Skin.ToggleSetting(custom502)</onclick>
+					<selected>Skin.HasSetting(custom502)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item3)</visible>
+					</control>
+					
+					<control type="button" id="524">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom502playlist)</onclick>
+					<label2>$INFO[Skin.String(custom502playlist)]</label2>
+					<visible>Skin.HasSetting(custom502)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item3)</visible>
+					</control>
+					
+					<control type="button" id="525">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom502label)</onclick>
+					<label2>$INFO[Skin.String(custom502label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item3)</visible>
+					<visible>Skin.HasSetting(custom502)</visible>
+					</control>
+					
+					<control type="button" id="526">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom502icon)</onclick>
+					<label2>$INFO[Skin.String(custom502icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item3)</visible>
+					<visible>Skin.HasSetting(custom502)</visible>
+					</control>
+					
+					
+					<!-- MUSIC SUBMENU ITEM 4 -->
+					
+					<control type="button" id="531">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32139]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item4)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item4)</selected>
+					</control>
+					
+					<control type="radiobutton" id="532">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide503)</onclick>
+					<onclick>Skin.Reset(custom503)</onclick>
+					<selected>Skin.HasSetting(hide503)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item4)</visible>
+					</control>
+					
+					<control type="radiobutton" id="533">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide503)</onclick>
+					<onclick>Skin.ToggleSetting(custom503)</onclick>
+					<selected>Skin.HasSetting(custom503)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item4)</visible>
+					</control>
+					
+					<control type="button" id="534">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom503playlist)</onclick>
+					<label2>$INFO[Skin.String(custom503playlist)]</label2>
+					<visible>Skin.HasSetting(custom503)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item4)</visible>
+					</control>
+					
+					<control type="button" id="535">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom503label)</onclick>
+					<label2>$INFO[Skin.String(custom503label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item4)</visible>
+					<visible>Skin.HasSetting(custom503)</visible>
+					</control>
+					
+					<control type="button" id="536">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom503icon)</onclick>
+					<label2>$INFO[Skin.String(custom503icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item4)</visible>
+					<visible>Skin.HasSetting(custom503)</visible>
+					</control>
+					
+					
+					<!-- MUSIC SUBMENU ITEM 5 -->
+					
+					<control type="button" id="541">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32140]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item5)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item5)</selected>
+					</control>
+					
+					<control type="radiobutton" id="542">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide504)</onclick>
+					<onclick>Skin.Reset(custom504)</onclick>
+					<selected>Skin.HasSetting(hide504)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item5)</visible>
+					</control>
+					
+					<control type="radiobutton" id="543">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide504)</onclick>
+					<onclick>Skin.ToggleSetting(custom504)</onclick>
+					<selected>Skin.HasSetting(custom504)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item5)</visible>
+					</control>
+					
+					<control type="button" id="544">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom504playlist)</onclick>
+					<label2>$INFO[Skin.String(custom504playlist)]</label2>
+					<visible>Skin.HasSetting(custom504)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item5)</visible>
+					</control>
+					
+					<control type="button" id="545">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom504label)</onclick>
+					<label2>$INFO[Skin.String(custom504label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item5)</visible>
+					<visible>Skin.HasSetting(custom504)</visible>
+					</control>
+					
+					<control type="button" id="546">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom504icon)</onclick>
+					<label2>$INFO[Skin.String(custom504icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item5)</visible>
+					<visible>Skin.HasSetting(custom504)</visible>
+					</control>
+					
+					
+					<!-- MUSIC SUBMENU ITEM 6 -->
+					
+					<control type="button" id="551">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32141]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item6)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item6)</selected>
+					</control>
+					
+					<control type="radiobutton" id="552">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide505)</onclick>
+					<onclick>Skin.Reset(custom505)</onclick>
+					<selected>Skin.HasSetting(hide505)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item6)</visible>
+					</control>
+					
+					<control type="radiobutton" id="553">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide505)</onclick>
+					<onclick>Skin.ToggleSetting(custom505)</onclick>
+					<selected>Skin.HasSetting(custom505)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item6)</visible>
+					</control>
+					
+					<control type="button" id="554">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom505playlist)</onclick>
+					<label2>$INFO[Skin.String(custom505playlist)]</label2>
+					<visible>Skin.HasSetting(custom505)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item6)</visible>
+					</control>
+					
+					<control type="button" id="555">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom505label)</onclick>
+					<label2>$INFO[Skin.String(custom505label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item6)</visible>
+					<visible>Skin.HasSetting(custom505)</visible>
+					</control>
+					
+					<control type="button" id="556">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom505icon)</onclick>
+					<label2>$INFO[Skin.String(custom505icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item6)</visible>
+					<visible>Skin.HasSetting(custom505)</visible>
+					</control>
+					
+					
+					<!-- MUSIC SUBMENU ITEM 7 -->
+					
+					<control type="button" id="561">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32142]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item7)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item7)</selected>
+					</control>
+					
+					<control type="radiobutton" id="562">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide506)</onclick>
+					<onclick>Skin.Reset(custom506)</onclick>
+					<selected>Skin.HasSetting(hide506)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item7)</visible>
+					</control>
+					
+					<control type="radiobutton" id="563">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide506)</onclick>
+					<onclick>Skin.ToggleSetting(custom506)</onclick>
+					<selected>Skin.HasSetting(custom506)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item7)</visible>
+					</control>
+					
+					<control type="button" id="564">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom506playlist)</onclick>
+					<label2>$INFO[Skin.String(custom506playlist)]</label2>
+					<visible>Skin.HasSetting(custom506)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item7)</visible>
+					</control>
+					
+					<control type="button" id="565">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom506label)</onclick>
+					<label2>$INFO[Skin.String(custom506label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item7)</visible>
+					<visible>Skin.HasSetting(custom506)</visible>
+					</control>
+					
+					<control type="button" id="566">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom506icon)</onclick>
+					<label2>$INFO[Skin.String(custom506icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item7)</visible>
+					<visible>Skin.HasSetting(custom506)</visible>
+					</control>
+					
+					
+					<!-- MUSIC SUBMENU ITEM 8 -->
+					
+					<control type="button" id="571">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32143]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item8)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item8)</selected>
+					</control>
+					
+					<control type="radiobutton" id="572">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide507)</onclick>
+					<onclick>Skin.Reset(custom507)</onclick>
+					<selected>Skin.HasSetting(hide507)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item8)</visible>
+					</control>
+					
+					<control type="radiobutton" id="573">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide507)</onclick>
+					<onclick>Skin.ToggleSetting(custom507)</onclick>
+					<selected>Skin.HasSetting(custom507)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item8)</visible>
+					</control>
+					
+					<control type="button" id="574">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom507playlist)</onclick>
+					<label2>$INFO[Skin.String(custom507playlist)]</label2>
+					<visible>Skin.HasSetting(custom507)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item8)</visible>
+					</control>
+					
+					<control type="button" id="575">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom507label)</onclick>
+					<label2>$INFO[Skin.String(custom507label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item8)</visible>
+					<visible>Skin.HasSetting(custom507)</visible>
+					</control>
+					
+					<control type="button" id="576">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom507icon)</onclick>
+					<label2>$INFO[Skin.String(custom507icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item8)</visible>
+					<visible>Skin.HasSetting(custom507)</visible>
+					</control>
+					
+					
+					<!-- MUSIC SUBMENU ITEM 9 -->
+					
+					<control type="button" id="581">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32144]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item9)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item9)</selected>
+					</control>
+					
+					<control type="radiobutton" id="582">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide508)</onclick>
+					<onclick>Skin.Reset(custom508)</onclick>
+					<selected>Skin.HasSetting(hide508)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item9)</visible>
+					</control>
+					
+					<control type="radiobutton" id="583">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide508)</onclick>
+					<onclick>Skin.ToggleSetting(custom508)</onclick>
+					<selected>Skin.HasSetting(custom508)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item9)</visible>
+					</control>
+					
+					<control type="button" id="584">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom508playlist)</onclick>
+					<label2>$INFO[Skin.String(custom508playlist)]</label2>
+					<visible>Skin.HasSetting(custom508)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item9)</visible>
+					</control>
+					
+					<control type="button" id="585">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom508label)</onclick>
+					<label2>$INFO[Skin.String(custom508label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item9)</visible>
+					<visible>Skin.HasSetting(custom508)</visible>
+					</control>
+					
+					<control type="button" id="586">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom508icon)</onclick>
+					<label2>$INFO[Skin.String(custom508icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item9)</visible>
+					<visible>Skin.HasSetting(custom508)</visible>
+					</control>
+					
+					
+					<!-- MUSIC SUBMENU ITEM 10 -->
+					
+					<control type="button" id="591">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32145]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item10)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item10)</selected>
+					</control>
+					
+					<control type="radiobutton" id="592">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide509)</onclick>
+					<onclick>Skin.Reset(custom509)</onclick>
+					<selected>Skin.HasSetting(hide509)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item10)</visible>
+					</control>
+					
+					<control type="radiobutton" id="593">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide509)</onclick>
+					<onclick>Skin.ToggleSetting(custom509)</onclick>
+					<selected>Skin.HasSetting(custom509)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item10)</visible>
+					</control>
+					
+					<control type="button" id="594">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom509playlist)</onclick>
+					<label2>$INFO[Skin.String(custom509playlist)]</label2>
+					<visible>Skin.HasSetting(custom509)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item10)</visible>
+					</control>
+					
+					<control type="button" id="595">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom509label)</onclick>
+					<label2>$INFO[Skin.String(custom509label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item10)</visible>
+					<visible>Skin.HasSetting(custom509)</visible>
+					</control>
+					
+					<control type="button" id="596">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom509icon)</onclick>
+					<label2>$INFO[Skin.String(custom509icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item10)</visible>
+					<visible>Skin.HasSetting(custom509)</visible>
+					</control>
+					
+					
+					<!-- MUSIC SUBMENU ITEM 11 -->
+					
+					<control type="button" id="401">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32146]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item11)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item11)</selected>
+					</control>
+					
+					<control type="radiobutton" id="402">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide510)</onclick>
+					<onclick>Skin.Reset(custom510)</onclick>
+					<selected>Skin.HasSetting(hide510)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item11)</visible>
+					</control>
+					
+					<control type="radiobutton" id="403">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide510)</onclick>
+					<onclick>Skin.ToggleSetting(custom510)</onclick>
+					<selected>Skin.HasSetting(custom510)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item11)</visible>
+					</control>
+					
+					<control type="button" id="404">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom510playlist)</onclick>
+					<label2>$INFO[Skin.String(custom510playlist)]</label2>
+					<visible>Skin.HasSetting(custom510)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item11)</visible>
+					</control>
+					
+					<control type="button" id="405">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom510label)</onclick>
+					<label2>$INFO[Skin.String(custom510label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item11)</visible>
+					<visible>Skin.HasSetting(custom510)</visible>
+					</control>
+					
+					<control type="button" id="406">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom510icon)</onclick>
+					<label2>$INFO[Skin.String(custom510icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item11)</visible>
+					<visible>Skin.HasSetting(custom510)</visible>
+					</control>
+					
+					
+					<!-- MUSIC SUBMENU ITEM 12 -->
+					
+					<control type="button" id="411">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32147]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item12)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item12)</selected>
+					</control>
+					
+					<control type="radiobutton" id="412">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide511)</onclick>
+					<onclick>Skin.Reset(custom511)</onclick>
+					<selected>Skin.HasSetting(hide511)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item12)</visible>
+					</control>
+					
+					<control type="radiobutton" id="413">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide511)</onclick>
+					<onclick>Skin.ToggleSetting(custom511)</onclick>
+					<selected>Skin.HasSetting(custom511)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item12)</visible>
+					</control>
+					
+					<control type="button" id="414">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom511playlist)</onclick>
+					<label2>$INFO[Skin.String(custom511playlist)]</label2>
+					<visible>Skin.HasSetting(custom511)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item12)</visible>
+					</control>
+					
+					<control type="button" id="415">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom511label)</onclick>
+					<label2>$INFO[Skin.String(custom511label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item12)</visible>
+					<visible>Skin.HasSetting(custom511)</visible>
+					</control>
+					
+					<control type="button" id="416">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom511icon)</onclick>
+					<label2>$INFO[Skin.String(custom511icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item12)</visible>
+					<visible>Skin.HasSetting(custom511)</visible>
+					</control>
+					
+					
+					<!-- MUSIC SUBMENU ITEM 13 -->
+					
+					<control type="button" id="421">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32148]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item13)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item13)</selected>
+					</control>
+					
+					<control type="radiobutton" id="422">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide512)</onclick>
+					<onclick>Skin.Reset(custom512)</onclick>
+					<selected>Skin.HasSetting(hide512)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item13)</visible>
+					</control>
+					
+					<control type="radiobutton" id="423">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide512)</onclick>
+					<onclick>Skin.ToggleSetting(custom512)</onclick>
+					<selected>Skin.HasSetting(custom512)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item13)</visible>
+					</control>
+					
+					<control type="button" id="424">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom512playlist)</onclick>
+					<label2>$INFO[Skin.String(custom512playlist)]</label2>
+					<visible>Skin.HasSetting(custom512)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item13)</visible>
+					</control>
+					
+					<control type="button" id="425">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom512label)</onclick>
+					<label2>$INFO[Skin.String(custom512label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item13)</visible>
+					<visible>Skin.HasSetting(custom512)</visible>
+					</control>
+					
+					<control type="button" id="426">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom512icon)</onclick>
+					<label2>$INFO[Skin.String(custom512icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item13)</visible>
+					<visible>Skin.HasSetting(custom512)</visible>
+					</control>
+					
+					
+					<!-- MUSIC SUBMENU ITEM 14 -->
+					
+					<control type="button" id="431">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32149]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Submenu_Item14)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Submenu_Item14)</selected>
+					</control>
+					
+					<control type="radiobutton" id="432">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide513)</onclick>
+					<onclick>Skin.Reset(custom513)</onclick>
+					<selected>Skin.HasSetting(hide513)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item14)</visible>
+					</control>
+					
+					<control type="radiobutton" id="433">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide513)</onclick>
+					<onclick>Skin.ToggleSetting(custom513)</onclick>
+					<selected>Skin.HasSetting(custom513)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item14)</visible>
+					</control>
+					
+					<control type="button" id="434">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom513playlist)</onclick>
+					<label2>$INFO[Skin.String(custom513playlist)]</label2>
+					<visible>Skin.HasSetting(custom513)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item14)</visible>
+					</control>
+					
+					<control type="button" id="435">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom513label)</onclick>
+					<label2>$INFO[Skin.String(custom513label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item14)</visible>
+					<visible>Skin.HasSetting(custom513)</visible>
+					</control>
+					
+					<control type="button" id="436">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom513icon)</onclick>
+					<label2>$INFO[Skin.String(custom513icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Submenu_Item14)</visible>
+					<visible>Skin.HasSetting(custom513)</visible>
+					</control>
+					</control>
+					
+					
+					<control type="grouplist" id="9002">
+					<visible>Container(9000).Hasfocus(2)</visible>
+					<posx>560</posx>
+					<posy>180</posy>
+					<width>1260</width>
+					<height>675</height>
+					<itemgap>0</itemgap>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					
+					<!-- MUSIC TILE 1 -->
+					
+					<control type="button" id="461">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32159]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Tile_1)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Tile_1)</selected>
+					</control>
+					
+					<control type="radiobutton" id="462">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.ToggleSetting(custom_Music_tile_1)</onclick>
+					<selected>Skin.HasSetting(custom_Music_tile_1)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Tile_1)</visible>
+					</control>
+					
+					<control type="button" id="463">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetAddon(custom_Music_tile_1_addon,xbmc.addon.audio,xbmc.addon.executable)</onclick>
+					<label2>$INFO[Skin.String(custom_Music_tile_1_addon)]</label2>
+					<visible>Skin.HasSetting(custom_Music_tile_1)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Tile_1)</visible>
+					</control>
+					
+					<control type="button" id="464">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom_Music_tile_1_addon_label)</onclick>
+					<label2>$INFO[Skin.String(custom_Music_tile_1_addon_label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Tile_1)</visible>
+					<visible>Skin.HasSetting(custom_Music_tile_1)</visible>
+					</control>
+					
+					<control type="button" id="465">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom_Music_tile_1_addon_icon)</onclick>
+					<label2>$INFO[Skin.String(custom_Music_tile_1_addon_icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Tile_1)</visible>
+					<visible>Skin.HasSetting(custom_Music_tile_1)</visible>
+					</control>
+					
+					
+					<!-- MUSIC TILE 2 -->
+					
+					<control type="button" id="471">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32160]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Music_Tile_2)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Music_Tile_2)</selected>
+					</control>
+					
+					<control type="radiobutton" id="472">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.ToggleSetting(custom_Music_tile_2)</onclick>
+					<selected>Skin.HasSetting(custom_Music_tile_2)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Tile_2)</visible>
+					</control>
+					
+					<control type="button" id="473">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetAddon(custom_Music_tile_2_addon,xbmc.addon.audio,xbmc.addon.executable)</onclick>
+					<label2>$INFO[Skin.String(custom_Music_tile_2_addon)]</label2>
+					<visible>Skin.HasSetting(custom_Music_tile_2)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Tile_2)</visible>
+					</control>
+					
+					<control type="button" id="474">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom_Music_tile_2_addon_label)</onclick>
+					<label2>$INFO[Skin.String(custom_Music_tile_2_addon_label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Tile_2)</visible>
+					<visible>Skin.HasSetting(custom_Music_tile_2)</visible>
+					</control>
+					
+					<control type="button" id="475">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom_Music_tile_2_addon_icon)</onclick>
+					<label2>$INFO[Skin.String(custom_Music_tile_2_addon_icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Music_Tile_2)</visible>
+					<visible>Skin.HasSetting(custom_Music_tile_2)</visible>
+					</control>
+					</control>
+					</control>
+					</control>
+					
+					</controls>
+					</window>

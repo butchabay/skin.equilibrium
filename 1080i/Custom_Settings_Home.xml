@@ -1,0 +1,1153 @@
+					
+					<?xml version="1.0" encoding="UTF-8"?>
+					<window type="dialog" id="3000">
+					<defaultcontrol always="true">9000</defaultcontrol>
+					<controls>
+					
+					<include>Overlay</include>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1920</width>
+					<height>1080</height>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>300</fadetime>
+					<texture colordiffuse="white-condensed">special://skin/extras/backgrounds/1080/settings.jpg</texture>
+					</control>
+					
+					<!-- CUSTOM MOVIES ITEMS -->
+					
+					<control type="grouplist">
+					<visible>!Window.IsVisible(filebrowser)</visible>
+					<posx>95</posx>
+					<posy>18</posy>
+					<width>1500</width>
+					<height>70</height>
+					<orientation>horizontal</orientation>
+					<align>left</align>
+					<itemgap>8</itemgap>
+					<control type="label">
+					<include>WindowTitleCommons</include>
+					<label>$LOCALIZE[32054]</label>
+					</control>
+					</control>
+					
+					<control type="group">
+					<visible>!Window.IsVisible(filebrowser)</visible>
+					<posx>0</posx>
+					<posy>20</posy>
+					
+					
+					<!-- LIST OVERLAY -->
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>180</posy>
+					<width>455</width>
+					<height>673.375</height>
+					<texture colordiffuse="color5-transparent" background="true">white.png</texture>
+					</control>
+					
+					<!-- GRID -->
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>264.375</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>348.75</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>433.125</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>517.5</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>601.875</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>686.25</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>770.625</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					
+					
+					<!-- LIST OVERLAY -->
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>180</posy>
+					<width>1260</width>
+					<height>673.375</height>
+					<texture colordiffuse="color5-transparent" background="true">white.png</texture>
+					</control>
+					
+					<!-- GRID -->
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>264.375</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>348.75</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>433.125</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>517.5</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>601.875</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>686.25</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>770.625</posy>
+					<width>1260</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					
+					
+					<control type="list" id="9000">
+					<posx>90</posx>
+					<posy>180</posy>
+					<width>455</width>
+					<height>675</height>
+					<onleft>9010</onleft>
+					<onright>9010</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<scrolltime>300</scrolltime>
+					
+					<itemlayout height="86" width="455">
+					
+					<control type="label">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>424</width>
+					<height>86</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color2</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					</control>
+					
+					</itemlayout>
+					<focusedlayout height="86" width="455">
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>86</height>
+					<width>455</width>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					</control>
+					
+					<control type="label">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>424</width>
+					<height>86</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color2</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					</control>
+					
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<label>32062</label>
+					<onclick>noop</onclick>
+					</item>
+					
+					<item id="2">
+					<label>32158</label>
+					<onclick>noop</onclick>
+					</item>
+					
+				<!-- 	<item id="3">
+					<label>Settings 3</label>
+					<onclick>noop</onclick>
+					</item>
+					
+					<item id="4">
+					<label>Settings 4</label>
+					<onclick>noop</onclick>
+					</item>
+					
+					<item id="5">
+					<label>Settings 5</label>
+					<onclick>noop</onclick>
+					</item> -->
+					
+					</content>
+					</control>
+				
+					
+					
+					<control type="group" id="9010">
+					<control type="grouplist" id="9001">
+					<visible>Container(9000).Hasfocus(1)</visible>
+					<posx>560</posx>
+					<posy>180</posy>
+					<width>1260</width>
+					<height>675</height>
+					<itemgap>0</itemgap>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					
+					<!-- MOVIES SUBMENU ITEM 1 -->
+					
+					<control type="button" id="100">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32136]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item1)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item1)</selected>
+					</control>
+					
+					<control type="radiobutton" id="101">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide100)</onclick>
+					<onclick>Skin.Reset(custom100)</onclick>
+					<selected>Skin.HasSetting(hide100)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item1)</visible>
+					</control>
+					
+					<control type="radiobutton" id="102">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide100)</onclick>
+					<onclick>Skin.ToggleSetting(custom100)</onclick>
+					<selected>Skin.HasSetting(custom100)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item1)</visible>
+					</control>
+					
+					<control type="button" id="103">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom100playlist)</onclick>
+					<label2>$INFO[Skin.String(custom100playlist)]</label2>
+					<visible>Skin.HasSetting(custom100)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item1)</visible>
+					</control>
+					
+					<control type="button" id="104">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom100label)</onclick>
+					<label2>$INFO[Skin.String(custom100label)]</label2>
+					<visible>Skin.HasSetting(custom100)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item1)</visible>
+					</control>
+					
+					<control type="button" id="105">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom100icon)</onclick>
+					<label2>$INFO[Skin.String(custom100icon)]</label2>
+					<visible>Skin.HasSetting(custom100)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item1)</visible>
+					</control>
+					
+					<!-- MOVIES SUBMENU ITEM 2 -->
+					
+					<control type="button" id="111">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32137]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item2)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item2)</selected>
+					</control>
+					
+					<control type="radiobutton" id="112">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide101)</onclick>
+					<onclick>Skin.Reset(custom101)</onclick>
+					<selected>Skin.HasSetting(hide101)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item2)</visible>
+					</control>
+					
+					<control type="radiobutton" id="113">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide101)</onclick>
+					<onclick>Skin.ToggleSetting(custom101)</onclick>
+					<selected>Skin.HasSetting(custom101)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item2)</visible>
+					</control>
+					
+					<control type="button" id="114">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom101playlist)</onclick>
+					<label2>$INFO[Skin.String(custom101playlist)]</label2>
+					<visible>Skin.HasSetting(custom101)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item2)</visible>
+					</control>
+					
+					
+					
+					<control type="button" id="115">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom101label)</onclick>
+					<label2>$INFO[Skin.String(custom101label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item2)</visible>
+					<visible>Skin.HasSetting(custom101)</visible>
+					</control>
+					
+					<control type="button" id="116">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom101icon)</onclick>
+					<label2>$INFO[Skin.String(custom101icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item2)</visible>
+					<visible>Skin.HasSetting(custom101)</visible>
+					</control>
+					
+					
+					<!-- MOVIES SUBMENU ITEM 3 -->
+					
+					<control type="button" id="121">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32138]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item3)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item3)</selected>
+					</control>
+					
+					<control type="radiobutton" id="122">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide102)</onclick>
+					<onclick>Skin.Reset(custom102)</onclick>
+					<selected>Skin.HasSetting(hide102)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item3)</visible>
+					</control>
+					
+					<control type="radiobutton" id="123">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide102)</onclick>
+					<onclick>Skin.ToggleSetting(custom102)</onclick>
+					<selected>Skin.HasSetting(custom102)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item3)</visible>
+					</control>
+					
+					<control type="button" id="124">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom102playlist)</onclick>
+					<label2>$INFO[Skin.String(custom102playlist)]</label2>
+					<visible>Skin.HasSetting(custom102)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item3)</visible>
+					</control>
+					
+					<control type="button" id="125">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom102label)</onclick>
+					<label2>$INFO[Skin.String(custom102label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item3)</visible>
+					<visible>Skin.HasSetting(custom102)</visible>
+					</control>
+					
+					<control type="button" id="126">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom102icon)</onclick>
+					<label2>$INFO[Skin.String(custom102icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item3)</visible>
+					<visible>Skin.HasSetting(custom102)</visible>
+					</control>
+					
+					
+					<!-- MOVIES SUBMENU ITEM 4 -->
+					
+					<control type="button" id="131">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32139]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item4)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item4)</selected>
+					</control>
+					
+					<control type="radiobutton" id="132">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide103)</onclick>
+					<onclick>Skin.Reset(custom103)</onclick>
+					<selected>Skin.HasSetting(hide103)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item4)</visible>
+					</control>
+					
+					<control type="radiobutton" id="133">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide103)</onclick>
+					<onclick>Skin.ToggleSetting(custom103)</onclick>
+					<selected>Skin.HasSetting(custom103)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item4)</visible>
+					</control>
+					
+					<control type="button" id="134">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom103playlist)</onclick>
+					<label2>$INFO[Skin.String(custom103playlist)]</label2>
+					<visible>Skin.HasSetting(custom103)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item4)</visible>
+					</control>
+					
+					<control type="button" id="135">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom103label)</onclick>
+					<label2>$INFO[Skin.String(custom103label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item4)</visible>
+					<visible>Skin.HasSetting(custom103)</visible>
+					</control>
+					
+					<control type="button" id="136">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom103icon)</onclick>
+					<label2>$INFO[Skin.String(custom103icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item4)</visible>
+					<visible>Skin.HasSetting(custom103)</visible>
+					</control>
+					
+					
+					<!-- MOVIES SUBMENU ITEM 5 -->
+					
+					<control type="button" id="141">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32140]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item5)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item5)</selected>
+					</control>
+					
+					<control type="radiobutton" id="142">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide104)</onclick>
+					<onclick>Skin.Reset(custom104)</onclick>
+					<selected>Skin.HasSetting(hide104)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item5)</visible>
+					</control>
+					
+					<control type="radiobutton" id="143">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide104)</onclick>
+					<onclick>Skin.ToggleSetting(custom104)</onclick>
+					<selected>Skin.HasSetting(custom104)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item5)</visible>
+					</control>
+					
+					<control type="button" id="144">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom104playlist)</onclick>
+					<label2>$INFO[Skin.String(custom104playlist)]</label2>
+					<visible>Skin.HasSetting(custom104)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item5)</visible>
+					</control>
+					
+					<control type="button" id="145">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom104label)</onclick>
+					<label2>$INFO[Skin.String(custom104label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item5)</visible>
+					<visible>Skin.HasSetting(custom104)</visible>
+					</control>
+					
+					<control type="button" id="146">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom104icon)</onclick>
+					<label2>$INFO[Skin.String(custom104icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item5)</visible>
+					<visible>Skin.HasSetting(custom104)</visible>
+					</control>
+					
+					
+					<!-- MOVIES SUBMENU ITEM 6 -->
+					
+					<control type="button" id="151">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32141]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item6)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item6)</selected>
+					</control>
+					
+					<control type="radiobutton" id="152">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide105)</onclick>
+					<onclick>Skin.Reset(custom105)</onclick>
+					<selected>Skin.HasSetting(hide105)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item6)</visible>
+					</control>
+					
+					<control type="radiobutton" id="153">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide105)</onclick>
+					<onclick>Skin.ToggleSetting(custom105)</onclick>
+					<selected>Skin.HasSetting(custom105)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item6)</visible>
+					</control>
+					
+					<control type="button" id="154">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom105playlist)</onclick>
+					<label2>$INFO[Skin.String(custom105playlist)]</label2>
+					<visible>Skin.HasSetting(custom105)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item6)</visible>
+					</control>
+					
+					<control type="button" id="155">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom105label)</onclick>
+					<label2>$INFO[Skin.String(custom105label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item6)</visible>
+					<visible>Skin.HasSetting(custom105)</visible>
+					</control>
+					
+					<control type="button" id="156">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom105icon)</onclick>
+					<label2>$INFO[Skin.String(custom105icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item6)</visible>
+					<visible>Skin.HasSetting(custom105)</visible>
+					</control>
+					
+					
+					<!-- MOVIES SUBMENU ITEM 7 -->
+					
+					<control type="button" id="161">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32142]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item7)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item7)</selected>
+					</control>
+					
+					<control type="radiobutton" id="162">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide106)</onclick>
+					<onclick>Skin.Reset(custom106)</onclick>
+					<selected>Skin.HasSetting(hide106)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item7)</visible>
+					</control>
+					
+					<control type="radiobutton" id="163">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide106)</onclick>
+					<onclick>Skin.ToggleSetting(custom106)</onclick>
+					<selected>Skin.HasSetting(custom106)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item7)</visible>
+					</control>
+					
+					<control type="button" id="164">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom106playlist)</onclick>
+					<label2>$INFO[Skin.String(custom106playlist)]</label2>
+					<visible>Skin.HasSetting(custom106)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item7)</visible>
+					</control>
+					
+					<control type="button" id="165">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom106label)</onclick>
+					<label2>$INFO[Skin.String(custom106label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item7)</visible>
+					<visible>Skin.HasSetting(custom106)</visible>
+					</control>
+					
+					<control type="button" id="166">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom106icon)</onclick>
+					<label2>$INFO[Skin.String(custom106icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item7)</visible>
+					<visible>Skin.HasSetting(custom106)</visible>
+					</control>
+					
+					
+					<!-- MOVIES SUBMENU ITEM 8 -->
+					
+					<control type="button" id="171">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32143]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item8)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item8)</selected>
+					</control>
+					
+					<control type="radiobutton" id="172">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide107)</onclick>
+					<onclick>Skin.Reset(custom107)</onclick>
+					<selected>Skin.HasSetting(hide107)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item8)</visible>
+					</control>
+					
+					<control type="radiobutton" id="173">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide107)</onclick>
+					<onclick>Skin.ToggleSetting(custom107)</onclick>
+					<selected>Skin.HasSetting(custom107)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item8)</visible>
+					</control>
+					
+					<control type="button" id="174">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom107playlist)</onclick>
+					<label2>$INFO[Skin.String(custom107playlist)]</label2>
+					<visible>Skin.HasSetting(custom107)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item8)</visible>
+					</control>
+					
+					<control type="button" id="175">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom107label)</onclick>
+					<label2>$INFO[Skin.String(custom107label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item8)</visible>
+					<visible>Skin.HasSetting(custom107)</visible>
+					</control>
+					
+					<control type="button" id="176">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom107icon)</onclick>
+					<label2>$INFO[Skin.String(custom107icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item8)</visible>
+					<visible>Skin.HasSetting(custom107)</visible>
+					</control>
+					
+					
+					<!-- MOVIES SUBMENU ITEM 9 -->
+					
+					<control type="button" id="181">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32144]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item9)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item9)</selected>
+					</control>
+					
+					<control type="radiobutton" id="182">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide108)</onclick>
+					<onclick>Skin.Reset(custom108)</onclick>
+					<selected>Skin.HasSetting(hide108)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item9)</visible>
+					</control>
+					
+					<control type="radiobutton" id="183">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide108)</onclick>
+					<onclick>Skin.ToggleSetting(custom108)</onclick>
+					<selected>Skin.HasSetting(custom108)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item9)</visible>
+					</control>
+					
+					<control type="button" id="184">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom108playlist)</onclick>
+					<label2>$INFO[Skin.String(custom108playlist)]</label2>
+					<visible>Skin.HasSetting(custom108)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item9)</visible>
+					</control>
+					
+					<control type="button" id="185">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom108label)</onclick>
+					<label2>$INFO[Skin.String(custom108label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item9)</visible>
+					<visible>Skin.HasSetting(custom108)</visible>
+					</control>
+					
+					<control type="button" id="186">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom108icon)</onclick>
+					<label2>$INFO[Skin.String(custom108icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item9)</visible>
+					<visible>Skin.HasSetting(custom108)</visible>
+					</control>
+					
+					
+					<!-- MOVIES SUBMENU ITEM 10 -->
+					
+					<control type="button" id="191">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32145]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item10)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item10)</selected>
+					</control>
+					
+					<control type="radiobutton" id="192">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide109)</onclick>
+					<onclick>Skin.Reset(custom109)</onclick>
+					<selected>Skin.HasSetting(hide109)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item10)</visible>
+					</control>
+					
+					<control type="radiobutton" id="193">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide109)</onclick>
+					<onclick>Skin.ToggleSetting(custom109)</onclick>
+					<selected>Skin.HasSetting(custom109)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item10)</visible>
+					</control>
+					
+					<control type="button" id="194">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom109playlist)</onclick>
+					<label2>$INFO[Skin.String(custom109playlist)]</label2>
+					<visible>Skin.HasSetting(custom109)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item10)</visible>
+					</control>
+					
+					<control type="button" id="195">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom109label)</onclick>
+					<label2>$INFO[Skin.String(custom109label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item10)</visible>
+					<visible>Skin.HasSetting(custom109)</visible>
+					</control>
+					
+					<control type="button" id="196">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom109icon)</onclick>
+					<label2>$INFO[Skin.String(custom109icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item10)</visible>
+					<visible>Skin.HasSetting(custom109)</visible>
+					</control>
+					
+					
+					<!-- MOVIES SUBMENU ITEM 11 -->
+					
+					<control type="button" id="201">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32146]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item11)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item11)</selected>
+					</control>
+					
+					<control type="radiobutton" id="202">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide110)</onclick>
+					<onclick>Skin.Reset(custom110)</onclick>
+					<selected>Skin.HasSetting(hide110)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item11)</visible>
+					</control>
+					
+					<control type="radiobutton" id="203">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide110)</onclick>
+					<onclick>Skin.ToggleSetting(custom110)</onclick>
+					<selected>Skin.HasSetting(custom110)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item11)</visible>
+					</control>
+					
+					<control type="button" id="204">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom110playlist)</onclick>
+					<label2>$INFO[Skin.String(custom110playlist)]</label2>
+					<visible>Skin.HasSetting(custom110)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item11)</visible>
+					</control>
+					
+					<control type="button" id="205">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom110label)</onclick>
+					<label2>$INFO[Skin.String(custom110label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item11)</visible>
+					<visible>Skin.HasSetting(custom110)</visible>
+					</control>
+					
+					<control type="button" id="206">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom110icon)</onclick>
+					<label2>$INFO[Skin.String(custom110icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item11)</visible>
+					<visible>Skin.HasSetting(custom110)</visible>
+					</control>
+					
+					
+					<!-- MOVIES SUBMENU ITEM 12 -->
+					
+					<control type="button" id="211">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32147]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item12)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item12)</selected>
+					</control>
+					
+					<control type="radiobutton" id="212">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide111)</onclick>
+					<onclick>Skin.Reset(custom111)</onclick>
+					<selected>Skin.HasSetting(hide111)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item12)</visible>
+					</control>
+					
+					<control type="radiobutton" id="213">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide111)</onclick>
+					<onclick>Skin.ToggleSetting(custom111)</onclick>
+					<selected>Skin.HasSetting(custom111)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item12)</visible>
+					</control>
+					
+					<control type="button" id="214">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom111playlist)</onclick>
+					<label2>$INFO[Skin.String(custom111playlist)]</label2>
+					<visible>Skin.HasSetting(custom111)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item12)</visible>
+					</control>
+					
+					<control type="button" id="215">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom111label)</onclick>
+					<label2>$INFO[Skin.String(custom111label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item12)</visible>
+					<visible>Skin.HasSetting(custom111)</visible>
+					</control>
+					
+					<control type="button" id="216">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom111icon)</onclick>
+					<label2>$INFO[Skin.String(custom111icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item12)</visible>
+					<visible>Skin.HasSetting(custom111)</visible>
+					</control>
+					
+					
+					<!-- MOVIES SUBMENU ITEM 13 -->
+					
+					<control type="button" id="221">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32148]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item13)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item13)</selected>
+					</control>
+					
+					<control type="radiobutton" id="222">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide112)</onclick>
+					<onclick>Skin.Reset(custom112)</onclick>
+					<selected>Skin.HasSetting(hide112)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item13)</visible>
+					</control>
+					
+					<control type="radiobutton" id="223">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide112)</onclick>
+					<onclick>Skin.ToggleSetting(custom112)</onclick>
+					<selected>Skin.HasSetting(custom112)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item13)</visible>
+					</control>
+					
+					<control type="button" id="224">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom112playlist)</onclick>
+					<label2>$INFO[Skin.String(custom112playlist)]</label2>
+					<visible>Skin.HasSetting(custom112)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item13)</visible>
+					</control>
+					
+					<control type="button" id="225">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom112label)</onclick>
+					<label2>$INFO[Skin.String(custom112label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item13)</visible>
+					<visible>Skin.HasSetting(custom112)</visible>
+					</control>
+					
+					<control type="button" id="226">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom112icon)</onclick>
+					<label2>$INFO[Skin.String(custom112icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item13)</visible>
+					<visible>Skin.HasSetting(custom112)</visible>
+					</control>
+					
+					
+					<!-- MOVIES SUBMENU ITEM 14 -->
+					
+					<control type="button" id="231">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32149]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Submenu_Item14)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item14)</selected>
+					</control>
+					
+					<control type="radiobutton" id="232">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32152]</label>
+					<onclick>Skin.ToggleSetting(hide113)</onclick>
+					<onclick>Skin.Reset(custom113)</onclick>
+					<selected>Skin.HasSetting(hide113)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item14)</visible>
+					</control>
+					
+					<control type="radiobutton" id="233">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.Reset(hide113)</onclick>
+					<onclick>Skin.ToggleSetting(custom113)</onclick>
+					<selected>Skin.HasSetting(custom113)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item14)</visible>
+					</control>
+					
+					<control type="button" id="234">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetFile(custom113playlist)</onclick>
+					<label2>$INFO[Skin.String(custom113playlist)]</label2>
+					<visible>Skin.HasSetting(custom113)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item14)</visible>
+					</control>
+					
+					<control type="button" id="235">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom113label)</onclick>
+					<label2>$INFO[Skin.String(custom113label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item14)</visible>
+					<visible>Skin.HasSetting(custom113)</visible>
+					</control>
+					
+					<control type="button" id="236">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom113icon)</onclick>
+					<label2>$INFO[Skin.String(custom113icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Submenu_Item14)</visible>
+					<visible>Skin.HasSetting(custom113)</visible>
+					</control>
+					</control>
+					
+					
+					<control type="grouplist" id="9002">
+					<visible>Container(9000).Hasfocus(2)</visible>
+					<posx>560</posx>
+					<posy>180</posy>
+					<width>1260</width>
+					<height>675</height>
+					<itemgap>0</itemgap>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					
+					
+					<!-- MOVIES TILE 1 -->
+					
+					<control type="button" id="261">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32159]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Tile_1)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Tile_1)</selected>
+					</control>
+					
+					<control type="radiobutton" id="262">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.ToggleSetting(custom_movies_tile_1)</onclick>
+					<selected>Skin.HasSetting(custom_movies_tile_1)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Tile_1)</visible>
+					</control>
+					
+					<control type="button" id="263">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetAddon(custom_Movies_tile_1_addon,xbmc.addon.video,xbmc.addon.executable)</onclick>
+					<label2>$INFO[Skin.String(custom_Movies_tile_1_addon)]</label2>
+					<visible>Skin.HasSetting(custom_movies_tile_1)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Tile_1)</visible>
+					</control>
+					
+					<control type="button" id="264">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom_Movies_tile_1_addon_label)</onclick>
+					<label2>$INFO[Skin.String(custom_Movies_tile_1_addon_label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Tile_1)</visible>
+					<visible>Skin.HasSetting(custom_movies_tile_1)</visible>
+					</control>
+					
+					<control type="button" id="265">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom_Movies_tile_1_addon_icon)</onclick>
+					<label2>$INFO[Skin.String(custom_Movies_tile_1_addon_icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Tile_1)</visible>
+					<visible>Skin.HasSetting(custom_movies_tile_1)</visible>
+					</control>
+					
+					
+					<!-- MOVIES TILE 2 -->
+					
+					<control type="button" id="271">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>$LOCALIZE[32157] $LOCALIZE[32160]</label>
+					<onclick>Skin.ToggleSetting(Activate_Settings_Movies_Tile_2)</onclick>
+					<selected>Skin.HasSetting(Activate_Settings_Movies_Tile_2)</selected>
+					</control>
+					
+					<control type="radiobutton" id="272">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32153]</label>
+					<onclick>Skin.ToggleSetting(custom_movies_tile_2)</onclick>
+					<selected>Skin.HasSetting(custom_movies_tile_2)</selected>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Tile_2)</visible>
+					</control>
+					
+					<control type="button" id="273">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32154]</label>
+					<onclick>Skin.SetAddon(custom_Movies_tile_2_addon,xbmc.addon.video,xbmc.addon.executable)</onclick>
+					<label2>$INFO[Skin.String(custom_Movies_tile_2_addon)]</label2>
+					<visible>Skin.HasSetting(custom_movies_tile_2)</visible>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Tile_2)</visible>
+					</control>
+					
+					<control type="button" id="274">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32155]</label>
+					<onclick>Skin.SetString(custom_Movies_tile_2_addon_label)</onclick>
+					<label2>$INFO[Skin.String(custom_Movies_tile_2_addon_label)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Tile_2)</visible>
+					<visible>Skin.HasSetting(custom_movies_tile_2)</visible>
+					</control>
+					
+					<control type="button" id="275">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32156]</label>
+					<onclick>Skin.SetImage(custom_Movies_tile_2_addon_icon)</onclick>
+					<label2>$INFO[Skin.String(custom_Movies_tile_2_addon_icon)]</label2>
+					<visible>Skin.HasSetting(Activate_Settings_Movies_Tile_2)</visible>
+					<visible>Skin.HasSetting(custom_movies_tile_2)</visible>
+					</control>
+					</control>
+					</control>
+					</control>
+					
+					</controls>
+					</window>

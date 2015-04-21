@@ -1,0 +1,231 @@
+					<?xml version="1.0" encoding="UTF-8"?>
+					<window type="dialog">
+					<defaultcontrol always="true">450</defaultcontrol>
+					
+					<coordinates>
+					
+					<system>1</system>
+					<posx>0</posx>
+					<posy>0</posy>
+					</coordinates>
+					<controls>
+					
+					<include>Overlay</include>
+
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1920</width>
+					<height>1080</height>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>300</fadetime>
+					<texture colordiffuse="white-condensed" fallback="special://skin/extras/backgrounds/1080/addons.jpg">$INFO[ListItem.Art(fanart)]</texture>
+					</control>
+					
+					<control type="grouplist">
+					<posx>95</posx>
+					<posy>20</posy>
+					<width>1500</width>
+					<height>70</height>
+					<orientation>horizontal</orientation>
+					<align>left</align>
+					<itemgap>8</itemgap>
+					<control type="label">
+					<include>WindowTitleCommons</include>
+					<label>32124</label>
+					</control>
+					</control>
+					
+					<control type="label">
+					<posx>95</posx>
+					<posy>80</posy>
+					<width>330</width>
+					<height>30</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[Container(450).NumItems] $LOCALIZE[32166]</label>
+					</control>
+					
+					<!-- LIST OVERLAY -->
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>180</posy>
+					<width>1050</width>
+					<height>675</height>
+					<texture colordiffuse="color5-transparent" background="true">white.png</texture>
+					</control>
+					
+					<!-- GRID -->
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>264.375</posy>
+					<width>1050</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>348.75</posy>
+					<width>1050</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>433.125</posy>
+					<width>1050</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>517.5</posy>
+					<width>1050</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>601.875</posy>
+					<width>1050</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>686.25</posy>
+					<width>1050</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>770.625</posy>
+					<width>1050</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					
+					<control type="list" id="450">
+					<posx>90</posx>
+					<posy>180</posy>
+					<width>1050</width>
+					<height>675</height>
+					<onup>noop</onup>
+					<onleft>Dialog.Close</onleft>
+					<onright>60</onright>
+					<ondown>noop</ondown>
+					<scrolltime>300</scrolltime>
+					<pagecontrol>60</pagecontrol>
+					<scrolltime tween="sine" easing="inout">300</scrolltime>
+					
+					<itemlayout height="84.375" width="1050">
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>0</posy>
+					<width>1030</width>
+					<height>84.375</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color2</textcolor>
+					<selectedcolor>color7</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					</control>
+					
+					</itemlayout>
+					
+					<focusedlayout height="84.375" width="1050">
+					
+					<control type="group">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1050</width>
+					<height>86</height>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>0</posy>
+					<width>1030</width>
+					<height>84.375</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color2</textcolor>
+					<selectedcolor>color7</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					</control>
+					</control>
+					</focusedlayout>
+					</control>
+					
+					<control type="group">
+					<posx>0</posx>
+					<posy>-20</posy>
+					</control>
+					
+					<control type="scrollbar" id="60">
+					<posx>1140</posx>
+					<posy>180</posy>
+					<width>13</width>
+					<height>675</height>
+					<texturesliderbackground colordiffuse="color7">white.png</texturesliderbackground>
+					<textureslidernib colordiffuse="color5">white.png</textureslidernib>
+					<textureslidernibfocus colordiffuse="color3">white.png</textureslidernibfocus>
+					<onleft>450</onleft>
+					<onright>noop</onright>
+					<showonepage>true</showonepage>
+					<orientation>vertical</orientation>
+					<visible>Control.IsVisible(450)</visible>
+					</control>
+					
+					<control type="group">
+					<posx>1138</posx>
+					<posy>180</posy>
+					
+					<control type="image">
+					<posx>15</posx>
+					<posy>0</posy>
+					<width>675</width>
+					<height>675</height>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>400</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color5-transparent</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>15</posx>
+					<posy>0</posy>
+					<width>675</width>
+					<height>675</height>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					<fadetime>400</fadetime>
+					<texture>$INFO[ListItem.Art(thumb]</texture>
+					</control>
+					</control>
+					</control>
+					
+					<include>WindowOverlayDialog</include>
+					</controls>
+					</window>

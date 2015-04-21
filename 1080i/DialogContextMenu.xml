@@ -1,0 +1,74 @@
+					<?xml version="1.0" encoding="UTF-8"?>
+					<window>
+					<defaultcontrol>1000</defaultcontrol>
+					
+					<coordinates>
+					<system>1</system>
+					<posx>0</posx>
+					<posy>0</posy>
+					<origin x="1500" y="0">true</origin>
+					</coordinates>
+					<controls>
+					
+					<control type="image">
+					<description>Overlay</description>
+					<posx>-1500</posx>
+					<posy>0</posy>
+					<include>Dimensions_Fullscreen_Home</include>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<animation type="WindowOpen" reversible="false">
+				    <effect type="fade" start="0" end="80" time="300" />
+				    </animation>
+					<animation type="WindowClose" reversible="false">
+				    <effect type="fade" start="80" end="0" time="300" />
+				    </animation>
+					</control>
+					
+					
+					<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					
+					<include>ContextInfoAnimation</include>
+					
+					
+					<control type="image" id="999">
+					<description>background image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>424</width>
+					<height>2000</height>
+					<aspectratio>stretch</aspectratio>
+					<texture>white.png</texture>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="label">
+					<posx>28</posx>
+					<posy>25</posy>
+					<width>375</width>
+					<height>40</height>
+					<font>Condensed-34-U</font>
+					<label>32184</label>
+					<textcolor>color2</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					</control>
+					
+					<control type="grouplist" id="996">
+					<description>grouplist for context buttons</description>
+					<posx>0</posx>
+					<posy>120</posy>
+					<width>424</width>
+					<height max="1005">auto</height>
+					<itemgap>0</itemgap>
+					</control>
+
+					<control type="button" id="1000">
+					<description>button template</description>
+					<include>ButtonCommonValues</include>
+					</control>
+					</control>
+					</controls>
+					</window>

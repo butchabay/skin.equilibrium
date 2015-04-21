@@ -1,0 +1,1526 @@
+					<?xml version="1.0" encoding="utf-8"?>
+					<includes>
+					<include name="HomeSubmenu">
+					<control type="group">
+					<posx>15</posx>
+					<posy>260</posy>
+					</control>
+					
+					<control type="group" id="9001">
+					<posx>-27</posx>
+					<posy>135</posy>
+
+					<control type="group">
+					<control type="label">
+					<posx>116</posx>
+					<posy>10</posy>
+					<width>800</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[Container(9010).ListItem.Label]</label>
+					<animation effect="fade" start="100" end="0" time="200" reversible="true" condition="ControlGroup(9001).HasFocus">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="300" reversible="true" condition="!ControlGroup(9001).HasFocus">Conditional</animation>
+					<include>WindowOverlay</include>
+					<visible>![Container(300).HasFocus(8) | Container(300).HasFocus(13) | Container(300).HasFocus(2) | Container(300).HasFocus(9) | Container(300).HasFocus(1) | Container(300).HasFocus(7) | Container(300).HasFocus(11)]</visible>
+					</control>
+
+					<control type="label">
+					<posx>116</posx>
+					<posy>10</posy>
+					<width>800</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>32101</label>
+					<include>WindowOverlay</include>
+					<visible>Container(300).HasFocus(13)</visible>
+					</control>
+					
+					<control type="label">
+					<posx>116</posx>
+					<posy>10</posy>
+					<width>800</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>32081</label>
+					<include>WindowOverlay</include>
+					<visible>Container(300).HasFocus(2)</visible>
+					</control>
+					
+					<control type="label">
+					<posx>116</posx>
+					<posy>10</posy>
+					<width>800</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>32084</label>
+					<include>WindowOverlay</include>
+					<visible>Container(300).HasFocus(1)</visible>
+					</control>
+					
+					<control type="label">
+					<posx>116</posx>
+					<posy>10</posy>
+					<width>800</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>32169</label>
+					<include>WindowOverlay</include>
+					<visible>Container(300).HasFocus(7)</visible>
+					</control>
+					
+					<control type="label">
+					<posx>116</posx>
+					<posy>10</posy>
+					<width>800</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>32170</label>
+					<include>WindowOverlay</include>
+					<visible>Container(300).HasFocus(11)</visible>
+					</control>
+					</control>
+					
+					<control type="group">
+					<include>WindowOverlay</include>
+					<visible>Container(300).HasFocus(9)</visible>
+					<control type="label">
+					<posx>116</posx>
+					<posy>10</posy>
+					<width>800</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[Window(Weather).Property(Location)]</label>
+					</control>
+					</control>
+
+					<control type="group">
+					<include>animation_submenu</include>
+					<posx>-223</posx>
+					<posy>-55</posy>
+					
+					<!-- MOVIES SUBMENU -->
+
+					<control type="wraplist" id="9010">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<ondown>8001</ondown>
+					<onup>300</onup>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">200</scrolltime>
+					<visible>Container(300).HasFocus(5)</visible>
+
+					<itemlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>130</posx>
+					<posy>70</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+
+					</itemlayout>
+					<focusedlayout width="438" height="280">
+
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>130</posx>
+					<posy>70</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</focusedlayout>
+					<content>
+
+					<!-- ITEM 1 -->
+					
+					<item id="100">
+					<description>recently added</description>
+					<label>$LOCALIZE[32044]</label>
+					<icon>icons/home/movies/recentmovies.png</icon>
+					<onclick>ActivateWindow(VideoLibrary,RecentlyAddedMovies,return)</onclick>
+					<visible>![Skin.HasSetting(hide100) | Skin.HasSetting(custom100)]</visible>
+					</item>
+					
+					<item id="100">
+					<description>custom100</description>
+					<label>$INFO[Skin.String(custom100label)]</label>
+					<icon>$INFO[Skin.String(custom100icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom100playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom100)</visible>
+					</item>
+
+					<!-- ITEM 2 -->
+					
+					<item id="101">
+					<description>unwatched</description>
+					<label>$LOCALIZE[32130]</label>
+					<icon>icons/home/movies/unwatched.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/Unwatched Movies.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide101) | Skin.HasSetting(custom101)]</visible>
+					</item>
+					
+					<item id="101">
+					<description>custom101</description>
+					<label>$INFO[Skin.String(custom101label)]</label>
+					<icon>$INFO[Skin.String(custom101icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom101playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom101)</visible>
+					</item>
+
+					<!-- ITEM 3 -->
+					
+					<item id="102">
+					<description>in progress</description>
+					<label>$LOCALIZE[575]</label>
+					<icon>icons/home/movies/moviesinprogress.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/Movies in Progress.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide102) | Skin.HasSetting(custom102)]</visible>
+					</item>
+					
+					<item id="102">
+					<description>custom102</description>
+					<label>$INFO[Skin.String(custom102label)]</label>
+					<icon>$INFO[Skin.String(custom102icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom102playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom102)</visible>
+					</item>
+
+					<!-- ITEM 4 -->
+					
+					<item id="103">
+					<description>new</description>
+					<label>$LOCALIZE[32085]</label>
+					<icon>icons/home/movies/new.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/New Movies.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide103) | Skin.HasSetting(custom103)]</visible>
+					</item>
+
+					<item id="103">
+					<description>custom103</description>
+					<label>$INFO[Skin.String(custom103label)]</label>
+					<icon>$INFO[Skin.String(custom103icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom103playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom103)</visible>
+					</item>
+					
+					<!-- ITEM 5 -->
+					
+					<item id="104">
+					<description>hd</description>
+					<label>$LOCALIZE[32046]</label>
+					<icon>icons/home/movies/hdmovies.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/HD Movies.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide104) | Skin.HasSetting(custom104)]</visible>
+					</item>
+					
+					<item id="104">
+					<description>custom104</description>
+					<label>$INFO[Skin.String(custom104label)]</label>
+					<icon>$INFO[Skin.String(custom104icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom104playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom104)</visible>
+					</item>
+
+					<!-- ITEM 6 -->
+					
+					<item id="105">
+					<description>3D</description>
+					<label>$LOCALIZE[32048]</label>
+					<icon>icons/home/movies/3dmovies.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/3D Movies.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide105) | Skin.HasSetting(custom105)]</visible>
+					</item>
+					
+					<item id="105">
+					<description>custom105</description>
+					<label>$INFO[Skin.String(custom105label)]</label>
+					<icon>$INFO[Skin.String(custom105icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom105playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom105)</visible>
+					</item>
+
+					<!-- ITEM 7 -->
+					
+					<item id="106">
+					<description>top rated</description>
+					<label>$LOCALIZE[32074]</label>
+					<icon>icons/home/movies/imdb.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/Top Rated Movies.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide106) | Skin.HasSetting(custom106)]</visible>
+					</item>
+					
+					<item id="106">
+					<description>custom106</description>
+					<label>$INFO[Skin.String(custom106label)]</label>
+					<icon>$INFO[Skin.String(custom106icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom106playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom106)</visible>
+					</item>
+
+					<!-- ITEM 8 -->
+					
+					<item id="107">
+					<description>Kids</description>
+					<label>$LOCALIZE[32075]</label>
+					<icon>icons/home/movies/disney.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/Kids Movies.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide107) | Skin.HasSetting(custom107)]</visible>
+					</item>
+					
+					<item id="107">
+					<description>custom107</description>
+					<label>$INFO[Skin.String(custom107label)]</label>
+					<icon>$INFO[Skin.String(custom107icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom107playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom107)</visible>
+					</item>
+
+					<!-- ITEM 9 -->
+					
+					<item id="108">
+					<description>Movies in Sets</description>
+					<label>$LOCALIZE[32049]</label>
+					<icon>icons/home/movies/collections.png</icon>
+					<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
+					<visible>![Skin.HasSetting(hide108) | Skin.HasSetting(custom108)]</visible>
+					</item>
+
+					<item id="108">
+					<description>custom108</description>
+					<label>$INFO[Skin.String(custom108label)]</label>
+					<icon>$INFO[Skin.String(custom108icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom108playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom108)</visible>
+					</item>
+					
+					<!-- ITEM 10 -->
+					
+					<item id="109">
+					<description>documentary</description>
+					<label>$LOCALIZE[32047]</label>
+					<icon>icons/home/movies/docus.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/Documentary.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide109) | Skin.HasSetting(custom109)]</visible>
+					</item>
+					
+					<item id="109">
+					<description>custom109</description>
+					<label>$INFO[Skin.String(custom109label)]</label>
+					<icon>$INFO[Skin.String(custom109icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom109playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom109)</visible>
+					</item>
+
+					<!-- ITEM 11 -->
+					
+					<item id="110">
+					<label>135</label>
+					<icon>icons/home/movies/genres.png</icon>
+					<onclick>ActivateWindow(VideoLibrary,MovieGenres,return)</onclick>
+					<visible>![Skin.HasSetting(hide110) | Skin.HasSetting(custom110)]</visible>
+					</item>
+					
+					<item id="110">
+					<description>custom110</description>
+					<label>$INFO[Skin.String(custom110label)]</label>
+					<icon>$INFO[Skin.String(custom110icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom110playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom110)</visible>
+					</item>
+
+					<!-- ITEM 12 -->
+					
+					<item id="111">
+					<description>studios</description>
+					<label>$LOCALIZE[20388]</label>
+					<icon>icons/home/tvshows/studios.png</icon>
+					<onclick>ActivateWindow(VideoLibrary,MoviesStudios,return)</onclick>
+					<visible>![Skin.HasSetting(hide111) | Skin.HasSetting(custom111)]</visible>
+					</item>
+					
+					<item id="111">
+					<description>custom111</description>
+					<label>$INFO[Skin.String(custom111label)]</label>
+					<icon>$INFO[Skin.String(custom111icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom111playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom111)</visible>
+					</item>
+
+					<!-- ITEM 13 -->
+
+					<item id="112">
+					<label>344</label>
+					<icon>icons/home/movies/actors.png</icon>
+					<onclick>ActivateWindow(VideoLibrary,MovieActors,return)</onclick>
+					<visible>![Skin.HasSetting(hide112) | Skin.HasSetting(custom112)]</visible>
+					</item>
+					
+					<item id="112">
+					<description>custom112</description>
+					<label>$INFO[Skin.String(custom112label)]</label>
+					<icon>$INFO[Skin.String(custom112icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom112playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom112)</visible>
+					</item>
+
+					<!-- ITEM 14 -->
+					
+					<item id="113">
+					<label>$LOCALIZE[32050]</label>
+					<icon>icons/home/movies/online.png</icon>
+					<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+					<visible>![Skin.HasSetting(hide113) | Skin.HasSetting(custom113)]</visible>
+					</item>
+					
+					<item id="113">
+					<description>custom113</description>
+					<label>$INFO[Skin.String(custom113label)]</label>
+					<icon>$INFO[Skin.String(custom113icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom113playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom113)</visible>
+					</item>
+					</content>
+					</control> 
+
+					
+					
+					<!-- TV SHOWS SUBMENU -->
+
+					
+					
+					<control type="wraplist" id="9010">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<ondown>8101</ondown>
+					<onup>300</onup>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">200</scrolltime>
+					<visible>Container(300).HasFocus(6)</visible>
+
+					<itemlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>130</posx>
+					<posy>70</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+
+					</itemlayout>
+					<focusedlayout width="438" height="280">
+
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>130</posx>
+					<posy>70</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</focusedlayout>
+					<content>
+
+					<!-- ITEM 1 -->
+					
+					<item id="200">
+					<description>recently added</description>
+					<label>$LOCALIZE[32044]</label>
+					<icon>icons/home/tvshows/recent.png</icon>
+					<onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
+					<visible>![Skin.HasSetting(hide200) | Skin.HasSetting(custom200)]</visible>
+					</item>
+					
+					<item id="200">
+					<description>custom200</description>
+					<label>$INFO[Skin.String(custom200label)]</label>
+					<icon>$INFO[Skin.String(custom200icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom200playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom200)</visible>
+					</item>
+					
+					<!-- ITEM 2 -->
+					
+					<item id="201">
+					<description>unwatched episodes</description>
+					<label>$LOCALIZE[32130]</label>
+					<icon>icons/home/tvshows/unwatched.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/unwatched episodes.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide201) | Skin.HasSetting(custom201)]</visible>
+					</item>
+					
+					<item id="201">
+					<description>custom201</description>
+					<label>$INFO[Skin.String(custom201label)]</label>
+					<icon>$INFO[Skin.String(custom201icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom201playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom201)</visible>
+					</item>
+
+					<!-- ITEM 3 -->
+					
+					<item id="202">
+					<description>watched</description>
+					<label>$LOCALIZE[32195]</label>
+					<icon>icons/home/tvshows/watched.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/Watched Episodes.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide202) | Skin.HasSetting(custom202)]</visible>
+					</item>
+
+					<item id="202">
+					<description>custom203</description>
+					<label>$INFO[Skin.String(custom202label)]</label>
+					<icon>$INFO[Skin.String(custom202icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom202playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom202)</visible>
+					</item>
+					
+						<!-- ITEM 4 -->
+					
+					<item id="203">
+					<description>in progress</description>
+					<label>$LOCALIZE[32094]</label>
+					<icon>icons/home/tvshows/watchlist.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,plugin://service.library.data.provider?type=recommendedepisodes)</onclick>
+					<visible>![Skin.HasSetting(hide203) | Skin.HasSetting(custom203)]</visible>
+					</item>
+
+					<item id="203">
+					<description>custom203</description>
+					<label>$INFO[Skin.String(custom203label)]</label>
+					<icon>$INFO[Skin.String(custom203icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom203playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom203)</visible>
+					</item>
+					
+					<!-- ITEM 5 -->
+					
+					<item id="204">
+					<description>new</description>
+					<label>$LOCALIZE[32085]</label>
+					<icon>icons/home/tvshows/new.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/New TV Shows.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide204) | Skin.HasSetting(custom204)]</visible>
+					</item>
+
+					<item id="204">
+					<description>custom204</description>
+					<label>$INFO[Skin.String(custom204label)]</label>
+					<icon>$INFO[Skin.String(custom204icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom204playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom204)</visible>
+					</item>
+					
+					<!-- ITEM 6 -->
+					
+					<item id="205">
+					<description>top rated</description>
+					<label>$LOCALIZE[32074]</label>
+					<icon>icons/home/tvshows/toprated.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/Top Rated TV Shows.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide205) | Skin.HasSetting(custom205)]</visible>
+					</item>
+
+					<item id="205">
+					<description>custom205</description>
+					<label>$INFO[Skin.String(custom205label)]</label>
+					<icon>$INFO[Skin.String(custom205icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom205playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom205)</visible>
+					</item>
+					
+					<!-- ITEM 7 -->
+					
+					<item id="206">
+					<description>documentary</description>
+					<label>$LOCALIZE[32083]</label>
+					<icon>icons/home/tvshows/broadcast.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/TV Documentary.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide206) | Skin.HasSetting(custom206)]</visible>
+					</item>
+
+					<item id="206">
+					<description>custom206</description>
+					<label>$INFO[Skin.String(custom206label)]</label>
+					<icon>$INFO[Skin.String(custom206icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom206playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom206)</visible>
+					</item>
+					
+					<!-- ITEM 8 -->
+					
+					<item id="207">
+					<description>kids tv</description>
+					<label>$LOCALIZE[32075]</label>
+					<icon>icons/home/tvshows/kids.png</icon>
+					<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/Kids TV Shows.xsp,return)</onclick>
+					<visible>![Skin.HasSetting(hide207) | Skin.HasSetting(custom207)]</visible>
+					</item>
+
+					<item id="207">
+					<description>custom207</description>
+					<label>$INFO[Skin.String(custom207label)]</label>
+					<icon>$INFO[Skin.String(custom207icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom207playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom207)</visible>
+					</item>
+					
+					<!-- ITEM 9 -->
+					
+					<item id="208">
+					<label>344</label>
+					<icon>icons/home/tvshows/actors.png</icon>
+					<onclick>ActivateWindow(VideoLibrary,TVShowActors,return)</onclick>
+					<visible>![Skin.HasSetting(hide208) | Skin.HasSetting(custom208)]</visible>
+					</item>
+
+					<item id="208">
+					<description>custom208</description>
+					<label>$INFO[Skin.String(custom208label)]</label>
+					<icon>$INFO[Skin.String(custom208icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom208playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom208)</visible>
+					</item>
+					
+					<!-- ITEM 10 -->
+					
+					<item id="209">
+					<label>135</label>
+					<icon>icons/home/tvshows/genres.png</icon>
+					<onclick>ActivateWindow(VideoLibrary,TVShowGenres,return)</onclick>
+					<visible>![Skin.HasSetting(hide209) | Skin.HasSetting(custom209)]</visible>
+					</item>
+
+					<item id="209">
+					<description>custom209</description>
+					<label>$INFO[Skin.String(custom209label)]</label>
+					<icon>$INFO[Skin.String(custom209icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom209playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom209)</visible>
+					</item>
+					
+					<!-- ITEM 11 -->
+					
+					<item id="210">
+					<label>$LOCALIZE[20388]</label>
+					<icon>icons/home/tvshows/studios.png</icon>
+					<onclick>ActivateWindow(VideoLibrary,TVShowStudios,return)</onclick>
+					<visible>![Skin.HasSetting(hide210) | Skin.HasSetting(custom210)]</visible>
+					</item>
+					
+					<item id="210">
+					<description>custom210</description>
+					<label>$INFO[Skin.String(custom210label)]</label>
+					<icon>$INFO[Skin.String(custom210icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom210playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom210)</visible>
+					</item>
+					
+					<!-- ITEM 12 -->
+					
+					<item id="211">
+					<label>32196</label>
+					<onclick>ActivateWindow(3001)</onclick>
+					<visible>![Skin.HasSetting(hide211) | Skin.HasSetting(custom211)]</visible>
+					</item>
+					
+					<item id="211">
+					<description>custom211</description>
+					<label>$INFO[Skin.String(custom211label)]</label>
+					<icon>$INFO[Skin.String(custom211icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom211playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom211)</visible>
+					</item>
+
+					<!-- ITEM 13 -->
+					
+					<item id="212">
+					<label>32196</label>
+					<onclick>ActivateWindow(3001)</onclick>
+					<visible>![Skin.HasSetting(hide212) | Skin.HasSetting(custom212)]</visible>
+					</item>
+
+					<item id="212">
+					<description>custom212</description>
+					<label>$INFO[Skin.String(custom212label)]</label>
+					<icon>$INFO[Skin.String(custom212icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom212playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom212)</visible>
+					</item>
+					
+					<!-- ITEM 14 -->
+					
+					<item id="213">
+					<label>32196</label>
+					<onclick>ActivateWindow(3001)</onclick>
+					<visible>![Skin.HasSetting(hide213) | Skin.HasSetting(custom213)]</visible>
+					</item>
+					
+					<item id="213">
+					<description>custom213</description>
+					<label>$INFO[Skin.String(custom213label)]</label>
+					<icon>$INFO[Skin.String(custom213icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom213playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom213)</visible>
+					</item>
+					</content>
+					</control>
+
+
+					<!-- FAKE LIVE TV SUBMENU -->
+					
+					
+
+					<control type="list" id="9010">
+					<posx>110</posx>
+					<posy>-30</posy>
+					<width>1840</width>
+					<height>150</height>
+					<ondown>8001</ondown>
+					<onup>300</onup>
+					<orientation>horizontal</orientation>
+					<visible>Container(300).HasFocus(13)</visible>
+
+					<itemlayout width="130" height="150">
+
+					<control type="image">
+					<posx>-13</posx>
+					<posy>-10</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					</itemlayout>
+					<focusedlayout width="130" height="150">
+
+					<control type="image">
+					<posx>-13</posx>
+					<posy>-10</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					<colordiffuse>color7</colordiffuse>
+					</control>
+					</focusedlayout>
+					<content>
+					<item id="300">
+					</item>
+
+					</content>
+					</control>
+
+
+					<!-- FAKE VIDEO SUBMENU -->
+					
+					
+
+					<control type="list" id="9010">
+					<posx>110</posx>
+					<posy>-30</posy>
+					<width>1840</width>
+					<height>150</height>
+					<ondown>8001</ondown>
+					<onup>300</onup>
+					<orientation>horizontal</orientation>
+					<visible>Container(300).HasFocus(2)</visible>
+
+					<itemlayout width="130" height="150">
+
+					<control type="image">
+					<posx>-13</posx>
+					<posy>-10</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					</itemlayout>
+					<focusedlayout width="130" height="150">
+
+					<control type="image">
+					<posx>-13</posx>
+					<posy>-10</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					<colordiffuse>color7</colordiffuse>
+					</control>
+					</focusedlayout>
+					<content>
+
+					<item id="400">
+					</item>
+
+					<item id="401">
+					</item>
+
+					<item id="402">
+					</item>
+
+					<item id="403">
+					</item>
+
+					<item id="404">
+					</item>
+
+					<item id="405">
+					</item>
+					</content>
+					</control>
+					
+					
+
+					<!-- MUSIC SUBMENU -->
+					
+					
+
+					<control type="wraplist" id="9010">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<ondown>8001</ondown>
+					<onup>300</onup>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">200</scrolltime>
+					<visible>Container(300).HasFocus(3)</visible>
+
+					<itemlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>130</posx>
+					<posy>70</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+
+					</itemlayout>
+					<focusedlayout width="438" height="280">
+
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>130</posx>
+					<posy>70</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</focusedlayout>
+					<content>
+
+					<!-- ITEM 1 -->
+
+					<item id="500">
+					<label>32128</label>
+					<onclick>ActivateWindow(MusicLibrary,RecentlyAddedAlbums,return)</onclick>
+					<icon>icons/home/music/recentaddedalbums.png</icon>
+					<visible>![Skin.HasSetting(hide500) | Skin.HasSetting(custom500)]</visible>
+					</item>
+					
+					<item id="500">
+					<description>custom500</description>
+					<label>$INFO[Skin.String(custom500label)]</label>
+					<icon>$INFO[Skin.String(custom500icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom500playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom500)</visible>
+					</item>
+
+					<!-- ITEM 2 -->
+					
+					<item id="501">
+					<label>132</label>
+					<onclick>ActivateWindow(MusicLibrary,albums,return)</onclick>
+					<icon>icons/home/music/albums.png</icon>
+					<visible>![Skin.HasSetting(hide501) | Skin.HasSetting(custom501)]</visible>
+					</item>
+					
+					<item id="501">
+					<description>custom501</description>
+					<label>$INFO[Skin.String(custom501label)]</label>
+					<icon>$INFO[Skin.String(custom501icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom501playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom501)</visible>
+					</item>
+					
+					<!-- ITEM 3 -->
+
+					<item id="502">
+					<label>32103</label>
+					<onclick>ActivateWindow(MusicLibrary,Top100Albums,return)</onclick>
+					<icon>icons/home/music/top100albums.png</icon>
+					<visible>![Skin.HasSetting(hide502) | Skin.HasSetting(custom502)]</visible>
+					</item>
+					
+					<item id="502">
+					<description>custom502</description>
+					<label>$INFO[Skin.String(custom502label)]</label>
+					<icon>$INFO[Skin.String(custom502icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom502playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom502)</visible>
+					</item>
+					
+					<!-- ITEM 4 -->
+
+					<item id="503">
+					<label>32126</label>
+					<onclick>ActivateWindow(MusicLibrary,Top100Songs,return)</onclick>
+					<icon>icons/home/music/top100.png</icon>
+					<visible>![Skin.HasSetting(hide503) | Skin.HasSetting(custom503)]</visible>
+					</item>
+					
+					<item id="503">
+					<description>custom503</description>
+					<label>$INFO[Skin.String(custom503label)]</label>
+					<icon>$INFO[Skin.String(custom503icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom503playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom503)</visible>
+					</item>
+					
+					<!-- ITEM 5 -->
+
+					<item id="504">
+					<label>133</label>
+					<onclick>ActivateWindow(MusicLibrary,artists,return)</onclick>
+					<icon>icons/home/music/artists.png</icon>
+					<visible>![Skin.HasSetting(hide504) | Skin.HasSetting(custom504)]</visible>
+					</item>
+					
+					<item id="504">
+					<description>custom504</description>
+					<label>$INFO[Skin.String(custom504label)]</label>
+					<icon>$INFO[Skin.String(custom504icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom504playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom504)</visible>
+					</item>
+					
+					<!-- ITEM 6 -->
+
+					<item id="505">
+					<label>135</label>
+					<onclick>ActivateWindow(MusicLibrary,genres,return)</onclick>
+					<icon>icons/home/music/genres.png</icon>
+					<visible>![Skin.HasSetting(hide505) | Skin.HasSetting(custom505)]</visible>
+					</item>
+					
+					<item id="505">
+					<description>custom505</description>
+					<label>$INFO[Skin.String(custom505label)]</label>
+					<icon>$INFO[Skin.String(custom505icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom505playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom505)</visible>
+					</item>
+
+					<!-- ITEM 7 -->
+					
+					<item id="506">
+					<label>32050</label>
+					<onclick>ActivateWindow(musicfiles,addons://sources/audio/,return)</onclick>
+					<icon>icons/home/music/online.png</icon>
+					<visible>![Skin.HasSetting(hide506) | Skin.HasSetting(custom506)]</visible>
+					</item>
+					
+					<item id="506">
+					<description>custom506</description>
+					<label>$INFO[Skin.String(custom506label)]</label>
+					<icon>$INFO[Skin.String(custom506icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom506playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom506)</visible>
+					</item>
+
+					<!-- ITEM 8 -->
+					
+					<item id="507">
+					<label>14022</label>
+					<onclick>ActivateWindow(MusicLibrary,return)</onclick>
+					<icon>icons/home/music/library.png</icon>
+					<visible>![Skin.HasSetting(hide507) | Skin.HasSetting(custom507)]</visible>
+					</item>
+					
+					<item id="507">
+					<description>custom507</description>
+					<label>$INFO[Skin.String(custom507label)]</label>
+					<icon>$INFO[Skin.String(custom507icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom507playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom507)</visible>
+					</item>
+					
+					<!-- ITEM 9 -->
+					
+					<item id="508">
+					<label>20389</label>
+					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
+					<icon>icons/home/music/musicvideos.png</icon>
+					<visible>![Skin.HasSetting(hide508) | Skin.HasSetting(custom508)]</visible>
+					</item>
+					
+					<item id="508">
+					<description>custom508</description>
+					<label>$INFO[Skin.String(custom508label)]</label>
+					<icon>$INFO[Skin.String(custom508icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom508playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom508)</visible>
+					</item>
+					
+					<!-- ITEM 10 -->
+					
+					<item id="509">
+					<label>32196</label>
+					<onclick>ActivateWindow(3004)</onclick>
+					<visible>![Skin.HasSetting(hide509) | Skin.HasSetting(custom509)]</visible>
+					</item>
+					
+
+					<item id="509">
+					<description>custom509</description>
+					<label>$INFO[Skin.String(custom509label)]</label>
+					<icon>$INFO[Skin.String(custom509icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom509playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom509)</visible>
+					</item>
+					
+					<!-- ITEM 11 -->
+					
+					<item id="510">
+					<label>32196</label>
+					<onclick>ActivateWindow(3004)</onclick>
+					<visible>![Skin.HasSetting(hide510) | Skin.HasSetting(custom510)]</visible>
+					</item>
+					
+					<item id="510">
+					<description>custom510</description>
+					<label>$INFO[Skin.String(custom510label)]</label>
+					<icon>$INFO[Skin.String(custom510icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom510playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom510)</visible>
+					</item>
+
+					<!-- ITEM 12 -->
+					
+					<item id="511">
+					<label>32196</label>
+					<onclick>ActivateWindow(3004)</onclick>
+					<visible>![Skin.HasSetting(hide511) | Skin.HasSetting(custom511)]</visible>
+					</item>
+					
+					<item id="511">
+					<description>custom511</description>
+					<label>$INFO[Skin.String(custom511label)]</label>
+					<icon>$INFO[Skin.String(custom511icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom511playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom511)</visible>
+					</item>
+
+					<!-- ITEM 13 -->
+					
+					<item id="512">
+					<label>32196</label>
+					<onclick>ActivateWindow(3004)</onclick>
+					<visible>![Skin.HasSetting(hide512) | Skin.HasSetting(custom512)]</visible>
+					</item>
+					
+					<item id="512">
+					<description>custom512</description>
+					<label>$INFO[Skin.String(custom512label)]</label>
+					<icon>$INFO[Skin.String(custom512icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom512playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom512)</visible>
+					</item>
+					
+					<!-- ITEM 14 -->
+
+					<item id="513">
+					<label>32196</label>
+					<onclick>ActivateWindow(3004)</onclick>
+					<visible>![Skin.HasSetting(hide513) | Skin.HasSetting(custom513)]</visible>
+					</item>
+					
+					<item id="513">
+					<description>custom513</description>
+					<label>$INFO[Skin.String(custom513label)]</label>
+					<icon>$INFO[Skin.String(custom513icon)]</icon>
+					<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(custom513playlist)],return)</onclick>
+					<visible>Skin.HasSetting(custom513)</visible>
+					</item>
+
+					</content>
+					</control>
+
+
+					<!-- FAKE ADDONS SUBMENU -->
+					
+					
+
+					<control type="list" id="9010">
+					<posx>110</posx>
+					<posy>-30</posy>
+					<width>1840</width>
+					<height>150</height>
+					<ondown>8001</ondown>
+					<onup>300</onup>
+					<orientation>horizontal</orientation>
+					<visible>Container(300).HasFocus(1)</visible>
+
+					<itemlayout width="130" height="150">
+
+					<control type="image">
+					<posx>-13</posx>
+					<posy>-10</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					</itemlayout>
+					<focusedlayout width="130" height="150">
+
+					<control type="image">
+					<posx>-13</posx>
+					<posy>-10</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					<colordiffuse>color7</colordiffuse>
+					</control>
+					</focusedlayout>
+					<content>
+
+					<item id="600">
+					</item>
+
+					<item id="601">
+					</item>
+
+					<item id="602">
+					</item>
+					</content>
+					</control>
+
+
+					<!-- Weather Fake Submenu -->
+
+					<control type="list" id="9010">
+					<posx>110</posx>
+					<posy>-30</posy>
+					<width>1840</width>
+					<height>150</height>
+					<ondown>8001</ondown>
+					<onup>300</onup>
+					<orientation>horizontal</orientation>
+					<visible>Container(300).HasFocus(9)</visible>
+
+					<itemlayout width="130" height="150">
+
+					<control type="image">
+					<posx>-13</posx>
+					<posy>-10</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					</itemlayout>
+					<focusedlayout width="130" height="150">
+
+					<control type="image">
+					<posx>-13</posx>
+					<posy>-10</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					<colordiffuse>color7</colordiffuse>
+					</control>
+					</focusedlayout>
+					<content>
+
+					<item id="700">
+					</item>
+					
+					<item id="701">
+					</item>
+					
+					<item id="702">
+					</item>
+					
+					</content>
+					</control>
+					
+					
+					
+					<!-- Pictures Fake Submenu -->
+
+					<control type="list" id="9010">
+					<posx>110</posx>
+					<posy>-30</posy>
+					<width>1840</width>
+					<height>150</height>
+					<ondown>8001</ondown>
+					<onup>300</onup>
+					<orientation>horizontal</orientation>
+					<visible>Container(300).HasFocus(7)</visible>
+
+					<itemlayout width="130" height="150">
+
+					<control type="image">
+					<posx>-13</posx>
+					<posy>-10</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					</itemlayout>
+					<focusedlayout width="130" height="150">
+
+					<control type="image">
+					<posx>-13</posx>
+					<posy>-10</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					<colordiffuse>color7</colordiffuse>
+					</control>
+					</focusedlayout>
+					<content>
+
+					<item id="900">
+					</item>
+					
+					<item id="901">
+					</item>
+					
+					<item id="902">
+					</item>
+					
+					</content>
+					</control>
+
+
+					<!-- SETTINGS SUBMENU -->
+
+					<control type="list" id="9010">
+					<posx>110</posx>
+					<posy>-30</posy>
+					<width>1840</width>
+					<height>150</height>
+					<ondown>8001</ondown>
+					<onup>300</onup>
+					<orientation>horizontal</orientation>
+					<visible>Container(300).HasFocus(11)</visible>
+
+					<itemlayout width="130" height="150">
+
+					<control type="image">
+					<posx>-13</posx>
+					<posy>-10</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					</itemlayout>
+					<focusedlayout width="130" height="150">
+
+					<control type="image">
+					<posx>-13</posx>
+					<posy>-10</posy>
+					<width>90</width>
+					<height>90</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					<colordiffuse>color7</colordiffuse>
+					</control>
+					</focusedlayout>
+					<content>
+
+					<item id="800">
+					</item>
+
+					<item id="801">
+					</item>
+
+					<item id="802">
+					</item>
+
+					<item id="803">
+					</item>
+
+					<item id="804">
+					</item>
+					</content>
+					</control>
+
+					</control>
+
+
+
+					</control>
+					</include>
+					</includes>

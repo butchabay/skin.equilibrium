@@ -1,0 +1,46 @@
+					<?xml version="1.0" encoding="UTF-8"?>
+					<colors>
+
+					<!-- NEW -->
+					
+					<color name="color1">FF989B9E</color>grey mid
+					<color name="color2">FFFFFFFF</color>white
+					<color name="color3">ff2C3538</color>grey dark
+					<color name="color4">FF347573</color>grey mid2
+					<color name="color5">FF4A585E</color>grey mid3
+					<color name="color6">FFCCCCCC</color>grey light
+					<color name="color7">FF40DE8F</color>lime
+					<color name="color8">FFFEAF33</color>orange
+					<color name="color9">FFDE181F</color>red1
+					<color name="color10">FFFF0000</color>red2
+					
+					<color name="overlay2">FF384347</color>background
+					<color name="overlay2-transpparent">CC384347</color>background transparent
+					<color name="overlay3-transpparent">EE384347</color>background transparent home
+					<color name="white-condensed">BB384347</color>background fanart
+					<color name="color5-transparent">EE4A585E</color>grey mid3 transparent
+					<color name="color3-transparent">EE2C3538</color>grey Dark transparent
+					
+					
+					<color name="grey1">FFE0E0E0</color>
+					<color name="grey2">FFE0E0E0</color>
+					<color name="grey3">FFBDBDBD</color>
+					<color name="grey4">FF474747</color>
+					<color name="grey6">FF2C2C2C</color> 
+					<color name="grey7">FFe66a4f</color>
+					
+					<color name="red1">FFDE181F</color> 
+					<color name="red2">FFFF0000</color>
+					
+					<!-- DEFAULT -->
+
+					<color name="white">FFF1F1F1</color>
+					<color name="grey">FFb4b4b4</color>
+					<color name="grey2">FF999999</color>
+					<color name="grey3">FF505050</color>
+					<color name="black">FF000000</color>
+					<color name="blue">FF0084ff</color>
+					<color name="selected">FFEB9E17</color>
+					<color name="invalid">FFFF0000</color>
+
+					</colors>

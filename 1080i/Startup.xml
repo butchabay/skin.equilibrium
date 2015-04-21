@@ -1,0 +1,62 @@
+					<?xml version="1.0" encoding="UTF-8"?>
+					<window>
+					<defaultcontrol always="true">10</defaultcontrol>
+					<include>WindowOverlay</include>
+					<allowoverlay>no</allowoverlay>
+					<onload condition="System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow, daemon=True)</onload>
+					<controls>
+					
+					<control type="image">
+					<description>Overlay</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<include>Dimensions_Fullscreen_Home</include>
+					<texture>white.png</texture>
+					<colordiffuse>overlay2</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<description>Overlay</description>
+					<posx>832</posx>
+					<posy>200</posy>
+					<width>256</width>
+					<height>256</height>
+					<texture>start.png</texture>
+					
+					</control>
+					
+					<control type="label">
+					<description>Busy label</description>
+					<posx>0</posx>
+					<posy>600</posy>
+					<width>1920</width>
+					<height>60</height>
+					<font>Condensed-68-B</font>
+					<textcolor>grey1</textcolor>
+					<align>center</align>
+					<label>Please wait while loading</label>
+					</control>
+					
+					
+			
+					<control type="button" id="10">
+					<description>trigger</description>
+					<!-- <onfocus>ActivateWindow(1115)</onfocus> -->
+					<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
+					<texturenofocus>-</texturenofocus>
+					<texturefocus>-</texturefocus>
+					<visible>!Skin.HasSetting(Use_Startup_Playlist)</visible>
+					<animation effect="fade" start="0" end="100" time="0" delay="10000">Focus</animation> -->
+					</control>
+					
+					<control type="button" id="10">
+					<description>trigger with startup Playlist</description>
+					<onfocus>XBMC.PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
+					<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
+					<texturenofocus>-</texturenofocus>
+					<texturefocus>-</texturefocus>
+					<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
+					<animation effect="fade" start="0" end="100" time="0" delay="10000">Focus</animation> -->
+					</control>
+					</controls>
+					</window>

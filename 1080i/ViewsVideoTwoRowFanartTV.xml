@@ -1,0 +1,452 @@
+					<includes>
+
+					<include name="TwoRowFanartTV">
+					<control type="group">
+					<include>Window_Fade_In_Out</include>
+					<visible>Control.IsVisible(530)</visible>
+					<animation effect="slide" start="0,0" end="422,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)">Conditional</animation>
+
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1920</width>
+					<height>1080</height>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>300</fadetime>
+					<texture colordiffuse="white-condensed">$INFO[ListItem.Art(fanart)]</texture>
+					</control>
+					
+					<control type="panel" id="530">
+					<posx>72</posx>
+					<posy>540</posy>
+					<width>1790</width>
+					<height>600</height>
+					<onleft>530</onleft>
+					<onright>530</onright>
+					<onup>9000</onup>
+					<ondown>60</ondown>
+					<viewtype label="Two Row Fanart">panel</viewtype>
+					<preloaditems>2</preloaditems>
+					<orientation>horizontal</orientation>
+					<pagecontrol>60</pagecontrol>
+					<scrolltime tween="sine" easing="out">400</scrolltime>
+					<visible>Container.Content(Episodes)</visible>
+
+					<itemlayout width="358" height="216">
+					<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>343</width>
+					<height>200</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<colordiffuse>white2-condensed</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					<visible>substring(listitem.label,..,left)</visible>
+					</control>
+
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>343</width>
+					<height>200</height>
+					<texture>white.png</texture>
+					<colordiffuse>overlay-transparency-4</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					<visible>!substring(listitem.label,..,left)</visible>
+					</control>
+
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>343</width>
+					<height>200</height>
+					<texture background="true" >$INFO[Listitem.Thumb]</texture>
+					<colordiffuse>white2-condensed</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+
+					<control type="image">
+					<posx>303</posx>
+					<posy>0</posy>
+					<width>40</width>
+					<height>40</height>
+					<texture>icons/overlays/indicator.png</texture>
+					<aspectratio>keep</aspectratio>
+					<colordiffuse>red2-condensed</colordiffuse>
+					<visible>!substring(listitem.label,..,left)</visible>
+					<visible>!IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+					<animation effect="fade" time="1000" start="0" end="100" delay="400" tween="sine" easing="out" reversible="false">focus</animation>
+					</control>
+
+					<control type="image">
+					<posx>-40</posx>
+					<posy>90</posy>
+					<width>150</width>
+					<height>150</height>
+					<texture>icons/overlays/small_circle.png</texture>
+					<aspectratio>keep</aspectratio>
+					<colordiffuse>white-condensed</colordiffuse>
+					<visible>!substring(listitem.label,..,left)</visible>
+					<animation effect="fade" time="1000" start="0" end="100" delay="400" tween="sine" easing="out" reversible="false">focus</animation>
+					</control>
+
+					<control type="label">
+					<description>Episode Number</description>
+					<posx>35.5</posx>
+					<posy>152</posy>
+					<width>100</width>
+					<height>25</height>
+					<label fallback="416">$INFO[ListItem.Episode]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Condensed-30-B</font>
+					<textcolor>grey3</textcolor>
+					<selectedcolor>selected2</selectedcolor>
+					<visible>!substring(listitem.label,..,left)</visible>
+					</control>
+					</control>
+
+					</itemlayout>
+					<focusedlayout width="358" height="216">
+					<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>343</width>
+					<height>200</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>substring(listitem.label,..,left)</visible>
+					</control>
+
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>343</width>
+					<height>200</height>
+					<texture background="true">$INFO[Listitem.Thumb]</texture>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="sine" easing="out" reversible="false">focus</animation>
+					<aspectratio>stretch</aspectratio>
+					</control>
+
+					<control type="image">
+					<posx>303</posx>
+					<posy>0</posy>
+					<width>40</width>
+					<height>40</height>
+					<texture>icons/overlays/indicator.png</texture>
+					<aspectratio>keep</aspectratio>
+					<colordiffuse>red2</colordiffuse>
+					<visible>!substring(listitem.label,..,left)</visible>
+					<visible>!IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+					<animation effect="fade" time="1000" start="0" end="100" delay="400" tween="sine" easing="out" reversible="false">focus</animation>
+					</control>
+
+					<control type="image">
+					<posx>-40</posx>
+					<posy>90</posy>
+					<width>150</width>
+					<height>150</height>
+					<texture>icons/overlays/small_circle.png</texture>
+					<aspectratio>keep</aspectratio>
+					<colordiffuse>white</colordiffuse>
+					<visible>!substring(listitem.label,..,left)</visible>
+					<animation effect="fade" time="1000" start="0" end="100" delay="400" tween="sine" easing="out" reversible="false">focus</animation>
+					</control>
+
+					<control type="label">
+					<description>Episode Number</description>
+					<posx>35.5</posx>
+					<posy>152</posy>
+					<width>100</width>
+					<height>25</height>
+					<label fallback="416">$INFO[ListItem.Episode]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Condensed-30-B</font>
+					<textcolor>grey4</textcolor>
+					<selectedcolor>selected1</selectedcolor>
+					<visible>!substring(listitem.label,..,left)</visible>
+					</control>
+					</control>
+
+					</focusedlayout>
+					</control>
+
+					<control type="group">
+					<posx>72</posx>
+					<posy>100</posy>
+
+					<visible>Container.Content(Episodes)</visible>
+					<visible>!substring(listitem.label,..,left)</visible>
+
+					<control type="label">
+					<description>title label</description>
+					<posx>0</posx>
+					<posy>25</posy>
+					<width>auto</width>
+					<height>55</height>
+					<label>$INFO[ListItem.TVShowTitle]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Condensed-68-B</font>
+					<textcolor>color8</textcolor>
+					</control>
+
+					<control type="label">
+					<description>Episode label</description>
+					<posx>0</posx>
+					<posy>90</posy>
+					<width>auto</width>
+					<height>55</height>
+					<label fallback="416">$INFO[ListItem.Title]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Condensed-36</font>
+					<textcolor>white</textcolor>
+					</control>
+
+					<control type="textbox">
+					<posx>0</posx>
+					<posy>180</posy>
+					<width>1780</width>
+					<height>160</height>
+					<aligny>top</aligny>
+					<font>Condensed-32-LS085</font>
+					<textcolor>white</textcolor>
+					<label>$INFO[ListItem.Plot]</label>
+					<autoscroll delay="6000" time="3000" repeat="8000">true</autoscroll>
+					</control>
+					</control>
+
+
+
+
+					<!-- FLAGS TV SHOWS -->
+
+					<control type="group">
+					<posx>72</posx>
+					<posy>222</posy>
+					<visible>Container.Content(Episodes)</visible>
+					<visible>!substring(listitem.label,..,left)</visible>
+
+					<control type="grouplist">
+					<description>Flags Backgrounds</description>
+					<posx>0</posx>
+					<posy>245</posy>
+					<width>1800</width>
+					<height>57</height>
+					<align>left</align>
+					<itemgap>15</itemgap>
+					<orientation>horizontal</orientation>
+
+					<control type="image">
+					<description>total seasons</description>
+					<width>164</width>
+					<height>56</height>
+					<texture>white.png</texture>
+					<colordiffuse>grey6</colordiffuse>
+					</control>
+
+					<control type="image">
+					<description>total episodes</description>
+					<width>164</width>
+					<height>56</height>
+					<texture>white.png</texture>
+					<colordiffuse>grey6</colordiffuse>
+					</control>
+
+					<control type="image">
+					<description>unwatched episodes</description>
+					<width>164</width>
+					<height>56</height>
+					<texture>white.png</texture>
+					<colordiffuse>grey6</colordiffuse>
+					</control>
+
+					<control type="image">
+					<description>watched episodes</description>
+					<width>164</width>
+					<height>56</height>
+					<texture>white.png</texture>
+					<colordiffuse>grey6</colordiffuse>
+					</control>
+
+					<control type="image">
+					<description>Audio Language</description>
+					<width>164</width>
+					<height>56</height>
+					<texture>white.png</texture>
+					<colordiffuse>00FFFFFF</colordiffuse>
+					</control>
+
+					<control type="image">
+					<description>Audio Language</description>
+					<width>164</width>
+					<height>56</height>
+					<texture>white.png</texture>
+					<colordiffuse>00FFFFFF</colordiffuse>
+					</control>
+
+					<control type="image">
+					<description>MPPA Ratings</description>
+					<width>164</width>
+					<height>56</height>
+					<texture>white.png</texture>
+					<colordiffuse>grey6</colordiffuse>
+					<visible>![substring(ListItem.MPAA,TV-MA)]</visible>
+					</control>
+
+					<control type="image">
+					<description>MPAA Rated R</description>
+					<width>164</width>
+					<height>56</height>
+					<texture>white.png</texture>
+					<colordiffuse>red3-condensed</colordiffuse>
+					<visible>[substring(ListItem.MPAA,TV-MA)]</visible>
+					</control>
+
+
+					<control type="image">
+					<width>164</width>
+					<height>56</height>
+					<texture>white.png</texture>
+					<colordiffuse>grey6</colordiffuse>
+					</control>
+
+					<control type="image">
+					<width>164</width>
+					<height>56</height>
+					<texture>white.png</texture>
+					<colordiffuse>grey6</colordiffuse>
+					</control>
+
+					<control type="image">
+					<width>164</width>
+					<height>56</height>
+					<texture>white.png</texture>
+					<colordiffuse>grey6</colordiffuse>
+					</control>
+					</control>
+
+					<control type="image">
+					<posx>716</posx>
+					<posy>245</posy>
+					<width>344</width>
+					<height>56</height>
+					<texture>$INFO[ListItem.Art(tvshow.banner)]</texture>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>800</fadetime>
+					</control>
+
+					<control type="group">
+					<posx>1432</posx>
+					<posy>0</posy>
+					</control>
+
+					<control type="image">
+					<description>rating stars</description>
+					<posx>1622</posx>
+					<posy>202</posy>
+					<height>140</height>
+					<width>140</width>
+					<aspectratio>keep</aspectratio>
+					<texture background="true">$INFO[ListItem.Rating,stars/,.png]</texture>
+					<colordiffuse>white</colordiffuse>
+					<fadetime>800</fadetime>
+					</control>
+
+					<control type="image">
+					<description>studio</description>
+					<posx>1232</posx>
+					<posy>246</posy>
+					<width>200</width>
+					<height>55</height>
+					<texture>$INFO[Listitem.Studio,special://skin/extras/flagging/studios/,.png]</texture>
+					<aspectratio>keep</aspectratio>
+					<colordiffuse>white</colordiffuse>
+					<fadetime>800</fadetime>
+					</control>
+
+					<control type="group">
+					<posx>0</posx>
+					<posy>235</posy>
+
+					<control type="grouplist">
+					<description>Info TV</description>
+					<posx>1070</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<align>left</align>
+					<itemgap>15</itemgap>
+					<orientation>horizontal</orientation>
+					<include>VideoInfoTV</include>
+					</control>
+
+					<control type="grouplist">
+					<description>Info TV 3</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>800</width>
+					<align>left</align>
+					<itemgap>15</itemgap>
+					<orientation>horizontal</orientation>
+					<include>VideoInfoTV3</include>
+					</control>
+					</control>
+
+					<control type="group">
+					<posx>1430</posx>
+					<posy>235</posy>
+					<control type="grouplist">
+					<description>Info Rating</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1800</width>
+					<align>left</align>
+					<itemgap>15</itemgap>
+					<orientation>horizontal</orientation>
+					<include>RatingInfo</include>
+					</control>
+					</control>
+					</control>
+
+					<control type="group">
+					<posx>1550</posx>
+					<posy>1008</posy>
+					<include>TimeAndTemp</include>
+					</control>
+					
+					<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<include>nowplaying_home_widgets</include>
+					</control>
+
+					<control type="scrollbar" id="60">
+					<posx>72</posx>
+					<posy>972</posy>
+					<width>1775</width>
+					<height>10</height>
+					<texturesliderbackground colordiffuse="grey3-transparent">white.png</texturesliderbackground>
+					<textureslidernib colordiffuse="grey3">white.png</textureslidernib>
+					<textureslidernibfocus colordiffuse="color7">white.png</textureslidernibfocus>
+					<onleft>60</onleft>
+					<onright>60</onright>
+					<onup>514</onup>
+					<ondown>noop</ondown>
+					<showonepage>true</showonepage>
+					<orientation>horizontal</orientation>
+					<visible>Control.IsVisible(530)</visible>
+					</control>
+					</control>
+
+					</include>
+					</includes>

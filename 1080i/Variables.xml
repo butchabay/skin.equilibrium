@@ -1,0 +1,75 @@
+﻿					<includes>
+					
+					<variable name="homebackgrounds"> 
+					<value condition="Container(300).HasFocus(1)">$INFO[Window(Home).Property(script.grab.fanart.Global.FanArt)]</value>					
+					<value condition="Container(300).HasFocus(5)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
+					<value condition="Container(300).HasFocus(2)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
+					<value condition="Container(300).HasFocus(3)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
+					<value condition="Container(300).HasFocus(4)">$INFO[Window(Home).Property(script.grab.fanart.Global.FanArt)]</value>
+					<value condition="Container(300).HasFocus(5)">$INFO[Window(Home).Property(script.grab.fanart.Global.FanArt)]</value>
+					<value condition="Container(300).HasFocus(6)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
+					<value condition="Container(300).HasFocus(7)">$INFO[Window(Home).Property(script.grab.fanart.Global.FanArt)]</value>
+					<value condition="Container(300).HasFocus(9)">$INFO[Window(Home).Property(script.grab.fanart.Global.FanArt)]</value>
+					<value condition="Container(300).HasFocus(11)">$INFO[Window(Home).Property(script.grab.fanart.Global.FanArt)]</value>
+					<value condition="Container(300).HasFocus(12)">$INFO[Window(Home).Property(script.grab.fanart.Global.FanArt)]</value>
+					<value condition="Container(300).HasFocus(13)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
+					</variable>
+
+					<variable name="breadcrumps">
+					<value condition="Container.Content(MusicVideos)">$LOCALIZE[36909]</value>
+					<value condition="Container.Content(TVShows)">$LOCALIZE[20343]</value>
+					<value condition="Container.Content(Seasons)">$INFO[ListItem.TVShowTitle]</value>
+					<value condition="Container.Content(Episodes) + !IsEmpty(listitem.Season) + !substring(container.folderpath,plugin://plugin.video.youtube)">$INFO[ListItem.TVShowTitle]  |  $LOCALIZE[20373] $INFO[ListItem.Season]</value>
+					<value condition="substring(container.folderpath,plugin://plugin.video.youtube)">Youtube</value>
+					<value condition="Container.Content(Movies)">$LOCALIZE[342]</value>
+					<!-- <value condition="Container.Content(Movies)">$LOCALIZE[342]  |  $INFO[Container.FolderName]</value> -->
+					<value condition="Container.Content(Sets)">$LOCALIZE[32049]</value>
+					<value condition="Container.Content(Genres)">$LOCALIZE[135]</value>
+					<value condition="Container.Content(Studios)">$LOCALIZE[20388]</value>
+					<value condition="Container.Content(Countries)">$LOCALIZE[20451]</value>
+					<value condition="Container.Content(Tags)">$LOCALIZE[20459]</value>
+					<value condition="Container.Content(Years)">$LOCALIZE[652]</value>
+					<value condition="Container.Content(Actors)">$LOCALIZE[344]</value>
+					<value condition="Container.Content(Directors)">$LOCALIZE[20348]</value>
+					<value condition="Container.Content(Files)">$INFO[Container.NumItems] $LOCALIZE[31025]</value>
+					<value condition="Container.Content(Addons)">$LOCALIZE[32052]</value>
+					<value condition="Container.Content(Artists)">$LOCALIZE[133]</value>
+					<value condition="Container.Content(Albums)">$INFO[ListItem.Artist]</value>
+					<value condition="Container.Content(Songs)">$LOCALIZE[134]</value>
+					<value condition="Window.IsActive(3)">$INFO[Container.NumItems] $LOCALIZE[31025]</value>
+					<value condition="Window.IsActive(2)">$INFO[Container.NumItems] $LOCALIZE[31025]</value>
+					<value condition="Window.IsActive(28)">$LOCALIZE[31059]</value>
+					</variable>
+					
+					<variable name="breadcrumps2">
+					<value condition="Container.Content(MusicVideos)">$INFO[Container.NumItems] $LOCALIZE[31025] $LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					<value condition="Container.Content(TVShows)">$INFO[Container.NumItems] $LOCALIZE[31025] $LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					<value condition="Container.Content(Seasons)">$INFO[Container.NumItems] $LOCALIZE[31025] $LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					<value condition="Container.Content(Episodes)">$INFO[Container.NumItems] $LOCALIZE[31025] $LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					<value condition="Container.Content(Movies)">$INFO[Container.NumItems] $LOCALIZE[31025] $LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					<value condition="Container.Content(Sets)">$INFO[Container.NumItems] $LOCALIZE[31025] $LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					<value condition="Container.Content(Genres)">$INFO[Container.NumItems] $LOCALIZE[31025]</value>
+					<value condition="Container.Content(Studios)">$INFO[Container.NumItems] $LOCALIZE[31025]</value>
+					<value condition="Container.Content(Countries)">$INFO[Container.NumItems] $LOCALIZE[31025]</value>
+					<value condition="Container.Content(Tags)">$INFO[Container.NumItems] $LOCALIZE[31025]</value>
+					<value condition="Container.Content(Years)">$INFO[Container.NumItems] $LOCALIZE[31025]</value>
+					<value condition="Container.Content(Actors)">$INFO[Container.NumItems] $LOCALIZE[31025]</value>
+					<value condition="Container.Content(Directors)">$INFO[Container.NumItems] $LOCALIZE[31025]</value>
+					<value condition="Container.Content(Files)">$LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					<value condition="Container.Content(Addons)">$INFO[Container.NumItems] $LOCALIZE[31025] $LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					<value condition="Container.Content(Videos)">$INFO[Container.NumItems] $LOCALIZE[31025] $LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					<value condition="Container.Content(Artists)">$INFO[Container.NumItems] $LOCALIZE[31025]</value>
+					<value condition="Container.Content(Albums)">$INFO[Container.NumItems] $LOCALIZE[31025] $LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					<value condition="Container.Content(Songs)">$INFO[Container.NumItems] $LOCALIZE[31025] $LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					<value condition="Window.IsActive(3)">$INFO[Container.NumItems] $LOCALIZE[31025] $LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					<value condition="Window.IsActive(2)">$INFO[Container.NumItems] $LOCALIZE[31025] $LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					<value condition="Window.IsActive(28)">$INFO[Container.NumItems] $LOCALIZE[31025] $LOCALIZE[32051] $INFO[Container.SortMethod]</value>
+					</variable>
+					
+					<variable name="PlayList">
+					<value condition="Window.IsActive(videolibrary) + !StringCompare(Playlist.Length(video),0)">ActivateWindow(videoplaylist)</value>
+					<value>ActivateWindow(musicplaylist)</value>
+					</variable>
+					
+
+					</includes>

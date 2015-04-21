@@ -1,0 +1,97 @@
+					<?xml version="1.0" encoding="UTF-8"?>
+					<window>
+					<defaultcontrol always="true">10</defaultcontrol>
+					<coordinates>
+					<system>1</system>
+					<posx>0</posx>
+					<posy>0</posy>
+					</coordinates>
+					<controls>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1920</width>
+					<height>1080</height>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>300</fadetime>
+					<texture colordiffuse="overlay2-transpparent">white.png</texture>
+					</control>
+					
+					<control type="group">
+					<posx>392</posx>
+					<posy>180</posy>
+					
+					<control type="image">
+					<posx>10</posx>
+					<posy>112</posy>
+					<width>1130</width>
+					<height>500</height>
+					<aspectratio>stretch</aspectratio>
+					<texture>white.png</texture>
+					<colordiffuse>color7</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>20</posx>
+					<posy>122</posy>
+					<width>1110</width>
+					<height>480</height>
+					<aspectratio>stretch</aspectratio>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					</control>
+					
+					<control type="label" id="1">
+					<description>header label</description>
+					<posx>82</posx>
+					<posy>120</posy>
+					<width>975</width>
+					<height>75</height>
+					<font>Condensed-30</font>
+					<textcolor>color2</textcolor>
+					<label>$LOCALIZE[13406]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					</control>
+					
+					<control type="textbox" id="9">
+					<description>dialogs</description>
+					<posx>82</posx>
+					<posy>220</posy>
+					<width>975</width>
+					<height>200</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<label>-</label>
+					</control>
+					
+					<control type="button" id="10">
+					<description>OK button</description>
+					<posx>450</posx>
+					<posy>520</posy>
+					<height>63</height>
+					<width>237.5</width>
+					<textoffsetx>0</textoffsetx>
+					<textwidth>175</textwidth>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>Condensed-24-B</font>
+					<texturefocus colordiffuse="color5">white.png</texturefocus>
+					<textcolor>color2</textcolor>
+					<focusedcolor>color2</focusedcolor>
+					<texturefocus>-</texturefocus>
+					<pulseonselect>false</pulseonselect>
+					<disabledcolor>color1</disabledcolor>
+					<onleft>10</onleft>
+					<onright>10</onright>
+					<onup>10</onup>
+					<ondown>10</ondown>
+					</control>
+					</control>
+					
+					</controls>
+					<include>WindowOverlay</include>
+					</window>

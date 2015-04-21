@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">2</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <include>CommonBackground</include>
+        <control type="image">
+            <posx>0</posx>
+            <posy>150r</posy>
+            <width>1920</width>
+            <height>150</height>
+            <texture>floor.png</texture>
+            <animation effect="slide" start="0,15" end="0,0" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="0,22" time="200" condition="Window.Next(Home)">WindowClose</animation>
+        </control>
+        <control type="group">
+            <posx>135</posx>
+            <posy>45</posy>
+            <animation type="WindowOpen" reversible="false">
+                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+                <effect type="fade" start="0" end="100" time="300" />
+            </animation>
+            <animation type="WindowClose" reversible="false">
+                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+                <effect type="fade" start="100" end="0" time="300" />
+            </animation>
+            <control type="image">
+                <posx>8</posx>
+                <posy>8</posy>
+                <width>1635</width>
+                <height>945</height>
+                <texture border="15">ContentPanel.png</texture>
+            </control>
+            <control type="image">
+                <posx>8</posx>
+                <posy>938</posy>
+                <width>1635</width>
+                <height>96</height>
+                <texture border="15">ContentPanelMirror.png</texture>
+            </control>
+            <control type="button">
+                <description>Close Window button</description>
+                <posx>1470</posx>
+                <posy>16</posy>
+                <width>96</width>
+                <height>48</height>
+                <label>-</label>
+                <font>-</font>
+                <onclick>PreviousMenu</onclick>
+                <texturefocus>DialogCloseButton-focus.png</texturefocus>
+                <texturenofocus>DialogCloseButton.png</texturenofocus>
+                <onleft>1</onleft>
+                <onright>1</onright>
+                <onup>1</onup>
+                <ondown>1</ondown>
+                <visible>system.getbool(input.enablemouse)</visible>
+            </control>
+            <control type="image">
+                <description>LOGO</description>
+                <posx>45</posx>
+                <posy>22</posy>
+                <width>330</width>
+                <height>120</height>
+                <aspectratio>keep</aspectratio>
+                <texture>Confluence_Logo.png</texture>
+            </control>
+            <control type="button" id="4">
+                <description>Enable Login screen</description>
+                <posx>15</posx>
+                <posy>135</posy>
+                <width>375</width>
+                <height>108</height>
+                <textoffsety>12</textoffsety>
+                <label>20096</label>
+                <font>font24_title</font>
+                <align>right</align>
+                <aligny>top</aligny>
+                <texturenofocus border="5">MenuItemNF.png</texturenofocus>
+                <texturefocus border="5">MenuItemFO.png</texturefocus>
+                <onleft>2</onleft>
+                <onright>2</onright>
+                <onup>5</onup>
+                <ondown>5</ondown>
+                <enable>!Window.IsVisible(ProfileSettings)</enable>
+            </control>
+            <control type="label">
+                <posx>375</posx>
+                <posy>195</posy>
+                <width>360</width>
+                <height>38</height>
+                <font>font13</font>
+                <textcolor>grey3</textcolor>
+                <align>right</align>
+                <aligny>center</aligny>
+                <label>305</label>
+                <visible>System.HasLoginScreen</visible>
+            </control>
+            <control type="label">
+                <posx>375</posx>
+                <posy>195</posy>
+                <width>360</width>
+                <height>38</height>
+                <font>font13</font>
+                <textcolor>grey3</textcolor>
+                <align>right</align>
+                <aligny>center</aligny>
+                <label>1223</label>
+                <visible>!System.HasLoginScreen</visible>
+            </control>
+            <control type="button" id="5">
+                <description>Choose auto login user</description>
+                <posx>15</posx>
+                <posy>242</posy>
+                <width>375</width>
+                <height>108</height>
+                <textoffsety>12</textoffsety>
+                <label>33084</label>
+                <font>font24_title</font>
+                <align>right</align>
+                <aligny>top</aligny>
+                <texturenofocus border="5">MenuItemNF.png</texturenofocus>
+                <texturefocus border="5">MenuItemFO.png</texturefocus>
+                <onleft>2</onleft>
+                <onright>2</onright>
+                <onup>4</onup>
+                <ondown>4</ondown>
+                <visible>!System.HasLoginScreen</visible>
+                <enable>!Window.IsVisible(ProfileSettings) + !System.HasLoginScreen</enable>
+            </control>
+            <control type="button">
+                <description>Choose auto login user (grayed out)</description>
+                <posx>15</posx>
+                <posy>242</posy>
+                <width>375</width>
+                <height>108</height>
+                <textoffsety>12</textoffsety>
+                <label>33084</label>
+                <font>font24_title</font>
+                <textcolor>grey3</textcolor>
+                <align>right</align>
+                <aligny>top</aligny>
+                <texturenofocus border="5">MenuItemNF.png</texturenofocus>
+                <texturefocus border="5">MenuItemFO.png</texturefocus>
+                <onleft>2</onleft>
+                <onright>2</onright>
+                <onup>4</onup>
+                <ondown>4</ondown>
+                <visible>System.HasLoginScreen</visible>
+                <enable>false</enable>
+            </control>
+            <control type="label">
+                <posx>370</posx>
+                <posy>302</posy>
+                <width>300</width>
+                <height>38</height>
+                <font>font13caps</font>
+                <textcolor>grey3</textcolor>
+                <align>right</align>
+                <aligny>center</aligny>
+                <label>$INFO[System.ProfileAutoLogin]</label>
+                <scroll>Control.HasFocus(5)</scroll>
+                <scrollspeed>30</scrollspeed>
+                <visible>!System.HasLoginScreen</visible>
+            </control>
+            <control type="group">
+                <posx>30</posx>
+                <posy>390</posy>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>360</width>
+                    <height>300</height>
+                    <aspectratio>keep</aspectratio>
+                    <bordertexture border="12">ThumbBorder.png</bordertexture>
+                    <bordersize>10</bordersize>
+                    <texture fallback="unknown-user.png">$INFO[Container(2).Listitem.Icon]</texture>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>315</posy>
+                    <width>360</width>
+                    <height>30</height>
+                    <font>font12_title</font>
+                    <textcolor>blue</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$LOCALIZE[31319]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>352</posy>
+                    <width>360</width>
+                    <height>30</height>
+                    <font>font13</font>
+                    <textcolor>color2</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[Container(2).ListItem.Label]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>398</posy>
+                    <width>360</width>
+                    <height>45</height>
+                    <font>font12_title</font>
+                    <textcolor>blue</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$LOCALIZE[31320]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>435</posy>
+                    <width>360</width>
+                    <height>45</height>
+                    <font>font13</font>
+                    <textcolor>color2</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label fallback="13170">$INFO[Container(2).ListItem.Label2]</label>
+                </control>
+            </control>
+            <control type="image">
+                <posx>402</posx>
+                <posy>15</posy>
+                <width>1185</width>
+                <height>927</height>
+                <texture border="5">black-back2.png</texture>
+            </control>
+            <control type="image">
+                <posx>402</posx>
+                <posy>15</posy>
+                <width>1206</width>
+                <height>105</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>GlassTitleBar.png</texture>
+            </control>
+            <control type="label">
+                <description>header label</description>
+                <posx>450</posx>
+                <posy>30</posy>
+                <width>1110</width>
+                <height>45</height>
+                <font>font30_title</font>
+                <label>$LOCALIZE[10034]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textcolor>color2</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="panel" id="2">
+                <posx>424</posx>
+                <posy>105</posy>
+                <width>1140</width>
+                <height>810</height>
+                <onleft>4</onleft>
+                <onright>60</onright>
+                <onup>53</onup>
+                <ondown>53</ondown>
+                <viewtype label="21371">list</viewtype>
+                <pagecontrol>60</pagecontrol>
+                <scrolltime>200</scrolltime>
+                <itemlayout height="270" width="285">
+                    <control type="image">
+                        <posx>1</posx>
+                        <posy>0</posy>
+                        <width>282</width>
+                        <height>218</height>
+                        <bordertexture border="5">button-nofocus.png</bordertexture>
+                        <bordersize>5</bordersize>
+                        <texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
+                    </control>
+                    <control type="label">
+                        <posx>141</posx>
+                        <posy>218</posy>
+                        <width>267</width>
+                        <height>38</height>
+                        <font>font11</font>
+                        <textcolor>grey3</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <info>ListItem.Label</info>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="270" width="285">
+                    <control type="image">
+                        <posx>1</posx>
+                        <posy>0</posy>
+                        <width>282</width>
+                        <height>218</height>
+                        <bordertexture border="5">folder-focus.png</bordertexture>
+                        <bordersize>5</bordersize>
+                        <texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
+                    </control>
+                    <control type="label">
+                        <posx>141</posx>
+                        <posy>218</posy>
+                        <width>267</width>
+                        <height>38</height>
+                        <font>font11</font>
+                        <textcolor>color2</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <info>ListItem.Label</info>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>1590</posx>
+                <posy>90</posy>
+                <width>38</width>
+                <height>795</height>
+                <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+                <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+                <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+                <textureslidernib>ScrollBarNib.png</textureslidernib>
+                <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+                <onleft>2</onleft>
+                <onright>4</onright>
+                <showonepage>false</showonepage>
+                <orientation>vertical</orientation>
+            </control>
+        </control>
+        <include>CommonNowPlaying</include>
+        <include>MainWindowMouseButtons</include>
+        <include>BehindDialogFadeOut</include>
+        <control type="image">
+            <description>Section header image</description>
+            <posx>30</posx>
+            <posy>4</posy>
+            <width>52</width>
+            <height>52</height>
+            <aspectratio>keep</aspectratio>
+            <texture>icon_system.png</texture>
+        </control>
+        <control type="grouplist">
+            <posx>98</posx>
+            <posy>8</posy>
+            <width>1500</width>
+            <height>45</height>
+            <orientation>horizontal</orientation>
+            <align>left</align>
+            <itemgap>8</itemgap>
+            <control type="label">
+                <include>WindowTitleCommons</include>
+                <label>$LOCALIZE[13200]</label>
+            </control>
+        </control>
+        <include>Clock</include>
+    </controls>
+</window>

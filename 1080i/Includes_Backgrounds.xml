@@ -1,0 +1,93 @@
+					<?xml version="1.0" encoding="UTF-8"?>
+
+					<includes>
+					
+					<include name="Overlay">
+					<control type="image">
+					<description>Overlay</description>
+					<include>Dimensions_Fullscreen_Home</include>
+					<texture>white.png</texture>
+					<colordiffuse>overlay2</colordiffuse>
+					</control>
+					</include>
+					
+					<include name="Overlay_Home">
+					<control type="image">
+					<description>Overlay</description>
+					<include>Dimensions_Fullscreen_Home</include>
+					<texture>white.png</texture>
+					<colordiffuse>overlay3-transpparent</colordiffuse>
+					</control>
+					</include>
+					
+					<include name="Backgrounds_Home">
+					<control type="image">
+					<include>Dimensions_Fullscreen</include>
+					<aspectratio>stretch</aspectratio>
+					<texture background="true">$VAR[homebackgrounds]</texture>
+					<fadetime>FanartCrossfadeTime</fadetime>
+					</control>	
+					</include>
+					
+					
+					<!-- <include name="Overlay2">
+					<control type="image">
+					<description>Overlay</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1920</width>
+					<height>600</height>
+					<texture>white.png</texture>
+					<colordiffuse>overlay2</colordiffuse>
+					</control>
+					</include> -->
+					
+					<include name="OverlayDialogs">
+					<control type="image">
+					<description>Overlay for dialogs slideout</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>424</width>
+					<height>1080</height>
+					<texture>white.png</texture>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					</include>
+
+					<include name="CommonBackground">
+					<control type="group" id="8800">
+					<visible>Container(300).HasFocus(5)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>100</posy>
+					<width>1920</width>
+					<height>1080</height>
+					<aspectratio>scale</aspectratio>
+					<texture background="true">$INFO[Window(Home).Property(script.grab.fanart.Global.FanArt)]</texture>
+					<include>Window_Fade_In_Out_Background</include>
+					<fadetime>FanartCrossfadeTime</fadetime>
+					</control>
+					</control>
+					
+					<control type="visualisation">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1920</width>
+					<height>1080</height>
+					<visible>Player.HasAudio + !Skin.HasSetting(ShowBackgroundVis) + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
+					<visible>!SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
+					</control>
+					</include>
+					
+					<!-- Home Backgrounds -->
+                    
+					<include name="Backgrounds_Home">
+					<control type="image">
+					<include>Dimensions_Fullscreen_Home_Mainbackgrounds</include>
+					<description>Home Backgorunds</description>
+					<texture background="true">$VAR[homebackgrounds]</texture>
+					<fadetime>380</fadetime>
+					<include>Window_Fade_In_Out_Background</include>
+					</control>	
+					</include>
+					</includes>

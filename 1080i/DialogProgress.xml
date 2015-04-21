@@ -1,0 +1,98 @@
+					<?xml version="1.0" encoding="UTF-8"?>
+					<window>
+					<defaultcontrol always="true">10</defaultcontrol>
+					<coordinates>
+					<system>1</system>
+					<posx>502</posx>
+					<posy>345</posy>
+					</coordinates>
+					<include>WindowOverlay</include>
+					<controls>
+					
+					<control type="image">
+					<description>Overlay</description>
+					<posx>-502</posx>
+					<posy>-345</posy>
+					<include>Dimensions_Fullscreen_Home</include>
+					<texture background="true">overlay.jpg</texture>
+					<colordiffuse>grey2-transparent</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>915</width>
+					<height>360</height>
+					<texture>white.png</texture>
+					<colordiffuse>grey6</colordiffuse>
+					</control>
+					
+					<control type="label" id="1">
+					<description>fake heading label</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>0</width>
+					<height>0</height>
+					<font>-</font>
+					<visible>false</visible>
+					</control>
+					
+					<control type="label">
+					<description>header label</description>
+					<posx>60</posx>
+					<posy>30</posy>
+					<width>795</width>
+					<height>45</height>
+					<font>Condensed-46</font>
+					<textcolor>color2</textcolor>
+					<label>$INFO[Control.GetLabel(1)] $INFO[System.Progressbar, ,%]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					</control>
+					
+					<control type="textbox" id="9">
+					<description>dialogs</description>
+					<posx>45</posx>
+					<posy>80</posy>
+					<width>825</width>
+					<height>120</height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Condensed-36</font>
+					<label>-</label>
+					<textcolor>grey2</textcolor>
+					</control>
+					
+					<control type="progress">
+					<description>Progressbar</description>
+					<posx>45</posx>
+					<posy>250</posy>
+					<width>825</width>
+					<height>5</height>
+					<info>System.Progressbar</info>
+					<texturebg colordiffuse="grey3">white.png</texturebg>
+					<midtexture colordiffuse="color7">white.png</midtexture>
+					</control>
+					
+					<control type="button" id="10">
+					<description>Cancel button</description>
+					<posx>308</posx>
+					<posy>280</posy>
+					<width>300</width>
+					<height>60</height>
+					<label>222</label>
+					<font>Condensed-36</font>
+					<textcolor>color2</textcolor>
+					<focusedcolor>grey4</focusedcolor>
+					<disabledcolor>grey3</disabledcolor>
+					<texturenofocus colordiffuse="grey3">white.png</texturenofocus>
+					<texturefocus colordiffuse="grey2">white.png</texturefocus>
+					<aligny>center</aligny>
+					<align>center</align>
+					<onleft>10</onleft>
+					<onright>10</onright>
+					<onup>10</onup>
+					<ondown>10</ondown>
+					</control>
+					</controls>
+					</window>

@@ -1,0 +1,53 @@
+					<?xml version="1.0" encoding="UTF-8"?>
+					<window type="dialog">
+					
+					<include>WindowOverlay</include>
+					
+					<controls>
+					
+					<control type="image">
+					<description>background image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<include>Dimensions_Fullscreen_Home</include>
+					<texture background="true">overlay.jpg</texture>
+					</control>
+					
+					<control type="group">
+					<posx>150</posx>
+					<posy>0</posy>
+					<control type="image">
+					<posx>0</posx>
+					<posy>-15</posy>
+					<width>555</width>
+					<height>105</height>
+					<texture>white.png</texture>
+					<colordiffuse>grey6</colordiffuse>
+					</control>
+					
+					<control type="label" id="401">
+					<description>Song Number Label</description>
+					<posx>22</posx>
+					<posy>3</posy>
+					<width>510</width>
+					<height>38</height>
+					<font>Condensed-36</font>
+					<textcolor>color2</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					</control>
+					
+					<control type="label" id="402">
+					<description>Song Name Label</description>
+					<posx>22</posx>
+					<posy>40</posy>
+					<width>510</width>
+					<height>30</height>
+					<font>Condensed-36</font>
+					<textcolor>grey2</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					</control>
+					</control>
+					</controls>
+					</window>

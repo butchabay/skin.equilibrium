@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+	id="skin.equilibrium"
+	version="0.9.1"
+	name="Equilibrium"
+	provider-name="butchabay">
+	<requires>
+		<import addon="xbmc.gui" version="5.3.0"/>
+	</requires>
+	<extension
+    point="xbmc.gui.skin"
+    defaultthemename="textures.xbt"
+    debugging="false"
+    effectslowdown="0.75">
+		<!-- <res width="1280" height="720" aspect="16:9" default="true" folder="1080i" /> -->
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>Equilibrium for Kodi by butchabay</summary>
+		<description>-</description>
+	</extension>
+</addon>

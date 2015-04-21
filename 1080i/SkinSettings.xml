@@ -1,0 +1,727 @@
+					<?xml version="1.0" encoding="UTF-8"?>
+					<window>
+					<defaultcontrol always="true">9000</defaultcontrol>
+					<controls>
+					
+					<include>Overlay</include>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1920</width>
+					<height>1080</height>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>300</fadetime>
+					<texture colordiffuse="white-condensed">special://skin/extras/backgrounds/1080/settings.jpg</texture>
+					</control>
+					
+					<control type="grouplist">
+					<visible>!Window.IsVisible(filebrowser)</visible>
+					<posx>95</posx>
+					<posy>18</posy>
+					<width>1500</width>
+					<height>70</height>
+					<orientation>horizontal</orientation>
+					<align>left</align>
+					<itemgap>8</itemgap>
+					<control type="label">
+					<include>WindowTitleCommons</include>
+					<label>$LOCALIZE[20077]</label>
+					</control>
+					
+					<control type="label">
+					<include>WindowTitleCommons</include>
+					<label>$INFO[Container.FolderName]</label>
+					<visible>!IsEmpty(Container.FolderName)</visible>
+					</control>
+					</control>
+					
+					<control type="group">
+					<posx>0</posx>
+					<posy>20</posy>
+					
+					<visible>!Window.IsVisible(filebrowser)</visible>
+					
+					<!-- LIST OVERLAY -->
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>180</posy>
+					<width>455</width>
+					<height>673.375</height>
+					<texture colordiffuse="color5-transparent" background="true">white.png</texture>
+					</control>
+					
+					<!-- GRID -->
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>264.375</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>348.75</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>433.125</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>517.5</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>601.875</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>686.25</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>770.625</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					
+					
+					
+					<!-- LIST OVERLAY -->
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>180</posy>
+					<width>1268</width>
+					<height>673.375</height>
+					<texture colordiffuse="color5-transparent" background="true">white.png</texture>
+					</control>
+					
+					<!-- GRID -->
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>264.375</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>348.75</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>433.125</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>517.5</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>601.875</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>686.25</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>770.625</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					
+					<control type="list" id="9000">
+					<posx>90</posx>
+					<posy>180</posy>
+					<width>455</width>
+					<height>675</height>
+					<onleft>9010</onleft>
+					<onright>9010</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<scrolltime>300</scrolltime>
+					
+					<itemlayout height="86" width="455">
+					
+					<control type="label">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>424</width>
+					<height>86</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color2</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					</control>
+					
+					</itemlayout>
+					<focusedlayout height="86" width="455">
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>86</height>
+					<width>455</width>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					</control>
+					
+					<control type="label">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>424</width>
+					<height>86</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color2</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					</control>
+					
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<label>32053</label>
+					<onclick>noop</onclick>
+					</item>
+					
+					<!-- <item id="2">
+					<label>Settings 2</label>
+					<onclick>noop</onclick>
+					</item>
+					
+					<item id="3">
+					<label>Settings 3</label>
+					<onclick>noop</onclick>
+					</item>
+					
+					<item id="4">
+					<label>Settings 4</label>
+					<onclick>noop</onclick>
+					</item>
+					
+					<item id="5">
+					<label>Settings 5</label>
+					<onclick>noop</onclick>
+					</item> -->
+					
+					</content>
+					</control>
+				
+					
+					
+					<control type="group" id="9010">
+					<control type="grouplist" id="9001">
+					<visible>Container(9000).Hasfocus(1)</visible>
+					<posx>560</posx>
+					<posy>180</posy>
+					<width>1268</width>
+					<height>675</height>
+					<itemgap>0</itemgap>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>9001</onup>
+					<ondown>9001</ondown>
+					
+					<control type="button" id="101">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>32054</label>
+					<onclick>ActivateWindow(3000)</onclick>
+					</control>
+					
+					<control type="button" id="102">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>32055</label>
+					<onclick>ActivateWindow(3001)</onclick>
+					</control>
+					
+					<control type="button" id="104">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>32057</label>
+					<onclick>ActivateWindow(3003)</onclick>
+					</control>
+					
+					<control type="button" id="105">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>32058</label>
+					<onclick>ActivateWindow(3004)</onclick>
+					</control>
+					
+					<control type="button" id="106">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>32060</label>
+					<onclick>ActivateWindow(3005)</onclick>
+					</control>
+					
+					<control type="button" id="107">
+					<include>ButtonsSkinSettingsSmall</include>
+					<label>32168</label>
+					<onclick>ActivateWindow(3006)</onclick>
+					<visible>!System.GetBool(pvrmanager.enabled)</visible>
+					</control>
+					</control>
+					
+					<control type="grouplist" id="9002">
+					<visible>Container(9000).Hasfocus(2)</visible>
+					<posx>475</posx>
+					<posy>38</posy>
+					<width>1250</width>
+					<height>762</height>
+					<itemgap>-2</itemgap>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>9002</onup>
+					<ondown>9002</ondown>
+					
+					
+					<control type="radiobutton" id="202">
+					<description>enable video info</description>
+					<include>RadioButtonsSkinSettings</include>
+					<label>20176</label>
+					<onclick>Skin.ToggleSetting(homepageVideoinfo)</onclick>
+					<selected>!Skin.HasSetting(homepageVideoinfo)</selected>
+					</control>
+					
+					<control type="radiobutton" id="203">
+					<description>enable music info</description>
+					<include>RadioButtonsSkinSettings</include>
+					<label>20083</label>
+					<onclick>Skin.ToggleSetting(homepageMusicinfo)</onclick>
+					<selected>!Skin.HasSetting(homepageMusicinfo)</selected>
+					</control>
+					
+					<control type="radiobutton" id="204">
+					<description>enable weather info</description>
+					<include>RadioButtonsSkinSettings</include>
+					<label>20084</label>
+					<onclick>Skin.ToggleSetting(homepageWeatherinfo)</onclick>
+					<selected>Skin.HasSetting(homepageWeatherinfo)</selected>
+					<visible>!IsEmpty(Weather.Plugin)</visible>
+					</control>
+					
+					<control type="radiobutton" id="205">
+					<description>Show Recently added Video info</description>
+					<include>RadioButtonsSkinSettings</include>
+					<label>31117</label>
+					<onclick>Skin.ToggleSetting(HomepageHideRecentlyAddedVideo)</onclick>
+					<selected>!Skin.HasSetting(HomepageHideRecentlyAddedVideo)</selected>
+					</control>
+					
+					<control type="radiobutton" id="206">
+					<description>Show Recently added info</description>
+					<include>RadioButtonsSkinSettings</include>
+					<label>31116</label>
+					<onclick>Skin.ToggleSetting(HomepageHideRecentlyAddedAlbums)</onclick>
+					<selected>!Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</selected>
+					</control>
+					
+					<control type="radiobutton" id="207">
+					<description>Hide Videos Button</description>
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[31111] - $LOCALIZE[3]</label>
+					<onclick>Skin.ToggleSetting(HomeMenuNoVideosButton)</onclick>
+					<selected>Skin.HasSetting(HomeMenuNoVideosButton)</selected>
+					</control>
+					
+					<control type="radiobutton" id="208">
+					<description>Hide Movies Button</description>
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[31111] - $LOCALIZE[20342] [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
+					<onclick>Skin.ToggleSetting(HomeMenuNoMovieButton)</onclick>
+					<selected>Skin.HasSetting(HomeMenuNoMovieButton)</selected>
+					<enable>Library.HasContent(Movies)</enable>
+					</control>
+					
+					<control type="radiobutton" id="209">
+					<description>Hide TV Shows Button</description>
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[31111] - $LOCALIZE[20343] [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
+					<onclick>Skin.ToggleSetting(HomeMenuNoTVShowButton)</onclick>
+					<selected>Skin.HasSetting(HomeMenuNoTVShowButton)</selected>
+					<enable>Library.HasContent(TVShows)</enable>
+					</control>
+					
+					<control type="radiobutton" id="210">
+					<description>Hide Music Button</description>
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[31111] - $LOCALIZE[2]</label>
+					<onclick>Skin.ToggleSetting(HomeMenuNoMusicButton)</onclick>
+					<selected>Skin.HasSetting(HomeMenuNoMusicButton)</selected>
+					</control>
+					
+					<control type="radiobutton" id="211">
+					<description>Hide Pictures Button</description>
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[31111] - $LOCALIZE[1]</label>
+					<onclick>Skin.ToggleSetting(HomeMenuNoPicturesButton)</onclick>
+					<selected>Skin.HasSetting(HomeMenuNoPicturesButton)</selected>
+					</control>
+					
+					<control type="radiobutton" id="212">
+					<description>Hide Programs Button</description>
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[31111] - $LOCALIZE[0]</label>
+					<onclick>Skin.ToggleSetting(HomeMenuNoProgramsButton)</onclick>
+					<selected>Skin.HasSetting(HomeMenuNoProgramsButton)</selected>
+					</control>
+					
+					<control type="radiobutton" id="213">
+					<description>Hide Weather Button</description>
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[31111] - $LOCALIZE[8]</label>
+					<onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
+					<selected>Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
+					</control>
+					</control>
+					
+					<control type="grouplist" id="9003">
+					<visible>Container(9000).Hasfocus(3)</visible>
+					<posx>475</posx>
+					<posy>38</posy>
+					<width>1250</width>
+					<height>762</height>
+					<itemgap>-2</itemgap>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>9003</onup>
+					<ondown>9003</ondown>
+					
+					<control type="radiobutton" id="301">
+					<include>RadioButtonsSkinSettings</include>
+					<label>31119</label>
+					<onclick>Skin.ToggleSetting(HideBackGroundFanart)</onclick>
+					<selected>Skin.HasSetting(HideBackGroundFanart)</selected>
+					</control>
+					
+					<control type="radiobutton" id="302">
+					<include>RadioButtonsSkinSettings</include>
+					<label>31129</label>
+					<onclick>Skin.ToggleSetting(HideVisualizationFanart)</onclick>
+					<selected>Skin.HasSetting(HideVisualizationFanart)</selected>
+					</control>
+					
+					<control type="radiobutton" id="303">
+					<include>RadioButtonsSkinSettings</include>
+					<label>31124</label>
+					<onclick>Skin.ToggleSetting(ShowBackgroundVideo)</onclick>
+					<selected>!Skin.HasSetting(ShowBackgroundVideo)</selected>
+					</control>
+					
+					<control type="radiobutton" id="304">
+					<include>RadioButtonsSkinSettings</include>
+					<label>31125</label>
+					<onclick>Skin.ToggleSetting(ShowBackgroundVis)</onclick>
+					<selected>!Skin.HasSetting(ShowBackgroundVis)</selected>
+					</control>
+					
+					<control type="radiobutton" id="305">
+					<include>RadioButtonsSkinSettings</include>
+					<label>31109</label>
+					<onclick>Skin.ToggleSetting(UseCustomBackground)</onclick>
+					<selected>Skin.HasSetting(UseCustomBackground)</selected>
+					</control>
+					
+					<control type="button" id="306">
+					<include>RadioButtonsSkinSettings</include>
+					<label>- $LOCALIZE[31110]</label>
+					<label2>[COLOR=selected]$INFO[Skin.String(CustomBackgroundPath)][/COLOR]</label2>
+					<onclick>Skin.SetImage(CustomBackgroundPath)</onclick>
+					<enable>Skin.HasSetting(UseCustomBackground)</enable>
+					</control>
+					</control>
+					
+					<control type="group">
+					<control type="grouplist" id="9004">
+					<visible>Container(9000).Hasfocus(4)</visible>
+					<posx>475</posx>
+					<posy>38</posy>
+					<width>1250</width>
+					<height>762</height>
+					<itemgap>-2</itemgap>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>9004</onup>
+					<ondown>9004</ondown>
+					
+					<control type="button" id="400">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[31132]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(LyricScript_Path))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
+					</control>
+					
+					<control type="button" id="401">
+					<include>RadioButtonsSkinSettings</include>
+					<label>- $LOCALIZE[24020]</label>
+					<enable>!IsEmpty(Skin.String(LyricScript_Path))</enable>
+					<onclick>Addon.OpenSettings($INFO[Skin.String(LyricScript_Path)])</onclick>
+					</control>
+					
+					<control type="button" id="402">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[31133]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(SubtitleScript_Path))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
+					</control>
+					
+					<control type="button" id="403">
+					<include>RadioButtonsSkinSettings</include>
+					<label>- $LOCALIZE[24020]</label>
+					<enable>!IsEmpty(Skin.String(SubtitleScript_Path))</enable>
+					<onclick>Addon.OpenSettings($INFO[Skin.String(SubtitleScript_Path)])</onclick>
+					</control>
+					
+					<control type="button" id="404">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]1[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeVideosButton1))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeVideosButton1,xbmc.addon.video,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="405">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]2[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeVideosButton2))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeVideosButton2,xbmc.addon.video,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="406">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]3[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeVideosButton3))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeVideosButton3,xbmc.addon.video,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="407">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]4[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeVideosButton4))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeVideosButton4,xbmc.addon.video,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="408">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]5[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeVideosButton5))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeVideosButton5,xbmc.addon.video,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="409">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]1[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeMusicButton1))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeMusicButton1,xbmc.addon.audio,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="410">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]2[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeMusicButton2))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeMusicButton2,xbmc.addon.audio,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="411">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]3[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeMusicButton3))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeMusicButton3,xbmc.addon.audio,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="412">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]4[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeMusicButton4))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeMusicButton4,xbmc.addon.audio,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="413">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]5[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeMusicButton5))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeMusicButton5,xbmc.addon.audio,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="414">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]1[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomePictureButton1))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomePictureButton1,xbmc.addon.image,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="415">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]2[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomePictureButton2))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomePictureButton2,xbmc.addon.image,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="416">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]3[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomePictureButton3))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomePictureButton3,xbmc.addon.image,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="417">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]4[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomePictureButton4))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomePictureButton4,xbmc.addon.image,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="418">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]5[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomePictureButton5))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomePictureButton5,xbmc.addon.image,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="419">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]1[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeProgramButton1))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeProgramButton1,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="420">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]2[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeProgramButton2))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeProgramButton2,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="421">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]3[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeProgramButton3))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeProgramButton3,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="422">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]4[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeProgramButton4))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeProgramButton4,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="423">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]5[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeProgramButton5))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeProgramButton5,xbmc.addon.executable)</onclick>
+					</control>
+					
+					<control type="button" id="424">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[24000] [B]6[/B]</label>
+					<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(HomeProgramButton6))][/COLOR]</label2>
+					<onclick>Skin.SetAddon(HomeProgramButton6,xbmc.addon.executable)</onclick>
+					</control>
+					</control>
+					</control>
+
+					<!-- ZBox -->
+
+					<control type="group">
+					<control type="grouplist" id="9005">
+					<visible>Container(9000).Hasfocus(5)</visible>
+					<posx>475</posx>
+					<posy>38</posy>
+					<width>1250</width>
+					<height>762</height>
+					<itemgap>-2</itemgap>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>9005</onup>
+					<ondown>9005</ondown>
+					
+					<control type="radiobutton" id="501">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32089]</label>
+					<onclick>Skin.ToggleSetting(thumbwidgetstv)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<selected>Skin.HasSetting(thumbwidgetstv)</selected>
+					</control>
+					
+					<control type="radiobutton" id="502">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32084]</label>
+					<onclick>Skin.ToggleSetting(Widgets_Movies)</onclick>
+					<selected>Skin.HasSetting(Widgets_Movies)</selected>
+					</control>
+					
+					<control type="radiobutton" id="503">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32088]</label>
+					<onclick>Skin.ToggleSetting(Widgets_TV)</onclick>
+					<selected>Skin.HasSetting(Widgets_TV)</selected>
+					</control>
+					
+					<control type="radiobutton" id="504">
+					<include>RadioButtonsSkinSettings</include>
+					<label>$LOCALIZE[32089]</label>
+					<onclick>Skin.ToggleSetting(thumbwidgetstv)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<selected>Skin.HasSetting(thumbwidgetstv)</selected>
+					<enable>Skin.HasSetting(Widgets_TV)</enable>
+					</control>
+					</control>
+					</control>
+					
+					</control>
+					</control>
+					<include>WindowOverlay</include>
+					</controls>
+					</window>

@@ -1,0 +1,228 @@
+					<window>
+					
+					<defaultcontrol always="true">300</defaultcontrol>
+					<allowoverlay>yes</allowoverlay>
+					<controls>
+					
+				
+					
+					<include>Backgrounds_Home</include>
+					<include>Overlay_Home</include>
+					<!-- <include>Overlay2</include> -->
+					
+					<control type="group">
+					
+					<visible>!Window.IsVisible(filebrowser)</visible>
+					
+					<include>SkinWidgetsMovies</include>
+					<include>SkinWidgetsTVShows</include>
+					<include>SkinWidgetsVideos</include>
+					<include>SkinWidgetsLiveTV</include>
+					<include>SkinWidgetsMusic</include>
+					<include>SkinWidgetsWeather</include>
+					<include>SkinWidgetsApps</include>
+					<include>SkinWidgetsPictures</include>
+					<include>SkinWidgetsSystem</include>
+					<include>nowplaying_home_widgets</include>
+					
+
+					<!-- RSS -->
+
+					<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					
+					<control type="rss">
+					<description>RSS Feed</description>
+					<posx>90</posx>
+					<posy>1020</posy>
+					<width>1738</width>
+					<height>35</height>
+					<font>font12</font>
+					<urlset>1</urlset>
+					<titlecolor>color7</titlecolor>
+					<headlinecolor>color6</headlinecolor>
+					<textcolor>color7</textcolor>
+					<visible>![Window.IsVisible(infodialog) | Window.IsVisible(extendedprogressdialog)]</visible>
+					</control>
+					</control>
+					
+					
+
+					<!-- TIME AND TEMPERATURE -->
+					
+					<control type="group">
+					<posx>1820</posx>
+					<posy>940</posy>
+					<include>TimeAndTemp</include>
+					</control>
+					
+
+					<!-- MENU -->
+					
+					<control type="group">
+					
+					<include>HomeSubmenu</include>
+					
+					
+					<!-- MAIN MENU -->
+					
+					<control type="list" id="300">
+					<description>Home list</description>
+					<posx>-67</posx>
+					<posy>20</posy>
+					<width>1900</width>
+					<height>80</height>
+					<onup>301</onup>
+					<ondown condition="Container(300).Hasfocus(13)">8051</ondown>
+					<ondown condition="Container(300).Hasfocus(2)">8061</ondown>
+					<ondown condition="Container(300).Hasfocus(1)">8081</ondown>
+					<ondown condition="Container(300).Hasfocus(7)">8091</ondown>
+					<ondown condition="Container(300).Hasfocus(11)">8201</ondown>
+					<ondown condition="Container(300).Hasfocus(9)">301</ondown>
+					<ondown condition="![Container(300).Hasfocus(13) | Container(300).Hasfocus(2) | Container(300).Hasfocus(9) | Container(300).Hasfocus(1) | Container(300).Hasfocus(7) | Container(300).Hasfocus(11)]">9010</ondown>
+					<onleft>300</onleft>
+					<onright>300</onright>
+					<orientation>horizontal</orientation>
+					<scrolltime>200</scrolltime>
+					
+					<itemlayout width="230" height="80">
+					<control type="label">
+					<posx>108.75</posx>
+					<posy>0</posy>
+					<width>217.5</width>
+					<height>50</height>
+					<font>Condensed-34-U</font>
+					<textcolor>color1</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					<animation effect="fade" start="100" end="40" time="200" reversible="true" condition="Window.IsVisible(favourites) | ControlGroup(9001).HasFocus | ControlGroup(8000).HasFocus  | ControlGroup(8010).HasFocus | ControlGroup(8200).HasFocus | ControlGroup(8050).HasFocus | ControlGroup(8060).HasFocus | ControlGroup(8070).HasFocus | ControlGroup(8080).HasFocus | ControlGroup(8090).HasFocus | ControlGroup(8100).HasFocus">conditional</animation>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="230" height="80">
+					<control type="label">
+					<posx>108.75</posx>
+					<posy>0</posy>
+					<width>217.5</width>
+					<height>50</height>
+					<font>Condensed-34-U</font>
+					<textcolor>color2</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					<animation effect="fade" start="100" end="60" time="200" reversible="true" condition="Window.IsVisible(favourites) | ControlGroup(9001).HasFocus | ControlGroup(8000).HasFocus | ControlGroup(8010).HasFocus | ControlGroup(8200).HasFocus | ControlGroup(8050).HasFocus | ControlGroup(8060).HasFocus | ControlGroup(8070).HasFocus | ControlGroup(8080).HasFocus | ControlGroup(8090).HasFocus | ControlGroup(8100).HasFocus">conditional</animation>
+					</control>
+					</focusedlayout>
+					<content>
+					
+					<item id="13">
+					<description>Live TV</description>
+					<label>$LOCALIZE[32042]</label>
+					<onclick>ActivateWindow(TVChannels)</onclick>
+					<!-- <visible>System.HasPVR</visible> -->
+					<visible>System.GetBool(pvrmanager.enabled)</visible>
+					</item>
+					
+					<item id="5">
+					<description>Movies</description>
+					<label>$LOCALIZE[342]</label>
+					<onclick>ActivateWindow(video,movietitles,return)</onclick>
+					<visible>Library.HasContent(Movies)</visible>
+					</item>
+					
+					<item id="6">
+					<description>TV Shows</description>
+					<label>$LOCALIZE[20343]</label>
+					<onclick>ActivateWindow(video,tvshowtitles,return)</onclick>
+					<visible>Library.HasContent(TVShows)</visible>
+					</item>
+					
+					
+					 <item id="2">
+					<description>Videos</description>
+					<label>$LOCALIZE[10025]</label>
+					<onclick>ActivateWindow(Videos,root)</onclick>
+					</item>
+					
+					<item id="3">
+					<description>Music</description>
+					<label>$LOCALIZE[10005]</label>
+					<onclick>ActivateWindow(music)</onclick>
+					</item>
+					
+					
+					<item id="7">
+					<description>Pictures</description>
+					<label>$LOCALIZE[31951]</label>
+					<onclick>ActivateWindow(pictures,return)</onclick>
+					<visible>!System.GetBool(pvrmanager.enabled)</visible>
+					</item>
+					
+					<item id="1">
+					<description>APPS</description>
+					<label>$LOCALIZE[32041]</label>
+					<onclick>ActivateWindow(programs,addons,return)</onclick>
+					</item>
+					
+					<item id="9">
+					<description>Weather</description>
+					<label>$LOCALIZE[12600]</label>
+					<onclick>ActivateWindow(weather)</onclick>
+					</item>
+					
+					<item id="11">
+					<description>System</description>
+					<label>$LOCALIZE[31959]</label>
+					<onclick>ActivateWindow(settings)</onclick>
+					</item>
+					
+					
+					</content>
+					</control>
+					</control>
+					</control>
+					
+					<control type="group">
+					<visible>Window.Previous(startup)</visible>
+					<animation effect="fade" start="100" end="0" time="600" delay="40000" condition="Window.Previous(startup)">Conditional</animation>
+					
+					<control type="image">
+					<description>Overlay</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<include>Dimensions_Fullscreen_Home</include>
+					<texture>white.png</texture>
+					<colordiffuse>overlay2</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<description>Overlay</description>
+					<posx>832</posx>
+					<posy>200</posy>
+					<width>256</width>
+					<height>256</height>
+					<texture>start.png</texture>
+					
+					</control>
+					
+					<control type="label">
+					<description>Busy label</description>
+					<posx>0</posx>
+					<posy>600</posy>
+					<width>1920</width>
+					<height>60</height>
+					<font>Condensed-68-B</font>
+					<textcolor>grey1</textcolor>
+					<align>center</align>
+					<label>32203</label>
+					</control>
+					</control>
+					
+					
+					<include>WindowOverlay</include>
+					
+					
+					</controls>
+					</window>

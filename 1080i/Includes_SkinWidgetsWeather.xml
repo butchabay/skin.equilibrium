@@ -1,0 +1,584 @@
+					<includes>
+
+					<include name="SkinWidgetsWeather">
+
+					<control type="group" id="8070">
+					<posx>-250</posx>
+					<posy>80</posy>
+					
+					
+					
+					<!-- WEATHER -->
+
+					
+					<control type="wraplist" id="8071">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>360</height>
+					<onup>300</onup>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<visible>Container(300).Hasfocus(9)</visible>
+					<include>widgets_animation</include>
+					
+					<itemlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Label2]</texture>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>350</posx>
+					<posy>237</posy>
+					<width>60</width>
+					<height>60</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>color1</colordiffuse>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Label2]</texture>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>350</posx>
+					<posy>237</posy>
+					<width>60</width>
+					<height>60</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>color1</colordiffuse>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</focusedlayout>
+					<content>
+					
+					<!-- WEATHER FORECAST ICONS -->
+					
+					<item id="1">
+					<description>Day1</description>
+					<label>$INFO[Window(Weather).Property(Day1.Title)]  $INFO[Window(Weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
+					<onclick>noop</onclick>
+					<icon>$INFO[Window(Weather).Property(Day1.FanartCode),weather/medium/,.png]</icon>
+					<label2>$INFO[Window(Weather).Property(Day1.FanartCode),weather/backgrounds/,.jpg]</label2>
+					</item>
+					
+					<item id="2">
+					<description>Day2</description>
+					<label>$INFO[Window(Weather).Property(Day2.Title)]  $INFO[Window(Weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
+					<onclick>noop</onclick>
+					<icon>$INFO[Window(Weather).Property(Day2.FanartCode),weather/medium/,.png]</icon>
+					<label2>$INFO[Window(Weather).Property(Day2.FanartCode),weather/backgrounds/,.jpg]</label2>
+					</item>
+					
+					<item id="3">
+					<description>Day3</description>
+					<label>$INFO[Window(Weather).Property(Day3.Title)]  $INFO[Window(Weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
+					<onclick>noop</onclick>
+					<icon>$INFO[Window(Weather).Property(Day3.FanartCode),weather/medium/,.png]</icon>
+					<label2>$INFO[Window(Weather).Property(Day3.FanartCode),weather/backgrounds/,.jpg]</label2>
+					</item>
+					
+					<item id="4">
+					<description>Day4</description>
+					<label>$INFO[Window(Weather).Property(Day4.Title)]  $INFO[Window(Weather).Property(Day4.HighTemp)]$INFO[System.TemperatureUnits]</label>
+					<onclick>noop</onclick>
+					<icon>$INFO[Window(Weather).Property(Day4.FanartCode),weather/medium/,.png]</icon>
+					<label2>$INFO[Window(Weather).Property(Day4.FanartCode),weather/backgrounds/,.jpg]</label2>
+					</item>
+					
+					</content>
+					</control>
+					</control>
+					
+					<!-- WIDGETS BOTTOM -->
+					
+					<control type="group" id="8010">
+					<posx>-250</posx>
+					<posy>140</posy>
+					
+					<control type="group">
+					<posx>5</posx>
+					<posy>25</posy>
+					<visible>Container(300).HasFocus(9)</visible>
+					
+					<!-- LABELS -->
+					
+					<control type="label">
+					<posx>335</posx>
+					<posy>400</posy>
+					<label>$LOCALIZE[32113]</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>![Player.HasVideo | Player.HasAudio]</visible>
+					</control>
+					
+					<control type="label">
+					<posx>335</posx>
+					<posy>400</posy>
+					<label>$LOCALIZE[31040]</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Player.HasVideo | Player.HasAudio</visible>
+					</control>
+					</control>
+					
+					
+					<!-- ACTUAL WEATHER -->
+					
+					
+					<control type="panel" id="8002">
+					<posx>340</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(9)</visible>
+				    <visible>![Player.HasVideo | Player.HasAudio]</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Label2]</texture>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<!-- <control type="image">
+					<posx>130</posx>
+					<posy>65</posy>
+					<width>150</width>
+					<height>150</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control> -->
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Actual Weather</description>
+					<label>$INFO[Window(Weather).Property(Current.Condition)]  $INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
+					<property name="Location">$INFO[Window(Weather).Property(Location)]</property>
+					<property name="Updated">$INFO[Window(Weather).Property(Updated)]</property>
+					<onclick>noop</onclick>
+					<icon>$INFO[Weather.FanartCode,weather/medium/,.png]</icon>
+					<label2>$INFO[Weather.FanartCode,weather/backgrounds/,.jpg]</label2>
+					</item>
+					</content>
+					</control>
+					
+					
+					<!-- HUMIDITY -->
+
+					<control type="panel" id="8003">
+					<posx>778</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(9)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Label2]</texture>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>360</posx>
+					<posy>243</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>color1</colordiffuse>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Humidity</description>
+					<onclick>noop</onclick> 
+					<icon>weather/humidity.png</icon>
+					<label>$LOCALIZE[32198]: $INFO[Window(Weather).Property(Current.Humidity)]</label>
+					<label2>weather/backgrounds/humidity.jpg</label2>
+					</item>
+					</content>
+					</control>
+					
+					
+					<!-- INFO -->
+					
+					<control type="panel" id="8004">
+					<posx>1216</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(9)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Label2]</texture>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>360</posx>
+					<posy>243</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>color1</colordiffuse>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Pressure</description>
+					<onclick>noop</onclick> 
+					<icon>weather/medium/1.png</icon>
+					<label>$LOCALIZE[32110]: $INFO[Window(Weather).Property(Current.Pressure)]$LOCALIZE[32199]</label>
+					<label2>weather/backgrounds/pressure.jpg</label2>
+					</item>
+					</content>
+					</control>
+					
+					
+					
+
+					<!-- PROVIDER -->
+					
+					<control type="panel" id="8005">
+					<posx>1654</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(9)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Label2]</texture>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Provider</description>
+					<onclick>noop</onclick> 
+					<label>$INFO[Window(Weather).Property(WeatherProvider)]</label>
+					<property name="Provider">$INFO[Window(Weather).Property(WeatherProvider)]</property>
+					<label2>weather/backgrounds/provider.jpg</label2>
+					</item>
+					</content>
+					</control>
+					</control>
+					
+
+					
+					
+					</include>
+					</includes>

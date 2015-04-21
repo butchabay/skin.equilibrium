@@ -1,0 +1,538 @@
+					<includes>
+
+					<include name="SkinWidgetsSystem">
+
+					<control type="group" id="8200">
+					<posx>-250</posx>
+					<posy>80</posy>
+					
+					<!-- SYSTEM -->
+
+					
+					<control type="wraplist" id="8201">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>300</onup>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<visible>Container(300).Hasfocus(11)</visible>
+					<include>widgets_animation</include>
+					
+					<itemlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[Listitem.Icon]</texture>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[Listitem.Icon]</texture>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="group">
+					<visible>!Control.HasFocus(8201)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					
+					<control type="group">
+					<visible>Control.HasFocus(8201)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					
+					</focusedlayout>
+					<content>
+					
+					
+					<item id="1">
+					<description>Shutdown Menu</description>
+					<label>31003</label>
+					<onclick>ActivateWindow(Shutdownmenu)</onclick>
+					<icon>special://skin/extras/backgrounds/shutdown.jpg</icon>
+					</item>
+					
+					<item id="2">
+					<description>File Manager</description>
+					<label>7</label>
+					<onclick>ActivateWindow(FileManager)</onclick>
+					<icon>special://skin/extras/backgrounds/files.jpg</icon>
+					</item>
+					
+					
+					<item id="3">
+					<description>Profiles</description>
+					<label>13200</label>
+					<onclick>ActivateWindow(Profiles)</onclick>
+					<icon>special://skin/extras/backgrounds/profiles.jpg</icon>
+					</item>
+					
+					
+					<item id="4">
+					<description>System Info</description>
+					<label>130</label>
+					<onclick>ActivateWindow(SystemInfo)</onclick>
+					<icon>special://skin/extras/backgrounds/systeminfo.jpg</icon>
+					</item>
+					
+					
+					<item id="5">
+					<description>Skin Settings</description>
+					<label>32077</label>
+					<onclick>ActivateWindow(SkinSettings)</onclick>
+					<icon>special://skin/extras/backgrounds/skin.jpg</icon>
+					</item>
+					
+					
+					<item id="6">
+					<description>Appearance Settings</description>
+					<label>$LOCALIZE[480] $LOCALIZE[5]</label>
+					<onclick>ActivateWindow(AppearanceSettings)</onclick>
+					<icon>special://skin/extras/backgrounds/appearance.jpg</icon>
+					</item>
+					
+					
+					<item id="7">
+					<description>Video Settings</description>
+					<label>$LOCALIZE[31953] $LOCALIZE[5]</label>
+					<onclick>ActivateWindow(VideosSettings)</onclick>
+					<icon>special://skin/extras/backgrounds/videos.jpg</icon>
+					</item>
+					
+					
+					<item id="8">
+					<description>Audio Settings</description>
+					<label>$LOCALIZE[292] $LOCALIZE[5]</label>
+					<onclick>ActivateWindow(MusicSettings)</onclick>
+					<icon>special://skin/extras/backgrounds/audio.jpg</icon>
+					</item>
+					
+					
+					<item id="9">
+					<description>Addons Settings</description>
+					<label>$LOCALIZE[32177]</label>
+					<onclick>ActivateWindow(AddonBrowser)</onclick>
+					<icon>special://skin/extras/backgrounds/addons.jpg</icon>
+					</item>
+					
+					
+					<item id="10">
+					<description>Live TV Settings</description>
+					<label>$LOCALIZE[31502] $LOCALIZE[5]</label>
+					<onclick>ActivateWindow(PVRSettings)</onclick>
+					<icon>special://skin/extras/backgrounds/livetv.jpg</icon>
+					</item>
+					
+					
+					<item id="11">
+					<description>Network Settings</description>
+					<label>$LOCALIZE[14036]</label>
+					<onclick>ActivateWindow(NetworkSettings)</onclick>
+					<icon>special://skin/extras/backgrounds/service.jpg</icon>
+					</item>
+					
+					
+					<item id="12">
+					<description>Weather Settings</description>
+					<label>$LOCALIZE[31950] $LOCALIZE[5]</label>
+					<onclick>ActivateWindow(WeatherSettings)</onclick>
+					<icon>special://skin/extras/backgrounds/weather.jpg</icon>
+					</item>
+					
+					<item id="13">
+					<description>Picture Settings</description>
+					<label>$LOCALIZE[31951] $LOCALIZE[5]</label>
+					<onclick>ActivateWindow(PicturesSettings)</onclick>
+					<icon>special://skin/extras/backgrounds/pictures.jpg</icon>
+					</item>
+					
+					</content>
+					</control>
+					</control>
+					
+					
+					<!-- WIDGETS BOTTOM -->
+					
+					<control type="group" id="8010">
+					<posx>-250</posx>
+					<posy>140</posy>
+					
+					<control type="group">
+					<posx>5</posx>
+					<posy>25</posy>
+					
+					<visible>Container(300).HasFocus(11)</visible>
+					
+					<control type="label">
+					<posx>335</posx>
+					<posy>400</posy>
+					<label>$LOCALIZE[31040]</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Player.HasVideo | Player.HasAudio</visible>
+					</control>
+					</control>
+					
+					
+					<!-- MOVIES INFO -->
+					
+					
+					<control type="panel" id="8002">
+					<posx>340</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(11)</visible>
+					<visible>![Player.HasVideo | Player.HasAudio]</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Movies Info</description> 
+					<icon>special://skin/extras/backgrounds/movies.jpg</icon>
+					<label>$LOCALIZE[31954]: $INFO[Window(Home).Property(Movies.Count)]</label>
+					<onclick>noop</onclick>
+					</item>
+					</content>
+					</control>
+					
+					
+					<!-- TVSHOWS INFO -->
+
+					<control type="panel" id="8003">
+					<posx>778</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>8002</onleft>
+					<onright>8004</onright>
+					<onup>8061</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(11)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>TVShows Info</description>
+					<onclick>noop</onclick> 
+					<icon>special://skin/extras/backgrounds/tvshows.jpg</icon>
+					<label>$LOCALIZE[32200]: $INFO[Window(Home).Property(TVShows.Count)]</label>
+					</item>
+					</content>
+					</control>
+					
+					
+					<!-- EPISODES INFO -->
+					
+					<control type="panel" id="8004">
+					<posx>1216</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>8003</onleft>
+					<onright>8005</onright>
+					<onup>8061</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(11)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<icon>special://skin/extras/backgrounds/episodes.jpg</icon>
+					<label>$LOCALIZE[32090]: $INFO[Window(Home).Property(Episodes.Count)]</label>
+					<onclick>noop</onclick>
+					</item>
+					</content>
+					</control>
+					
+					
+
+					<!-- ALBUMS / SONGS INFO -->
+					
+					<control type="panel" id="8005">
+					<posx>1654</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>8004</onleft>
+					<onright>noop</onright>
+					<onup>8061</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(11)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Songs</description>
+					<icon>special://skin/extras/backgrounds/artists.jpg</icon>
+					<label>$LOCALIZE[32201]: $INFO[Window(Home).Property(Music.SongsCount)]</label>
+					<onclick>noop</onclick>
+					
+					</item>
+					</content>
+					</control>
+					</control>
+
+					
+					
+					</include>
+					</includes>

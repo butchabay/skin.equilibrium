@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">20</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <coordinates>
+        <system>1</system>
+        <posx>285</posx>
+        <posy>45</posy>
+    </coordinates>
+    <include>WindowOverlay</include>
+    <controls>
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1350</width>
+            <height>990</height>
+            <texture border="40">DialogBack.png</texture>
+        </control>
+        <control type="image">
+            <description>Dialog Header image</description>
+            <posx>60</posx>
+            <posy>24</posy>
+            <width>1230</width>
+            <height>60</height>
+            <texture>dialogheader.png</texture>
+        </control>
+        <control type="label">
+            <description>header label</description>
+            <posx>60</posx>
+            <posy>30</posy>
+            <width>1230</width>
+            <height>45</height>
+            <font>font13_title</font>
+            <label>$LOCALIZE[19199] - $LOCALIZE[19023]</label>
+            <align>center</align>
+            <aligny>center</aligny>
+            <textcolor>selected</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <visible>IsEmpty(Window.Property(IsRadio))</visible>
+        </control>
+        <control type="label">
+            <description>header label</description>
+            <posx>60</posx>
+            <posy>30</posy>
+            <width>1230</width>
+            <height>45</height>
+            <font>font13_title</font>
+            <label>$LOCALIZE[19199] - $LOCALIZE[19024]</label>
+            <align>center</align>
+            <aligny>center</aligny>
+            <textcolor>selected</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+        </control>
+        <control type="button">
+            <description>Close Window button</description>
+            <posx>1215</posx>
+            <posy>22</posy>
+            <width>96</width>
+            <height>48</height>
+            <label>-</label>
+            <font>-</font>
+            <onclick>PreviousMenu</onclick>
+            <texturefocus>DialogCloseButton-focus.png</texturefocus>
+            <texturenofocus>DialogCloseButton.png</texturenofocus>
+            <onleft>10</onleft>
+            <onright>10</onright>
+            <onup>10</onup>
+            <ondown>10</ondown>
+            <visible>system.getbool(input.enablemouse)</visible>
+        </control>
+        <control type="group">
+            <posx>30</posx>
+            <posy>105</posy>
+            <control type="scrollbar" id="60">
+                <posx>0</posx>
+                <posy>8</posy>
+                <width>38</width>
+                <height>705</height>
+                <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+                <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+                <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+                <textureslidernib>ScrollBarNib.png</textureslidernib>
+                <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+                <onleft>9002</onleft>
+                <onright>20</onright>
+                <showonepage>false</showonepage>
+                <orientation>vertical</orientation>
+            </control>
+            <control type="image">
+                <posx>38</posx>
+                <posy>0</posy>
+                <width>645</width>
+                <height>712</height>
+                <texture border="5">button-nofocus.png</texture>
+            </control>
+            <control type="list" id="20">
+                <posx>45</posx>
+                <posy>8</posy>
+                <width>630</width>
+                <height>705</height>
+                <onup>20</onup>
+                <ondown>20</ondown>
+                <onleft>60</onleft>
+                <onright>9002</onright>
+                <pagecontrol>60</pagecontrol>
+                <scrolltime>200</scrolltime>
+                <itemlayout height="68" width="630">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>630</width>
+                        <height>60</height>
+                        <texture border="5">button-nofocus.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>8</posx>
+                        <posy>8</posy>
+                        <width>45</width>
+                        <height>45</height>
+                        <texture>$INFO[ListItem.Property(Icon)]</texture>
+                        <visible>ListItem.Property(ActiveChannel)</visible>
+                    </control>
+                    <control type="image">
+                        <posx>8</posx>
+                        <posy>8</posy>
+                        <width>45</width>
+                        <height>45</height>
+                        <colordiffuse>77FFFFFF</colordiffuse>
+                        <texture>$INFO[ListItem.Property(Icon)]</texture>
+                        <visible>!ListItem.Property(ActiveChannel)</visible>
+                    </control>
+                    <control type="label">
+                        <posx>68</posx>
+                        <posy>0</posy>
+                        <width>502</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <textcolor>color2</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+                        <visible>ListItem.Property(ActiveChannel)</visible>
+                    </control>
+                    <control type="label">
+                        <posx>68</posx>
+                        <posy>0</posy>
+                        <width>502</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <textcolor>grey3</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+                        <visible>!ListItem.Property(ActiveChannel)</visible>
+                    </control>
+                    <control type="image">
+                        <posx>585</posx>
+                        <posy>15</posy>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>OverlayWatched.png</texture>
+                        <visible>ListItem.Property(Changed)</visible>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="98" width="630">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>630</width>
+                        <height>90</height>
+                        <texture border="5">button-focus2.png</texture>
+                        <animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(20)">conditional</animation>
+                    </control>
+                    <control type="image">
+                        <posx>8</posx>
+                        <posy>8</posy>
+                        <width>45</width>
+                        <height>45</height>
+                        <texture>$INFO[ListItem.Property(Icon)]</texture>
+                        <visible>ListItem.Property(ActiveChannel)</visible>
+                    </control>
+                    <control type="image">
+                        <posx>8</posx>
+                        <posy>8</posy>
+                        <width>45</width>
+                        <height>45</height>
+                        <colordiffuse>77FFFFFF</colordiffuse>
+                        <texture>$INFO[ListItem.Property(Icon)]</texture>
+                        <visible>!ListItem.Property(ActiveChannel)</visible>
+                    </control>
+                    <control type="label">
+                        <posx>68</posx>
+                        <posy>0</posy>
+                        <width>502</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <textcolor>color2</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+                        <visible>ListItem.Property(ActiveChannel)</visible>
+                    </control>
+                    <control type="label">
+                        <posx>68</posx>
+                        <posy>0</posy>
+                        <width>502</width>
+                        <height>60</height>
+                        <font>font12</font>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <textcolor>grey3</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+                        <visible>!ListItem.Property(ActiveChannel)</visible>
+                    </control>
+                    <control type="image">
+                        <posx>585</posx>
+                        <posy>15</posy>
+                        <width>30</width>
+                        <height>30</height>
+                        <texture>OverlayWatched.png</texture>
+                        <visible>ListItem.Property(Changed)</visible>
+                    </control>
+                    <control type="label">
+                        <posx>8</posx>
+                        <posy>45</posy>
+                        <width>615</width>
+                        <height>45</height>
+                        <font>font12</font>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <textcolor>grey3</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="label">
+                <description>Page Count Label</description>
+                <posx>45</posx>
+                <posy>728</posy>
+                <width>630</width>
+                <height>30</height>
+                <font>font12</font>
+                <textcolor>grey</textcolor>
+                <scroll>false</scroll>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>([COLOR=blue]$INFO[Container(20).NumItems][/COLOR]) $LOCALIZE[19019] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(20).CurrentPage]/$INFO[Container(20).NumPages][/COLOR])</label>
+            </control>
+        </control>
+        <control type="group" id="9002">
+            <control type="group">
+                <posx>735</posx>
+                <posy>105</posy>
+                <control type="label">
+                    <description>channel options Header</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>570</width>
+                    <height>30</height>
+                    <font>font12</font>
+                    <label>$LOCALIZE[31511]</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <textcolor>blue</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                </control>
+                <control type="radiobutton" id="7">
+                    <description>Channel activated</description>
+                    <posx>0</posx>
+                    <posy>38</posy>
+                    <width>570</width>
+                    <height>52</height>
+                    <font>font12</font>
+                    <textcolor>color2</textcolor>
+                    <focusedcolor>color6</focusedcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturefocus border="5">button-focus2.png</texturefocus>
+                    <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                    <pulseonselect>no</pulseonselect>
+                    <label>19074</label>
+                    <onleft>20</onleft>
+                    <onright>60</onright>
+                    <onup>9000</onup>
+                    <ondown>8</ondown>
+                </control>
+                <control type="edit" id="8">
+                    <description>Channel name</description>
+                    <posx>0</posx>
+                    <posy>98</posy>
+                    <width>570</width>
+                    <height>52</height>
+                    <font>font12</font>
+                    <textcolor>color2</textcolor>
+                    <focusedcolor>color6</focusedcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <texturefocus border="5">button-focus2.png</texturefocus>
+                    <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                    <label>19201</label>
+                    <onright>60</onright>
+                    <onleft>20</onleft>
+                    <onup>7</onup>
+                    <ondown>9</ondown>
+                </control>
+                <control type="button" id="9">
+                    <description>Channel logo Button</description>
+                    <posx>0</posx>
+                    <posy>158</posy>
+                    <width>570</width>
+                    <height>52</height>
+                    <font>font12</font>
+                    <texturefocus border="5">button-focus2.png</texturefocus>
+                    <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                    <label>19202</label>
+                    <onleft>20</onleft>
+                    <onright>60</onright>
+                    <onup>8</onup>
+                    <ondown>12</ondown>
+                </control>
+                <control type="image" id="10">
+                    <description>Current Channel Icon</description>
+                    <posx>518</posx>
+                    <posy>160</posy>
+                    <width>45</width>
+                    <height>45</height>
+                    <aspectratio>keep</aspectratio>
+                    <info>ListItem.Property(Icon)</info>
+                </control>
+                <control type="radiobutton" id="12">
+                    <description>EPG activated</description>
+                    <posx>0</posx>
+                    <posy>218</posy>
+                    <width>570</width>
+                    <height>52</height>
+                    <font>font12</font>
+                    <textcolor>color2</textcolor>
+                    <focusedcolor>color6</focusedcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturefocus border="5">button-focus2.png</texturefocus>
+                    <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                    <pulseonselect>no</pulseonselect>
+                    <label>19206</label>
+                    <onleft>20</onleft>
+                    <onright>60</onright>
+                    <onup>9</onup>
+                    <ondown>13</ondown>
+                </control>
+                <control type="spincontrolex" id="13">
+                    <description>EPG source</description>
+                    <posx>0</posx>
+                    <posy>278</posy>
+                    <width>570</width>
+                    <height>52</height>
+                    <font>font12</font>
+                    <texturefocus border="5">button-focus2.png</texturefocus>
+                    <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                    <label>19200</label>
+                    <onright>60</onright>
+                    <onleft>20</onleft>
+                    <onup>12</onup>
+                    <ondown>14</ondown>
+                </control>
+                <control type="radiobutton" id="14">
+                    <description>Parental locked</description>
+                    <posx>0</posx>
+                    <posy>338</posy>
+                    <width>570</width>
+                    <height>52</height>
+                    <font>font12</font>
+                    <textcolor>color2</textcolor>
+                    <focusedcolor>color6</focusedcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <texturefocus border="5">button-focus2.png</texturefocus>
+                    <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                    <pulseonselect>no</pulseonselect>
+                    <label>19267</label>
+                    <onleft>20</onleft>
+                    <onright>60</onright>
+                    <onup>13</onup>
+                    <ondown>30</ondown>
+                </control>
+            </control>
+            <control type="group">
+                <posx>735</posx>
+                <posy>540</posy>
+                <control type="label">
+                    <description>channel options Header</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>570</width>
+                    <height>30</height>
+                    <font>font12</font>
+                    <label>$LOCALIZE[31026]</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <textcolor>blue</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                </control>
+                <control type="button" id="30">
+                    <description>Group Manager Button</description>
+                    <posx>0</posx>
+                    <posy>38</posy>
+                    <width>285</width>
+                    <height>52</height>
+                    <font>font12</font>
+                    <texturefocus border="5">button-focus2.png</texturefocus>
+                    <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                    <align>center</align>
+                    <label>19205</label>
+                    <onleft>20</onleft>
+                    <onright>34</onright>
+                    <onup>14</onup>
+                    <ondown>31</ondown>
+                </control>
+                <control type="button" id="34">
+                    <description>TV/Radio Button</description>
+                    <posx>292</posx>
+                    <posy>38</posy>
+                    <width>278</width>
+                    <height>52</height>
+                    <font>font12</font>
+                    <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                    <texturefocus border="5">button-focus2.png</texturefocus>
+                    <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                    <align>center</align>
+                    <label>19024</label>
+                    <onleft>30</onleft>
+                    <onright>60</onright>
+                    <onup>14</onup>
+                    <ondown>31</ondown>
+                </control>
+                <control type="button" id="34">
+                    <description>TV/Radio Button</description>
+                    <posx>292</posx>
+                    <posy>38</posy>
+                    <width>278</width>
+                    <height>52</height>
+                    <font>font12</font>
+                    <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                    <texturefocus border="5">button-focus2.png</texturefocus>
+                    <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                    <align>center</align>
+                    <label>19023</label>
+                    <onleft>30</onleft>
+                    <onright>60</onright>
+                    <onup>14</onup>
+                    <ondown>31</ondown>
+                </control>
+                <control type="button" id="31">
+                    <description>Edit channel Button</description>
+                    <posx>0</posx>
+                    <posy>98</posy>
+                    <width>570</width>
+                    <height>52</height>
+                    <font>font12</font>
+                    <texturefocus border="5">button-focus2.png</texturefocus>
+                    <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                    <align>center</align>
+                    <label>19203</label>
+                    <onleft>20</onleft>
+                    <onright>60</onright>
+                    <onup>30</onup>
+                    <ondown>32</ondown>
+                </control>
+                <control type="button" id="32">
+                    <description>Delete channel Button</description>
+                    <posx>0</posx>
+                    <posy>158</posy>
+                    <width>570</width>
+                    <height>52</height>
+                    <font>font12</font>
+                    <texturefocus border="5">button-focus2.png</texturefocus>
+                    <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                    <align>center</align>
+                    <label>19211</label>
+                    <onleft>20</onleft>
+                    <onright>60</onright>
+                    <onup>31</onup>
+                    <ondown>33</ondown>
+                </control>
+                <control type="button" id="33">
+                    <description>New channel Button</description>
+                    <posx>0</posx>
+                    <posy>218</posy>
+                    <width>570</width>
+                    <height>52</height>
+                    <font>font12</font>
+                    <texturefocus border="5">button-focus2.png</texturefocus>
+                    <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                    <align>center</align>
+                    <label>19204</label>
+                    <onleft>20</onleft>
+                    <onright>60</onright>
+                    <onup>32</onup>
+                    <ondown>9000</ondown>
+                </control>
+            </control>
+        </control>
+        <control type="group" id="9000">
+            <posx>105</posx>
+            <posy>885</posy>
+            <control type="button" id="4">
+                <description>OK Button</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>375</width>
+                <height>60</height>
+                <label>186</label>
+                <font>font12_title</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <onleft>6</onleft>
+                <onright>5</onright>
+                <onup>33</onup>
+                <ondown>7</ondown>
+            </control>
+            <control type="button" id="5">
+                <description>Apply changes Button</description>
+                <posx>390</posx>
+                <posy>0</posy>
+                <width>375</width>
+                <height>60</height>
+                <label>14070</label>
+                <font>font12_title</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <onleft>4</onleft>
+                <onright>6</onright>
+                <onup>33</onup>
+                <ondown>7</ondown>
+            </control>
+            <control type="button" id="6">
+                <description>Cancel Button</description>
+                <posx>780</posx>
+                <posy>0</posy>
+                <width>375</width>
+                <height>60</height>
+                <label>222</label>
+                <font>font12_title</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <onleft>5</onleft>
+                <onright>4</onright>
+                <onup>33</onup>
+                <ondown>7</ondown>
+            </control>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,145 @@
+					<?xml version="1.0" encoding="UTF-8"?>
+					<window>
+					<defaultcontrol always="true">50</defaultcontrol>
+					<allowoverlay>no</allowoverlay>
+					<views>50,51</views>
+					<controls>
+
+					<include>Overlay</include>
+
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1920</width>
+					<height>1080</height>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>300</fadetime>
+					<texture colordiffuse="white-condensed" fallback="special://skin/extras/backgrounds/1080/movies.jpg">$INFO[ListItem.Art(fanart)]</texture>
+					</control>
+
+					<control type="group">
+
+					<include>CommonRootView</include>
+					<!-- view id = 50 -->
+
+					</control>
+
+					<include>ScrollOffsetLabel</include>
+
+					<control type="group">
+					<animation effect="slide" start="0,0" end="424,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)">Conditional</animation>
+					<posx>95</posx>
+					<posy>20</posy>
+					<width>1800</width>
+					<height>70</height>
+					<align>left</align>
+
+					<control type="label">
+					<include>WindowTitleCommons</include>
+					<label>$VAR[breadcrumps]</label>
+					</control>
+
+					<control type="label">
+					<include>WindowTitleSort</include>
+					<label>$VAR[breadcrumps2]</label>
+					</control>
+					</control>
+
+					<control type="image">
+					<description>Overlay</description>
+					<include>Dimensions_Fullscreen_Home</include>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<animation effect="fade" start="0" end="90" time="300" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)">Conditional</animation>
+					<animation effect="fade" start="90" end="0" time="300" condition="![ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)]">Conditional</animation>
+					</control>
+
+					<control type="image">
+					<posx>-424</posx>
+					<posy>0</posy>
+					<width>424</width>
+					<height>1080</height>
+					<aspectratio>stretch</aspectratio>
+					<texture background="true">white.png</texture>
+					<colordiffuse>color5</colordiffuse>
+					<animation effect="slide" start="0,0" end="424,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-675,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001)">WindowClose</animation>
+					<animation effect="slide" start="0,0" end="-112,0" time="300" tween="quadratic" easing="out" condition="![ControlGroup(9000).HasFocus | Control.HasFocus(9001)]">WindowClose</animation>
+					<animation effect="slide" start="-75,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+					</control>
+
+
+
+					<control type="group">
+					<posx>-424</posx>
+					<include>SideBladeLeft</include>
+
+					<control type="label" id="200">
+					<posx>28</posx>
+					<posy>25</posy>
+					<width>375</width>
+					<height>40</height>
+					<font>Condensed-34-U</font>
+					<label>33063</label>
+					<textcolor>color2</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					</control>
+
+					<control type="grouplist" id="9000">
+					<posx>0</posx>
+					<posy>120</posy>
+					<width>424</width>
+					<height>975</height>
+					<onleft>9000</onleft>
+					<onright>50</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<onback>50</onback>
+					<itemgap>5</itemgap>
+
+					<control type="button" id="2">
+					<description>View As button</description>
+					<textwidth>352</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>-</label>
+					</control>
+
+					<control type="label" id="201">
+					<width>375</width>
+					<height>52</height>
+					<font>font12</font>
+					<label>31026</label>
+					<textcolor>blue</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					</control>
+
+					<control type="radiobutton" id="20">
+					<description>Shuffle button</description>
+					<include>ButtonCommonValues</include>
+					<label>191</label>
+					</control>
+
+					<control type="button" id="26">
+					<description>Repeat button</description>
+					<include>ButtonCommonValues</include>
+					<label>-</label>
+					</control>
+
+					<control type="button" id="21">
+					<description>Save button</description>
+					<label>190</label>
+					<include>ButtonCommonValues</include>
+					</control>
+
+					<control type="button" id="22">
+					<description>Clear button</description>
+					<label>192</label>
+					<onclick>ReplaceWindow(Videos)</onclick>
+					<include>ButtonCommonValues</include>
+					</control>
+					</control>
+					</control>
+					</controls>
+					</window>

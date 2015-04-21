@@ -1,0 +1,324 @@
+					<?xml version="1.0" encoding="UTF-8"?>
+					<window>
+					<defaultcontrol always="true">9</defaultcontrol>
+					<controls>
+					
+					<include>Overlay</include>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1920</width>
+					<height>1080</height>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>300</fadetime>
+					<texture colordiffuse="white-condensed">special://skin/extras/backgrounds/1080/settings.jpg</texture>
+					</control>
+					
+					
+					<control type="group">
+					<posx>0</posx>
+					<posy>-50</posy>
+					
+					<!-- LIST OVERLAY -->
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>180</posy>
+					<width>455</width>
+					<height>759.375</height>
+					<texture colordiffuse="color5-transparent" background="true">white.png</texture>
+					</control>
+					
+					<!-- GRID -->
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>264.375</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>348.75</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>433.125</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>517.5</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>601.875</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>686.25</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>770.625</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>90</posx>
+					<posy>855</posy>
+					<width>455</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					
+					
+					<!-- LIST OVERLAY -->
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>180</posy>
+					<width>1268</width>
+					<height>759.375</height>
+					<texture colordiffuse="color5-transparent" background="true">white.png</texture>
+					</control>
+					
+					<!-- GRID -->
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>264.375</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>348.75</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>433.125</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>517.5</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>601.875</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>686.25</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>770.625</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="image">
+					<posx>560</posx>
+					<posy>855</posy>
+					<width>1268</width>
+					<height>1</height>
+					<texture colordiffuse="color3" background="true">white.png</texture>
+					</control>
+					
+					<control type="label" id="20">
+					<description>header label</description>
+					<posx>95</posx>
+					<posy>8</posy>
+					<width>1600</width>
+					<height>40</height>
+					<font>Condensed-34-U</font>
+					<textcolor>color2</textcolor>
+					<label>-</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>grey-light2</textcolor>
+					</control>
+					
+					<!-- GROUP OF BUTTONS ON THE LEFT -->
+					
+					<control type="grouplist" id="9">
+					<description>Button area</description>
+					<posx>90</posx>
+					<posy>180</posy>
+					<width>455</width>
+					<height>506.25</height>
+					<itemgap>0</itemgap>
+					<onup>9</onup>
+					<ondown>9001</ondown>
+					<onleft>noop</onleft>
+					<onright>2</onright>
+					<orientation>vertical</orientation>
+					</control>
+					
+					<control type="button" id="13">
+					<include>ButtonsSkinSettingsBig</include>
+					</control>
+					
+					<control type="grouplist" id="2">
+					<description>control area</description>
+					<posx>560</posx>
+					<posy>180</posy>
+					<width>1268</width>
+					<height>675</height>
+					<itemgap>0</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>0</scrolltime>
+					<onup>2</onup>
+					<ondown>2</ondown>
+					<onleft>9</onleft>
+					<onright>noop</onright>
+					</control>
+					
+					<control type="scrollbar" id="30">
+					<visible>false</visible>
+					</control>
+					
+					<!-- BUTTONS OK, CANCEL and DEFAULT -->
+					
+					<control type="group" id="9001">
+					<posx>90</posx>
+					<posy>538</posy>
+					
+					<control type="button" id="10">
+					<description>OK Button</description>
+					<include>ButtonsSkinSettingsBig</include>
+					<posy>150</posy>
+					<label>186</label>
+					<onup>9</onup>
+					<onleft>noop</onleft>
+					<onright>2</onright>
+					<ondown>11</ondown>
+					<align>left</align>
+					<aligny>center</aligny>
+					</control>
+					
+					<control type="button" id="11">
+					<description>Cancel Button</description>
+					<include>ButtonsSkinSettingsBig</include>
+					<posy>234</posy>
+					<label>222</label>
+					<onup>10</onup>
+					<onleft>noop</onleft>
+					<onright>2</onright>
+					<ondown>12</ondown>
+					<align>left</align>
+					<aligny>center</aligny>
+					</control>
+					
+					<control type="button" id="12">
+					<description>Defaults Button</description>
+					<include>ButtonsSkinSettingsBig</include>
+					<label>409</label>
+					<posy>318</posy>
+					<onup>11</onup>
+					<onleft>noop</onleft>
+					<onright>2</onright>
+					<ondown>noop</ondown>
+					<align>left</align>
+					<aligny>center</aligny>
+					</control>
+					</control>
+					
+					<!-- LIST OF BUTTONS, TEXT ON THE RIGHT SIDE -->
+					
+					<control type="button" id="13">
+					<description>Default Category Button</description>
+					<include>ButtonsSkinSettingsSmall</include>
+					</control>
+					
+					<control type="button" id="3">
+					<description>Default Button</description>
+					<include>ButtonsSkinSettingsSmall</include>
+					</control>
+					
+					<control type="radiobutton" id="4">
+					<description>Default RadioButton</description>
+					<include>RadioButtonsSkinSettings</include>
+					</control>
+					
+					<control type="spincontrolex" id="5">
+					<description>Default spincontrolex</description>
+					<include>Spincontrolex_1</include>
+					<reverse>yes</reverse>
+					</control>
+					
+					<control type="label" id="7">
+					<height>84</height>
+					<font>Condensed-30</font>
+					<textcolor>color2</textcolor>
+					<selectedcolor>color7</selectedcolor>
+					<focusedcolor>color2</focusedcolor>
+					<label>-</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textoffsetx>25</textoffsetx>
+					</control>
+					
+					<control type="image" id="6">
+					<description>Default Seperator</description>
+					<height>1</height>
+					<texture>-</texture>
+					</control>
+					
+					<control type="sliderex" id="8">
+					<description>Default Slider</description>
+					<include>Sliderex1</include>
+					</control>
+					</control>
+					<include>WindowOverlay</include>
+					</controls>
+					</window>

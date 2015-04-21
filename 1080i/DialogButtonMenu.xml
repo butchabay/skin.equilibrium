@@ -1,0 +1,189 @@
+					<?xml version="1.0" encoding="UTF-8"?>
+					<window type="buttonMenu">
+					<defaultcontrol>9000</defaultcontrol>
+
+					<coordinates>
+					<system>1</system>
+					<posx>0</posx>
+					<posy>0</posy>
+					</coordinates>
+					<controls>
+
+					<control type="image">
+					<description>Overlay</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<include>Dimensions_Fullscreen_Home</include>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<animation type="WindowOpen" reversible="false">
+					<effect type="fade" start="0" end="80" time="300" />
+					</animation>
+					<animation type="WindowClose" reversible="false">
+					<effect type="fade" start="80" end="0" time="300" />
+					</animation>
+					</control>
+
+
+					<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+
+					<include>dialogeffectslide</include>
+					<include>OverlayDialogs</include>
+
+					<control type="label" id="200">
+					<posx>28</posx>
+					<posy>25</posy>
+					<width>375</width>
+					<height>40</height>
+					<font>Condensed-34-U</font>
+					<label>31003</label>
+					<textcolor>color2</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					</control>
+
+
+					<control type="grouplist" id="9000">
+					<posx>0</posx>
+					<posy>120</posy>
+					<width>424</width>
+					<height>1080</height>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<itemgap>0</itemgap>
+					<align>left</align>
+					<control type="group" id="1">
+					<width>510</width>
+					<height>45</height>
+					</control>
+
+					<control type="button" id="2">
+					<description>Exit button</description>
+					<include>ButtonCommonValues</include>
+					<onclick>XBMC.Quit()</onclick>
+					<pulseonselect>no</pulseonselect>
+					<label>13012</label>
+					<visible>System.ShowExitButton</visible>
+					</control>
+
+					<control type="button" id="3">
+					<description>Shutdown button</description>
+					<include>ButtonCommonValues</include>
+					<onclick>XBMC.Powerdown()</onclick>
+					<visible>System.CanPowerDown</visible>
+					<label>13016</label>
+					</control>
+
+					<control type="button" id="4">
+					<description>Custom Shutdown Timer</description>
+					<include>ButtonCommonValues</include>
+					<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
+					<label>20150</label>
+					<visible>!System.HasAlarm(shutdowntimer)</visible>
+					<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
+					</control>
+
+					<control type="button" id="5">
+					<description>Cancel Shutdown Timer</description>
+					<include>ButtonCommonValues</include>
+					<onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
+					<label>20151</label>
+					<visible>System.HasAlarm(shutdowntimer)</visible>
+					</control>
+
+					<control type="button" id="6">
+					<description>Suspend button</description>
+					<include>ButtonCommonValues</include>
+					<onclick>XBMC.Suspend()</onclick>
+					<visible>System.CanSuspend</visible>
+					<label>13011</label>
+					</control>
+
+					<control type="button" id="7">
+					<description>Hibernate button</description>
+					<include>ButtonCommonValues</include>
+					<onclick>XBMC.Hibernate()</onclick>
+					<visible>System.CanHibernate</visible>
+					<label>13010</label>
+					</control>
+
+					<control type="button" id="8">
+					<description>Reboot button</description>
+					<include>ButtonCommonValues</include>
+					<onclick>XBMC.Reset()</onclick>
+					<visible>System.CanReboot</visible>
+					<label>13013</label>
+					</control>
+
+					<control type="button" id="9">
+					<description>Logoff button</description>
+					<include>ButtonCommonValues</include>
+					<onclick>dialog.close(all,true)</onclick>
+					<onclick>System.LogOff</onclick>
+					<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
+					<visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
+					<visible>System.Loggedon</visible>
+					</control>
+
+					<control type="togglebutton" id="10">
+					<description>Master mode button</description>
+					<include>ButtonCommonValues</include>
+					<usealttexture>!System.IsMaster</usealttexture>
+					<onclick>xbmc.mastermode</onclick>
+					<visible>System.HasLocks</visible>
+					</control>
+
+					<control type="group" id="11">
+					<width>375</width>
+					<height>105</height>
+					<visible>System.HasAlarm(shutdowntimer)</visible>
+					<control type="textbox">
+					<posx>38</posx>
+					<posy>30</posy>
+					<width>340</width>
+					<height>75</height>
+					<font>Condensed-36</font>
+					<textcolor>grey-light2</textcolor>
+					<align>left</align>
+					<label>$LOCALIZE[31329] $INFO[System.Alarmpos]</label>
+					</control>
+					</control>
+
+					<control type="button" id="12">
+					<description>Inhibit idle shutdown</description>
+					<include>ButtonCommonValues</include>
+					<onclick>XBMC.InhibitIdleShutdown(true)</onclick>
+					<pulseonselect>no</pulseonselect>
+					<label>13017</label>
+					<visible>System.HasShutdown +!System.IsInhibit</visible>
+					</control>
+
+					<control type="button" id="13">
+					<description>Allow idle shutdown</description>
+					<include>ButtonCommonValues</include>
+					<onclick>XBMC.InhibitIdleShutdown(false)</onclick>
+					<label>13018</label>
+					<visible>System.HasShutdown + System.IsInhibit</visible>
+					</control>
+
+					<control type="button" id="14">
+					<description>Settings</description>
+					<include>ButtonCommonValues</include>
+					<onclick>ActivateWindow(settings)</onclick>
+					<label>$LOCALIZE[31959]</label>
+					</control>
+
+					<control type="button" id="15">
+					<description>Skin Settings</description>
+					<include>ButtonCommonValues</include>
+					<onclick>ActivateWindow(SkinSettings)</onclick>
+					<label>32077</label>
+					</control>
+					</control>
+					</control>
+					</controls>
+					</window>

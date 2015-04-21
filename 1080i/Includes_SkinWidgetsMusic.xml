@@ -1,0 +1,2453 @@
+					<includes>
+
+					<include name="SkinWidgetsMusic">
+
+					<control type="group" id="8000">
+					<visible>!Container(300).HasFocus(8)</visible>
+					<posx>-250</posx>
+					<posy>80</posy>
+					
+					<animation effect="slide" start="0,0" end="0,210" time="200" reversible="true" condition="ControlGroup(9001).HasFocus">Conditional</animation>
+					<animation effect="slide" start="0,210" end="0,0" time="300" reversible="true" condition="!ControlGroup(9001).HasFocus">Conditional</animation>
+					
+					
+					<!-- RECENT ALBUMS  -->
+					
+
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(500)</visible>
+					<visible>![Skin.HasSetting(hide500) | Skin.HasSetting(custom500)]</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content target="music">musicdb://recentlyaddedalbums/</content>
+					</control>
+					
+					
+					<!-- CUSTOM MUSIC WIDGETS 500 -->
+					
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(500)</visible>
+					<visible>Skin.HasSetting(custom500)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom500playlist)]</content>
+					</control>
+					
+					<!-- ALBUMS  -->
+
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(501)</visible>
+					<visible>![Skin.HasSetting(hide501) | Skin.HasSetting(custom501)]</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content target="music">musicdb://albums/</content>
+					</control>
+					
+					<!-- CUSTOM MUSIC WIDGETS 501 -->
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(501)</visible>
+					<visible>Skin.HasSetting(custom501)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom501playlist)]</content>
+					</control>
+					
+					<!-- TOP 100 ALBUMS -->
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(502)</visible>
+					<visible>![Skin.HasSetting(hide502) | Skin.HasSetting(custom502)]</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content limit="25" target="music">musicdb://top100/albums/</content>
+					</control>
+					
+					<!-- CUSTOM MUSIC WIDGETS 502 -->
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(502)</visible>
+					<visible>Skin.HasSetting(custom502)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom502playlist)]</content>
+					</control>
+					
+					<!-- TOP 100 SONGS -->
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(503)</visible>
+					<visible>![Skin.HasSetting(hide503) | Skin.HasSetting(custom503)]</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content limit="25" target="music">musicdb://top100/songs/</content>
+					</control>
+					
+					<!-- CUSTOM MUSIC WIDGETS 503 -->
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(503)</visible>
+					<visible>Skin.HasSetting(custom503)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom503playlist)]</content>
+					</control>
+
+					<!-- ARTISTS -->
+
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>360</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(504)</visible>
+					<visible>![Skin.HasSetting(hide504) | Skin.HasSetting(custom504)]</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music_Artists</include>
+					<content target="music">musicdb://artists/</content>
+					</control>
+					
+					<!-- CUSTOM MUSIC WIDGETS 504 -->
+
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>360</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(504)</visible>
+					<visible>Skin.HasSetting(custom504)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom504playlist)]</content>
+					</control>
+					
+					<!-- GENRES -->
+
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(505)</visible>
+					<visible>![Skin.HasSetting(hide505) | Skin.HasSetting(custom505)]</visible>
+					<include>widgets_animation</include>
+					<itemlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color5</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>424</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture fallback="special://skin/extras/musicgenresquare/empty.jpg">$INFO[Listitem.Label,special://skin/extras/musicgenresquare/,.jpg]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					<focusedlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color5</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>424</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture fallback="special://skin/extras/musicgenresquare/empty.jpg">$INFO[Listitem.Label,special://skin/extras/musicgenresquare/,.jpg]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					</control>
+					
+					<control type="group">
+					<visible>!Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					
+					<control type="group">
+					<visible>Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					</focusedlayout>
+					<content target="music">musicdb://genres/</content>
+					</control>
+					
+					
+					<!-- CUSTOM MUSIC WIDGETS 505 -->
+
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(505)</visible>
+					<visible>Skin.HasSetting(custom505)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom505playlist)]</content>
+					</control>
+					
+					<!-- ONLINE -->
+
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(506)</visible>
+					<visible>![Skin.HasSetting(hide506) | Skin.HasSetting(custom506)]</visible>
+					<include>widgets_animation</include>
+					
+					<itemlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color5</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					<focusedlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color5</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					
+					<control type="group">
+					<visible>!Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					
+					<control type="group">
+					<visible>Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					</focusedlayout>
+					<content target="music">addons://sources/audio</content>
+					</control>
+					
+					
+					<!-- CUSTOM MUSIC WIDGETS 506 -->
+
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(506)</visible>
+					<visible>Skin.HasSetting(custom506)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom506playlist)]</content>
+					</control>
+					
+					<!-- LIBRARY -->
+
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(507)</visible>
+					<visible>![Skin.HasSetting(hide507) | Skin.HasSetting(custom507)]</visible>
+					<include>widgets_animation</include>
+					
+					<itemlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color5</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>130</posx>
+					<posy>70</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					<focusedlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color5</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>130</posx>
+					<posy>70</posy>
+					<width>160</width>
+					<height>160</height>
+					<texture fallback="icons/home/add.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>color1</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					</control>
+					
+					<control type="group">
+					<visible>!Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					
+					<control type="group">
+					<visible>Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					</focusedlayout>
+					<content>
+					
+					<item id="1">
+					<description>Genre</description>
+					<label>135</label>
+					<onclick>ActivateWindow(MusicLibrary,genres,return)</onclick>
+					<icon>icons/home/music/genres.png</icon>
+					</item>
+					
+					<item id="2">
+					<description>Artists</description>
+					<label>133</label>
+					<onclick>ActivateWindow(MusicLibrary,artists,return)</onclick>
+					<icon>icons/home/music/artists.png</icon>
+					</item>
+					
+					<item id="3">
+					<description>Albums</description>
+					<label>132</label>
+					<onclick>ActivateWindow(MusicLibrary,albums,return)</onclick>
+					<icon>icons/home/music/albums.png</icon>
+					</item>
+					
+					<item id="4">
+					<description>Recently Added Albums</description>
+					<label>32128</label>
+					<onclick>ActivateWindow(MusicLibrary,RecentlyAddedAlbums,return)</onclick>
+					<icon>icons/home/music/recentaddedalbums.png</icon>
+					</item>
+					
+					<item id="5">
+					<description>Top 100 Albums</description>
+					<label>32103</label>
+					<onclick>ActivateWindow(MusicLibrary,Top100Albums,return)</onclick>
+					<icon>icons/home/music/top100.png</icon>
+					</item>
+					
+					<item id="6">
+					<description>Last Played Albums</description>
+					<label>517</label>
+					<onclick>ActivateWindow(MusicLibrary,RecentlyPlayedAlbums,return)</onclick>
+					<icon>icons/home/music/hd.png</icon>
+					</item>
+					
+					<item id="7">
+					<description>Top 100 Songs</description>
+					<label>32126</label>
+					<onclick>ActivateWindow(MusicLibrary,Top100Songs,return)</onclick>
+					<icon>icons/home/music/mic.png</icon>
+					</item>
+					
+					<item id="8">
+					<description>Playlists</description>
+					<label>136</label>
+					<onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
+					<icon>icons/home/music/playlists.png</icon>
+					</item>
+					
+					<item id="9">
+					<description>Music Videos</description>
+					<label>20389</label>
+					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
+					<icon>icons/home/music/musicvideos.png</icon>
+					</item>
+					
+					<item id="10">
+					<description>Years</description>
+					<label>652</label>
+					<onclick>ActivateWindow(MusicLibrary,years,return)</onclick>
+					<icon>icons/home/music/years.png</icon>
+					</item>
+					</content>
+					</control>
+					
+					<!-- CUSTOM MUSIC WIDGETS 507 -->
+
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(507)</visible>
+				    <visible>Skin.HasSetting(custom507)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom507playlist)]</content>
+					</control>
+					
+					<!-- MUSIC VIDEOS -->
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(508)</visible>
+					<visible>![Skin.HasSetting(hide508) | Skin.HasSetting(custom508)]</visible>
+					<include>widgets_animation</include>
+					<itemlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color5</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>424</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Art(fanart)]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					</control>
+					
+					<include>UnFocused_Widgets_Label_MusicVideos</include>
+					
+					</itemlayout>
+					
+					<focusedlayout width="438" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color5</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>424</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Art(fanart)]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					</control>
+					
+					<include>Focused_Widgets_Label_MusicVideos</include>
+					</focusedlayout>
+					<content limit="25" target="video">videodb://musicvideos/titles/</content>
+					</control>
+					
+					<!-- CUSTOM MUSIC WIDGETS 508 -->
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(508)</visible>
+					<visible>Skin.HasSetting(custom508)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom508playlist)]</content>
+					</control>
+					
+					<!-- CUSTOM MUSIC WIDGETS 509 -->
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(509)</visible>
+					<visible>!Skin.HasSetting(custom509)</visible>
+					<include>widgets_animation</include>
+					<itemlayout width="438" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="438" height="280">
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="group">
+					<visible>!Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					
+					<control type="group">
+					<visible>Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					</content>
+					</control>
+					
+					
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(509)</visible>
+					<visible>Skin.HasSetting(custom509)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom509playlist)]</content>
+					</control>
+					
+					<!-- CUSTOM MUSIC WIDGETS 510 -->
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(510)</visible>
+					<visible>!Skin.HasSetting(custom510)</visible>
+					<include>widgets_animation</include>
+					<itemlayout width="438" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="438" height="280">
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="group">
+					<visible>!Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					
+					<control type="group">
+					<visible>Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					</content>
+					</control>
+					
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(510)</visible>
+					<visible>Skin.HasSetting(custom510)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom510playlist)]</content>
+					</control>
+					
+					<!-- CUSTOM MUSIC WIDGETS 511 -->
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(511)</visible>
+					<visible>!Skin.HasSetting(custom511)</visible>
+					<include>widgets_animation</include>
+					<itemlayout width="438" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="438" height="280">
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="group">
+					<visible>!Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					
+					<control type="group">
+					<visible>Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					</content>
+					</control>
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(511)</visible>
+					<visible>Skin.HasSetting(custom511)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom511playlist)]</content>
+					</control>
+					
+					<!-- CUSTOM MUSIC WIDGETS 512 -->
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(512)</visible>
+					<visible>!Skin.HasSetting(custom512)</visible>
+					<include>widgets_animation</include>
+					<itemlayout width="438" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="438" height="280">
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="group">
+					<visible>!Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					
+					<control type="group">
+					<visible>Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					</content>
+					</control>
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(512)</visible>
+					<visible>Skin.HasSetting(custom512)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom512playlist)]</content>
+					</control>
+					
+					<!-- CUSTOM MUSIC WIDGETS 513 -->
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(513)</visible>
+					<visible>!Skin.HasSetting(custom513)</visible>
+					<include>widgets_animation</include>
+					<itemlayout width="438" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="label">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>380</width>
+					<height>35</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="438" height="280">
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="group">
+					<visible>!Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					
+					<control type="group">
+					<visible>Control.HasFocus(8001)</visible>
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>390</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</control>
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					<item id="1">
+					<description>Music Custom Item</description>
+					<onclick>-</onclick>
+					<label>32197</label>
+					</item>
+					</content>
+					</control>
+					
+					<control type="wraplist" id="8001">
+					<posx>340</posx>
+					<posy>70</posy>
+					<width>1738</width>
+					<height>305</height>
+					<onup>9010</onup>
+					<ondown condition="Player.HasVideo | Player.HasAudio">8003</ondown>
+					<ondown condition="![Player.HasVideo | Player.HasAudio]">8002</ondown>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<focusposition>0</focusposition>
+					<scrolltime tween="sine" easing="out">300</scrolltime>
+					<visible>Container(9010).Hasfocus(513)</visible>
+					<visible>Skin.HasSetting(custom513)</visible>
+					<include>widgets_animation</include>
+					<include>Items_Widgets_Music</include>
+					<content>$INFO[Skin.String(custom513playlist)]</content>
+					</control>
+					</control>
+					
+					<!-- WIDGETS BOTTOM -->
+					
+					<control type="group" id="8010">
+					<posx>-250</posx>
+					<posy>140</posy>
+					
+					<control type="group">
+					<posx>5</posx>
+					<posy>25</posy>
+					
+					<animation effect="fade" start="100" end="0" time="0" reversible="true" condition="ControlGroup(9001).HasFocus">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="800" reversible="true" delay="500" condition="!ControlGroup(9001).HasFocus">Conditional</animation>
+					
+					<control type="label">
+					<posx>335</posx>
+					<posy>400</posy>
+					<label>$LOCALIZE[32045]</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(3)</visible>
+					<visible>![Player.HasVideo | Player.HasAudio]</visible>
+					</control>
+					
+					<control type="label">
+					<posx>335</posx>
+					<posy>400</posy>
+					<label>$LOCALIZE[31040]</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(3)</visible>
+					<visible>Player.HasVideo | Player.HasAudio</visible>
+					</control>
+					
+					<control type="label">
+					<posx>775</posx>
+					<posy>400</posy>
+					<label>$LOCALIZE[32102]</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(3)</visible>
+					</control>
+					
+					<!-- MUSIC TILE 1 TITLE -->
+					
+					<control type="label">
+					<posx>1215</posx>
+					<posy>400</posy>
+					<label>$LOCALIZE[32082]</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(3) + !Skin.HasSetting(custom_music_tile_1)</visible>
+					</control>
+					
+					<!-- CUSTOM MUSIC TILE 1 TITLE -->
+					
+					<control type="label">
+					<posx>1215</posx>
+					<posy>400</posy>
+					<label>$INFO[Skin.String(custom_Music_tile_1_addon_label)]</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(3) + Skin.HasSetting(custom_music_tile_1)</visible>
+					</control>
+					
+					<!-- MUSIC TILE 2 TITLE -->
+					
+					<control type="label">
+					<posx>1650</posx>
+					<posy>400</posy>
+					<label>$LOCALIZE[32106]</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(3) + !Skin.HasSetting(custom_music_tile_2)</visible>
+					</control>
+					
+					<!-- CUSTOM MUSIC TILE 2 TITLE -->
+					
+					<control type="label">
+					<posx>1650</posx>
+					<posy>400</posy>
+					<label>$INFO[Skin.String(custom_Music_tile_2_addon_label)]</label>
+					<width>250</width>
+					<height>45</height>
+					<font>Condensed-24-B</font>
+					<textcolor>color6</textcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>Container(300).HasFocus(3) + Skin.HasSetting(custom_music_tile_2)</visible>
+					</control>
+					</control>
+					
+					
+					<control type="group">
+					
+					<animation effect="fade" start="100" end="0" time="0" reversible="true" condition="ControlGroup(9001).HasFocus">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="0" reversible="true" condition="!ControlGroup(9001).HasFocus">Conditional</animation>
+					
+					
+					<!-- RANDOM ALBUMS -->
+					
+					<control type="panel" id="8002">
+					<posx>340</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>305</height>
+					<onleft>noop</onleft>
+					<onright>8003</onright>
+					<onup>8001</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<focusposition>0</focusposition>
+					<visible>Container(300).HasFocus(3)</visible>
+					<visible>![Player.HasVideo | Player.HasAudio]</visible>
+					<include>widgets_animation1a</include>
+					<itemlayout width="438" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>424</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Art(thumb)]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					</control>
+					
+					<control type="group">
+					<include>UnFocused_Label_Spotlight_Music</include>
+					</control>
+					</itemlayout>
+					<focusedlayout width="438" height="280">
+					
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>424</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Art(thumb)]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					
+					<control type="group">
+					<include>Focused_Label_Spotlight_Music</include>
+					</control>
+					
+					</focusedlayout>
+					<content limit="1">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]</content>
+					</control>
+					
+					
+					<!-- RECOMMENDED -->
+
+					<control type="panel" id="8003">
+					<posx>778</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>305</height>
+					<onleft>8002</onleft>
+					<onright>8004</onright>
+					<onup>8001</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+					<scrolltime>300</scrolltime>
+					<visible>Container(300).HasFocus(3)</visible>
+					<include>widgets_animation1a</include>
+					<itemlayout width="438" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>424</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Art(thumb)]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					</control>
+					
+					<control type="group">
+					<include>UnFocused_Label_Spotlight_Music</include>
+					</control>
+					
+					</itemlayout>
+					<focusedlayout width="438" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>424</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Art(thumb)]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					
+					<control type="group">
+					<include>Focused_Label_Spotlight_Music</include>
+					</control>
+					
+					</focusedlayout>
+					<content limit="1">plugin://service.library.data.provider?type=recommendedalbums&reload=$INFO[Window.Property(recommendedalbums)]</content>
+					</control>
+					
+					
+					
+					<!-- NEW  -->
+
+					<control type="panel" id="8004">
+					<posx>1216</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>305</height>
+					<onup>8001</onup>
+					<onleft>8003</onleft>
+					<onright>8005</onright>
+					<ondown>noop</ondown>
+					<scrolltime>300</scrolltime>
+					<visible>Container(300).HasFocus(3) + !Skin.HasSetting(custom_music_tile_1)</visible>
+					<include>widgets_animation1a</include>
+					<itemlayout width="438" height="280">
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>424</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Art(thumb)]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					</control>
+					
+					<control type="group">
+					<include>UnFocused_Label_Spotlight_Music</include>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="438" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>424</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>$INFO[ListItem.Art(thumb)]</texture>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					<control type="group">
+					<include>Focused_Label_Spotlight_Music</include>
+					</control>
+					</focusedlayout>
+					
+					<content target="music">special://skin/playlists/New Albums.xsp</content>
+					</control>
+					
+					
+					<!-- CUSTOM MUISC TILE 1 -->
+					
+					<control type="panel" id="8004">
+					<posx>1216</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>305</height>
+					<onup>8001</onup>
+					<onleft>8003</onleft>
+					<onright>8005</onright>
+					<ondown>noop</ondown>
+					<scrolltime>300</scrolltime>
+					<visible>Container(300).HasFocus(3) + Skin.HasSetting(custom_music_tile_1)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					
+					</focusedlayout>
+					<content>
+					<item id="1">
+					<onclick>RunAddon($INFO[Skin.String(custom_Music_tile_1_addon)])</onclick>
+					<icon>$INFO[Skin.String(custom_Music_tile_1_addon_icon)]</icon>
+					<label>$INFO[system.addontitle(Skin.String(custom_Music_tile_1_addon))]</label>
+					</item>
+					</content>
+					</control>
+
+					
+					
+					 <!-- ADDON 2 -->
+					 
+					<control type="panel" id="8005">
+					<posx>1654</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>8004</onleft>
+					<onright>noop</onright>
+					<onup>8001</onup>
+					<ondown>noop</ondown>
+					<align>left</align>
+					<orientation>vertical</orientation>
+					<scrolltime>300</scrolltime>
+					<visible>Container(300).HasFocus(3) + !Skin.HasSetting(custom_music_tile_2)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					
+					</focusedlayout>
+					
+					<content>
+					<item id="1">
+					<onclick>ActivateWindow(3004)</onclick>
+					<icon>-</icon>
+					<label>32104</label>
+					</item>
+					</content>
+					</control>
+					
+					
+					<!-- ADDON 2 -->
+					 
+					<control type="panel" id="8005">
+					<posx>1654</posx>
+					<posy>430</posy>
+					<width>444</width>
+					<height>550</height>
+					<onleft>8004</onleft>
+					<onright>noop</onright>
+					<onup>8001</onup>
+					<ondown>noop</ondown>
+					<align>left</align>
+					<orientation>vertical</orientation>
+					<scrolltime>300</scrolltime>
+					<visible>Container(300).HasFocus(3) + Skin.HasSetting(custom_music_tile_2)</visible>
+					<include>widgets_animation1</include>
+					<itemlayout width="444" height="280">
+				
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color1</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					</itemlayout>
+					
+					<focusedlayout width="444" height="280">
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>424</width>
+					<height>255</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<colordiffuse>color5</colordiffuse>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>215</width>
+					<height>215</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<aspectratio>scale</aspectratio>
+					<animation effect="zoom" time="300" center="auto" start="60" end="100" tween="quadratic" easing="out" reversible="false">focus</animation>
+					</control>
+					
+					<control type="image">
+					<posx>0</posx>
+					<posy>229</posy>
+					<width>424</width>
+					<height>76</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>white.png</texture>
+					<colordiffuse>color3</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+					</control>
+					
+					<control type="textbox">
+					<posx>20</posx>
+					<posy>250</posy>
+					<width>410</width>
+					<height>38</height>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Condensed-24-B</font>
+					<textcolor>color7</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<scroll>false</scroll>
+					<autoscroll>false</autoscroll>
+					</control>
+					
+					</focusedlayout>
+					<content>
+					
+				    <item id="1">
+					<onclick>RunAddon($INFO[Skin.String(custom_Music_tile_2_addon)])</onclick>
+					<icon>$INFO[Skin.String(custom_Music_tile_2_addon_icon)]</icon>
+					<label>$INFO[system.addontitle(Skin.String(custom_Music_tile_2_addon))]</label>
+					</item>
+					</content>
+					</control>
+					</control>
+					</control>
+					
+					</include>
+					</includes>
